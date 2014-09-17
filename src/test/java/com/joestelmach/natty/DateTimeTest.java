@@ -2,6 +2,7 @@ package com.joestelmach.natty;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.text.DateFormat;
@@ -159,4 +160,22 @@ public class DateTimeTest extends AbstractTest {
     validateDateTime(dates.get(0), 4, 10, 2012, 3, 30, 0);
     validateDateTime(dates.get(1), 4, 10, 2012, 9, 41, 0);
   }
+
+  @Test
+  public void timeWinsOverDate() throws Exception {
+//    validateDate("2015", 1, 1, 2014);
+    Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("03/16/2012");
+    CalendarSource.setBaseDate(reference);
+    validateDateTime("2015", 3, 16, 2012, 20, 15, 0);
+  }
+
+  @Test
+  @Ignore("2014 is treated as time rather than year")
+  public void shouldPreferDateOverTime() throws Exception {
+//    validateDate("2015", 1, 1, 2014);
+    Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("05/15/2014");
+    CalendarSource.setBaseDate(reference);
+    validateDateTime("2010", 1, 1, 2010, 0, 0, 0);
+  }
+
 }
