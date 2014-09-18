@@ -1,28 +1,25 @@
 package com.joestelmach.natty;
 
+import com.joestelmach.natty.generated.DateLexer;
+import com.joestelmach.natty.generated.DateParser;
+import com.joestelmach.natty.generated.DateWalker;
+import com.joestelmach.natty.generated.TreeRewrite;
+import com.spark.antlr.runtime.ANTLRInputStream;
+import com.spark.antlr.runtime.CommonTokenStream;
+import com.spark.antlr.runtime.Token;
+import com.spark.antlr.runtime.TokenStream;
+import com.spark.antlr.runtime.tree.CommonTree;
+import com.spark.antlr.runtime.tree.CommonTreeNodeStream;
+import com.spark.antlr.runtime.tree.Tree;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.TimeZone;
-import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.logging.SimpleFormatter;
-
-import org.antlr.runtime.ANTLRInputStream;
-import org.antlr.runtime.CommonTokenStream;
-import org.antlr.runtime.Token;
-import org.antlr.runtime.TokenStream;
-import org.antlr.runtime.tree.CommonTree;
-import org.antlr.runtime.tree.CommonTreeNodeStream;
-import org.antlr.runtime.tree.Tree;
-
-import com.joestelmach.natty.generated.DateLexer;
-import com.joestelmach.natty.generated.DateParser;
-import com.joestelmach.natty.generated.DateWalker;
-import com.joestelmach.natty.generated.TreeRewrite;
 
 /**
  * 

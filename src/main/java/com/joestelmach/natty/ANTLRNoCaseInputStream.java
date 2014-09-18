@@ -3,8 +3,11 @@ package com.joestelmach.natty;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.antlr.runtime.ANTLRInputStream;
-import org.antlr.runtime.CharStream;
+//import org.antlr.runtime.ANTLRInputStream;
+//import org.antlr.runtime.CharStream;
+import com.spark.antlr.runtime.ANTLRInputStream;
+import com.spark.antlr.runtime.CharStream;
+
 
 /**
  * Extends an ordinary ANTLRInputStream to convert all characters to lower case

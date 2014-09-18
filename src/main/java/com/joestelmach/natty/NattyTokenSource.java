@@ -2,8 +2,8 @@ package com.joestelmach.natty;
 
 import java.util.List;
 
-import org.antlr.runtime.Token;
-import org.antlr.runtime.TokenSource;
+import com.spark.antlr.runtime.Token;
+import com.spark.antlr.runtime.TokenSource;
 
 public class NattyTokenSource implements TokenSource {
   private List<Token> _tokens;
