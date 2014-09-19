@@ -5,8 +5,8 @@ import java.io.InputStream;
 
 //import org.antlr.runtime.ANTLRInputStream;
 //import org.antlr.runtime.CharStream;
-import com.spark.antlr.runtime.ANTLRInputStream;
-import com.spark.antlr.runtime.CharStream;
+import org.antlr.runtime.ANTLRInputStream;
+import org.antlr.runtime.CharStream;
 
 
 /**
