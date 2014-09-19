@@ -16,9 +16,9 @@
   </licenses>
   
   <scm>
-    <connection>scm:git:git@github.com:joestelmach/natty.git</connection>
-    <url>scm:git:git@github.com:joestelmach/natty.git</url>
-    <developerConnection>scm:git:git@github.com:joestelmach/natty.git</developerConnection>  
+    <connection>scm:git:git@github.com:dhirajbhandari/natty.git</connection>
+    <url>scm:git:git@github.com:dhirajbhandari/natty.git</url>
+    <developerConnection>scm:git:git@github.com:dhirajbhandari/natty.git</developerConnection>
   </scm>
   
   <developers>
@@ -32,6 +32,16 @@
       </roles>
       <timezone>-5</timezone>
     </developer>
+      <developer>
+          <id>raj</id>
+          <name>Raj Bhandari</name>
+          <email>raj@lumanetix.com</email>
+          <url>http://github.com/dhirajbhandari</url>
+          <roles>
+              <role>developer</role>
+          </roles>
+          <timezone>+10</timezone>
+      </developer>
   </developers>
   
   <properties>
@@ -84,7 +94,7 @@
         <configuration>
           <filesets>
             <fileset>
-              <directory>src/main/java/com/joestelmach/natty/generated</directory>
+              <directory>src/main/java/com/joestelmach/natty/generated-new</directory>
               <includes>
                 <include>**/*.java</include>
               </includes>
@@ -95,68 +105,68 @@
       </plugin>
 
       <!-- ANTLR code generation plugin -->
-      <plugin>
-        <groupId>org.antlr</groupId>
-        <artifactId>antlr3-maven-plugin</artifactId>
-        <version>3.2</version>
-        
-        <executions>
-          <execution>
-            <id>debug</id>
-            <goals>
-              <goal>antlr</goal>
-            </goals>
-            <configuration>
-              <debug>true</debug>
-              <libDirectory>src/main/antlr3/com/joestelmach/natty/generated/imports</libDirectory>
-              <outputDirectory>src/main/java</outputDirectory>
-              <conversionTimeout>10000</conversionTimeout>
-              <includes>
-                <include>com/joestelmach/natty/generated/DateLexer.g</include> 
-                <include>com/joestelmach/natty/generated/DateParser.g</include> 
-              </includes>
-              <excludes>
-                <exclude>com/joestelmach/natty/generated/imports/NumericRules.g</exclude> 
-              </excludes>
-            </configuration>
-          </execution>
+      <!--<plugin>-->
+        <!--<groupId>org.antlr</groupId>-->
+        <!--<artifactId>antlr3-maven-plugin</artifactId>-->
+        <!--<version>3.2</version>-->
+        <!---->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<id>debug</id>-->
+            <!--<goals>-->
+              <!--<goal>antlr</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+              <!--<debug>true</debug>-->
+              <!--<libDirectory>src/main/antlr3/com/joestelmach/natty/generated-new/imports</libDirectory>-->
+              <!--<outputDirectory>src/main/java</outputDirectory>-->
+              <!--<conversionTimeout>10000</conversionTimeout>-->
+              <!--<includes>-->
+                <!--<include>com/joestelmach/natty/generated-new/DateLexer.g</include>-->
+                <!--<include>com/joestelmach/natty/generated-new/DateParser.g</include>-->
+              <!--</includes>-->
+              <!--<excludes>-->
+                <!--<exclude>com/joestelmach/natty/generated-new/imports/NumericRules.g</exclude>-->
+              <!--</excludes>-->
+            <!--</configuration>-->
+          <!--</execution>-->
 
-          <execution>
-            <id>non-debug</id>
-            <goals>
-              <goal>antlr</goal>
-            </goals>
-            <configuration>
-              <debug>false</debug>
-              <outputDirectory>src/main/java</outputDirectory>
-              <libDirectory>src/main/antlr3/com/joestelmach/natty/generated/imports</libDirectory>
-              <conversionTimeout>10000</conversionTimeout>
-              <excludes>
-                <exclude>com/joestelmach/natty/generated/DateLexer.g</exclude> 
-                <exclude>com/joestelmach/natty/generated/DateParser.g</exclude> 
-                <exclude>com/joestelmach/natty/generated/imports/NumericRules.g</exclude> 
-              </excludes>
-            </configuration>
-          </execution>
-          
-        </executions>
-      </plugin>
+          <!--<execution>-->
+            <!--<id>non-debug</id>-->
+            <!--<goals>-->
+              <!--<goal>antlr</goal>-->
+            <!--</goals>-->
+            <!--<configuration>-->
+              <!--<debug>false</debug>-->
+              <!--<outputDirectory>src/main/java</outputDirectory>-->
+              <!--<libDirectory>src/main/antlr3/com/joestelmach/natty/generated-new/imports</libDirectory>-->
+              <!--<conversionTimeout>10000</conversionTimeout>-->
+              <!--<excludes>-->
+                <!--<exclude>com/joestelmach/natty/generated-new/DateLexer.g</exclude>-->
+                <!--<exclude>com/joestelmach/natty/generated-new/DateParser.g</exclude>-->
+                <!--<exclude>com/joestelmach/natty/generated-new/imports/NumericRules.g</exclude>-->
+              <!--</excludes>-->
+            <!--</configuration>-->
+          <!--</execution>-->
+          <!---->
+        <!--</executions>-->
+      <!--</plugin>-->
       
       <!-- gUnit plugin --> 
-      <plugin> 
-        <groupId>org.antlr</groupId> 
-        <artifactId>maven-gunit-plugin</artifactId> 
-        <version>3.2</version> 
-        <executions> 
-          <execution> 
-            <id>maven-gunit-plugin</id> 
-            <phase>test</phase> 
-            <goals> 
-              <goal>gunit</goal> 
-            </goals> 
-          </execution> 
-        </executions> 
-      </plugin> 
+      <!--<plugin> -->
+        <!--<groupId>org.antlr</groupId> -->
+        <!--<artifactId>maven-gunit-plugin</artifactId> -->
+        <!--<version>3.2</version> -->
+        <!--<executions> -->
+          <!--<execution> -->
+            <!--<id>maven-gunit-plugin</id> -->
+            <!--<phase>test</phase> -->
+            <!--<goals> -->
+              <!--<goal>gunit</goal> -->
+            <!--</goals> -->
+          <!--</execution> -->
+        <!--</executions> -->
+      <!--</plugin> -->
     </plugins>
   </build>
   
