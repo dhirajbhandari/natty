@@ -1,11 +1,7 @@
 package com.joestelmach.natty.antlrV32;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-//import org.antlr.runtime.tree.Tree;
 import org.antlr.v32.runtime.tree.Tree;
 
 /**
@@ -19,19 +15,22 @@ public class DateGroup {
   private int _position;
   private boolean _isRecurring;
   private boolean _isTimeInferred;
-  private boolean yearSpecified;
-  private boolean monthSpecified;
-  private boolean daySpecified;
-  private boolean hourSpecified;
 
   private Date _recurringUntil;
   private Map<String, List<ParseLocation>> _parseLocations;
   private Tree _syntaxTree;
 
+  // BEGIN: Patch
+  private boolean[] _nonInferredFields;
+  // END: Patch
+
   public DateGroup() {
     _dates = new ArrayList<Date>();
     //assume not specified unless set
     _isTimeInferred = true;
+    // BEGIN: Patch
+    _nonInferredFields = new boolean[Calendar.FIELD_COUNT];
+    // END: Patch
   }
 
   public List<Date> getDates() {
@@ -102,6 +101,8 @@ public class DateGroup {
     _syntaxTree = syntaxTree;
   }
 
+  // BEGIN: Patch
+
   /**
    * @return true if the year information in this date group has been
    * explicitly specified in the _text input as opposed to being inferred.
@@ -112,35 +113,134 @@ public class DateGroup {
    * </code>
    */
   public boolean isYearSpecified() {
-    return yearSpecified;
-  }
-
-  public void markYearSpecified() {
-    yearSpecified = true;
+    return isFieldSpecified(Calendar.YEAR);
   }
 
   public boolean isMonthSpecified() {
-    return monthSpecified;
-  }
-
-  public void markMonthSpecified() {
-    this.monthSpecified = true;
+    return isFieldSpecified(Calendar.MONTH);
   }
 
   public boolean isDaySpecified() {
-    return daySpecified;
-  }
-
-  public void markDaySpecified() {
-    this.daySpecified = true;
+    return isFieldSpecified(Calendar.DAY_OF_MONTH);
   }
 
   public boolean isHourSet() {
-    return hourSpecified;
+    return isFieldSpecified(Calendar.HOUR);
+  }
+
+  public void markYearSpecified() {
+    markFieldSpecified(Calendar.YEAR);
+  }
+
+  public void markMonthSpecified() {
+    markFieldSpecified(Calendar.MONTH);
+  }
+
+  public void markDaySpecified() {
+    markFieldSpecified(Calendar.DAY_OF_MONTH);
   }
 
   public void markHourSpecified() {
-    //hour is explicitly set
-    this.hourSpecified = true;
+    markFieldSpecified(Calendar.HOUR);
   }
+
+  public List<Date> getDatesWithInferredFieldsSetToMinimum()
+  {
+    List<Date> dates = new ArrayList<Date>();
+    for (Date date : getDates())
+    {
+      Calendar cal = Calendar.getInstance();
+      cal.setTime(date);
+      if (isFieldInferred(Calendar.YEAR))
+      {
+        // Leave as current year
+        // TODO in the future could think about all years?
+      }
+      if (isFieldInferred(Calendar.DAY_OF_YEAR))
+      {
+        cal.set(Calendar.DAY_OF_YEAR, 1);
+      }
+      if (isFieldInferred(Calendar.MONTH))
+      {
+        cal.set(Calendar.MONTH, Calendar.JANUARY);
+      }
+      if (isFieldInferred(Calendar.HOUR) || isFieldInferred(Calendar.HOUR_OF_DAY))
+      {
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+      }
+      if (isFieldInferred(Calendar.MINUTE))
+      {
+        cal.set(Calendar.MINUTE, 0);
+      }
+      if (isFieldInferred(Calendar.SECOND))
+      {
+        cal.set(Calendar.SECOND, 0);
+      }
+      if (isFieldInferred(Calendar.MILLISECOND))
+      {
+        cal.set(Calendar.MILLISECOND, 0);
+      }
+      dates.add(date); // TODO revert this when fix the natty parsing to properly set the inferred fields
+//            dates.add(cal.getTime());
+    }
+    return dates;
+  }
+
+  public List<Date> getDatesWithInferredFieldsSetToMaximum()
+  {
+    List<Date> dates = new ArrayList<Date>();
+    for (Date date : getDates())
+    {
+      Calendar cal = Calendar.getInstance();
+      cal.setTime(date);
+      if (isFieldInferred(Calendar.YEAR))
+      {
+        // Leave as current year
+        // TODO in the future could think about all years?
+      }
+      if (isFieldInferred(Calendar.DAY_OF_YEAR))
+      {
+        cal.set(Calendar.DAY_OF_MONTH, 31);
+      }
+      if (isFieldInferred(Calendar.MONTH))
+      {
+        cal.set(Calendar.MONTH, Calendar.DECEMBER);
+      }
+      if (isFieldInferred(Calendar.HOUR) || isFieldInferred(Calendar.HOUR_OF_DAY))
+      {
+        cal.set(Calendar.HOUR_OF_DAY, 23);
+      }
+      if (isFieldInferred(Calendar.MINUTE))
+      {
+        cal.set(Calendar.MINUTE, 59);
+      }
+      if (isFieldInferred(Calendar.SECOND))
+      {
+        cal.set(Calendar.SECOND, 59);
+      }
+      if (isFieldInferred(Calendar.MILLISECOND))
+      {
+        cal.set(Calendar.MILLISECOND, 999);
+      }
+      dates.add(date); // TODO revert this when fix the natty parsing to properly set the inferred fields
+//            dates.add(cal.getTime());
+    }
+    return dates;
+  }
+
+  public boolean isFieldInferred(int field)
+  {
+    return !_nonInferredFields[field];
+  }
+
+  public boolean isFieldSpecified(int field)
+  {
+    return _nonInferredFields[field];
+  }
+
+  public void markFieldSpecified(int field)
+  {
+    _nonInferredFields[field] = true;
+  }
+  // END: Patch
 }
