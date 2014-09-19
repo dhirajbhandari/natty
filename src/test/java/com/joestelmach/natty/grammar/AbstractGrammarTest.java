@@ -5,12 +5,12 @@ import java.lang.reflect.Method;
 
 import junit.framework.Assert;
 
-import org.antlr.runtime.ANTLRInputStream;
-import org.antlr.runtime.CommonTokenStream;
-import org.antlr.runtime.ParserRuleReturnScope;
-import org.antlr.runtime.tree.CommonTree;
-import org.antlr.runtime.tree.CommonTreeNodeStream;
-import org.antlr.runtime.tree.Tree;
+import org.antlr.v32.runtime.ANTLRInputStream;
+import org.antlr.v32.runtime.CommonTokenStream;
+import org.antlr.v32.runtime.ParserRuleReturnScope;
+import org.antlr.v32.runtime.tree.CommonTree;
+import org.antlr.v32.runtime.tree.CommonTreeNodeStream;
+import org.antlr.v32.runtime.tree.Tree;
 
 import com.joestelmach.natty.ANTLRNoCaseInputStream;
 import com.joestelmach.natty.ParseListener;

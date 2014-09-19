@@ -1,8 +1,8 @@
 // $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/TreeRewrite.g 2014-09-18 18:35:13
  package com.joestelmach.natty.spark;
 
-import org.antlr.runtime.*;
-import org.antlr.runtime.tree.*;
+import org.antlr.v32.runtime.*;
+import org.antlr.v32.runtime.tree.*;
 
 public class TreeRewrite extends TreeRewriter {
     public static final String[] tokenNames = new String[] {

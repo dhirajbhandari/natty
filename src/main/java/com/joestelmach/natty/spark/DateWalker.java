@@ -2,8 +2,8 @@
  package com.joestelmach.natty.spark;
 
 //import org.antlr.runtime.*;
-import org.antlr.runtime.*;
-import org.antlr.runtime.tree.*;
+import org.antlr.v32.runtime.*;
+import org.antlr.v32.runtime.tree.*;
 //import org.antlr.runtime.tree.*;
 
 

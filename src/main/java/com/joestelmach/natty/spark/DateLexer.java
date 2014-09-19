@@ -2,7 +2,7 @@
  package com.joestelmach.natty.spark;
 
 //import org.antlr.runtime.*;
-import org.antlr.runtime.*;
+import org.antlr.v32.runtime.*;
 
 public class DateLexer extends Lexer {
     public static final int MONTH=28;

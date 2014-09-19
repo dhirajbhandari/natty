@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
-import org.antlr.runtime.RecognitionException;
-import org.antlr.runtime.Token;
-import org.antlr.runtime.debug.BlankDebugEventListener;
+import org.antlr.v32.runtime.RecognitionException;
+import org.antlr.v32.runtime.Token;
+import org.antlr.v32.runtime.debug.BlankDebugEventListener;
 
 /**
  * Responsible for collecting parse information from the debug parser

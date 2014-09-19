@@ -3,10 +3,8 @@ package com.joestelmach.natty;
 import java.io.IOException;
 import java.io.InputStream;
 
-//import org.antlr.runtime.ANTLRInputStream;
-//import org.antlr.runtime.CharStream;
-import org.antlr.runtime.ANTLRInputStream;
-import org.antlr.runtime.CharStream;
+import org.antlr.v32.runtime.ANTLRInputStream;
+import org.antlr.v32.runtime.CharStream;
 
 
 /**
