@@ -237,12 +237,12 @@
   
   <!-- dependencies -->
   <dependencies>
-    <dependency>
-      <!--com/spark/spark-antlr-runtime/3.2.1/spark-antlr-runtime-3.2.1-->
-      <groupId>com.spark</groupId>
-      <artifactId>spark-antlr-runtime</artifactId>
-      <version>3.2.1</version>
-    </dependency> 
+    <!--<dependency>-->
+      <!--&lt;!&ndash;com/spark/spark-antlr-runtime/3.2.1/spark-antlr-runtime-3.2.1&ndash;&gt;-->
+      <!--<groupId>com.spark</groupId>-->
+      <!--<artifactId>spark-antlr-runtime</artifactId>-->
+      <!--<version>3.2.1</version>-->
+    <!--</dependency> -->
     
     <dependency>
       <groupId>org.mnode.ical4j</groupId>
@@ -256,12 +256,18 @@
       <version>4.1</version>
       <scope>test</scope>
     </dependency>
-    
-    <dependency> 
-      <groupId>org.antlr</groupId>
-      <artifactId>gunit</artifactId>
-      <version>3.2</version>
-      <scope>test</scope>
-    </dependency> 
+
+      <dependency>
+          <groupId>org.antlr</groupId>
+          <artifactId>stringtemplate</artifactId>
+          <version>3.2</version>
+      </dependency>
+
+      <!--<dependency> -->
+      <!--<groupId>org.antlr</groupId>-->
+      <!--<artifactId>gunit</artifactId>-->
+      <!--<version>3.2</version>-->
+      <!--<scope>test</scope>-->
+    <!--</dependency> -->
   </dependencies>
 </project>
