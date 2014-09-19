@@ -3,7 +3,7 @@
   <groupId>com.joestelmach</groupId>
   <artifactId>natty</artifactId>
   <packaging>jar</packaging>
-  <version>0.9-SNAPSHOT</version>
+  <version>0.10-SNAPSHOT</version>
   <name>Natty Date Parser</name>
   <description>natural language date parser</description>
   <url>http://natty.joestelmach.com</url>
@@ -45,7 +45,7 @@
   </developers>
   
   <properties>
-    <grammar.dir>${basedir}/src/main/antlr3/com/joestelmach/natty/generated</grammar.dir>
+    <grammar.dir>${basedir}/src/main/antlr3/com/joestelmach/natty/generated-new</grammar.dir>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
@@ -88,21 +88,21 @@
       </plugin>
       
       <!-- clean plugin -->
-      <plugin>
-        <artifactId>maven-clean-plugin</artifactId>
-        <version>2.4.1</version>
-        <configuration>
-          <filesets>
-            <fileset>
-              <directory>src/main/java/com/joestelmach/natty/generated-new</directory>
-              <includes>
-                <include>**/*.java</include>
-              </includes>
-              <followSymlinks>false</followSymlinks>
-            </fileset>
-          </filesets>
-        </configuration>
-      </plugin>
+      <!--<plugin>-->
+        <!--<artifactId>maven-clean-plugin</artifactId>-->
+        <!--<version>2.4.1</version>-->
+        <!--<configuration>-->
+          <!--<filesets>-->
+            <!--<fileset>-->
+              <!--<directory>src/main/java/com/joestelmach/natty/generated-new</directory>-->
+              <!--<includes>-->
+                <!--<include>**/*.java</include>-->
+              <!--</includes>-->
+              <!--<followSymlinks>false</followSymlinks>-->
+            <!--</fileset>-->
+          <!--</filesets>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
 
       <!-- ANTLR code generation plugin -->
       <!--<plugin>-->
@@ -118,15 +118,15 @@
             <!--</goals>-->
             <!--<configuration>-->
               <!--<debug>true</debug>-->
-              <!--<libDirectory>src/main/antlr3/com/joestelmach/natty/generated-new/imports</libDirectory>-->
+              <!--<libDirectory>src/main/antlr3/com/joestelmach/natty/spark-new/imports</libDirectory>-->
               <!--<outputDirectory>src/main/java</outputDirectory>-->
               <!--<conversionTimeout>10000</conversionTimeout>-->
               <!--<includes>-->
-                <!--<include>com/joestelmach/natty/generated-new/DateLexer.g</include>-->
-                <!--<include>com/joestelmach/natty/generated-new/DateParser.g</include>-->
+                <!--<include>com/joestelmach/natty/spark-new/DateLexer.g</include>-->
+                <!--<include>com/joestelmach/natty/spark-new/DateParser.g</include>-->
               <!--</includes>-->
               <!--<excludes>-->
-                <!--<exclude>com/joestelmach/natty/generated-new/imports/NumericRules.g</exclude>-->
+                <!--<exclude>com/joestelmach/natty/spark-new/imports/NumericRules.g</exclude>-->
               <!--</excludes>-->
             <!--</configuration>-->
           <!--</execution>-->
@@ -139,12 +139,12 @@
             <!--<configuration>-->
               <!--<debug>false</debug>-->
               <!--<outputDirectory>src/main/java</outputDirectory>-->
-              <!--<libDirectory>src/main/antlr3/com/joestelmach/natty/generated-new/imports</libDirectory>-->
+              <!--<libDirectory>src/main/antlr3/com/joestelmach/natty/spark-new/imports</libDirectory>-->
               <!--<conversionTimeout>10000</conversionTimeout>-->
               <!--<excludes>-->
-                <!--<exclude>com/joestelmach/natty/generated-new/DateLexer.g</exclude>-->
-                <!--<exclude>com/joestelmach/natty/generated-new/DateParser.g</exclude>-->
-                <!--<exclude>com/joestelmach/natty/generated-new/imports/NumericRules.g</exclude>-->
+                <!--<exclude>com/joestelmach/natty/spark-new/DateLexer.g</exclude>-->
+                <!--<exclude>com/joestelmach/natty/spark-new/DateParser.g</exclude>-->
+                <!--<exclude>com/joestelmach/natty/spark-new/imports/NumericRules.g</exclude>-->
               <!--</excludes>-->
             <!--</configuration>-->
           <!--</execution>-->

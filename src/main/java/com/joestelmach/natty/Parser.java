@@ -1,9 +1,9 @@
 package com.joestelmach.natty;
 
-import com.joestelmach.natty.generated.DateLexer;
-import com.joestelmach.natty.generated.DateParser;
-import com.joestelmach.natty.generated.DateWalker;
-import com.joestelmach.natty.generated.TreeRewrite;
+import com.joestelmach.natty.spark.DateLexer;
+import com.joestelmach.natty.spark.DateParser;
+import com.joestelmach.natty.spark.DateWalker;
+import com.joestelmach.natty.spark.TreeRewrite;
 import com.spark.antlr.runtime.ANTLRInputStream;
 import com.spark.antlr.runtime.CommonTokenStream;
 import com.spark.antlr.runtime.Token;

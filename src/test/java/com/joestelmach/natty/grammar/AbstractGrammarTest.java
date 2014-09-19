@@ -14,9 +14,9 @@ import com.spark.antlr.runtime.tree.Tree;
 
 import com.joestelmach.natty.ANTLRNoCaseInputStream;
 import com.joestelmach.natty.ParseListener;
-import com.joestelmach.natty.generated.DateLexer;
-import com.joestelmach.natty.generated.DateParser;
-import com.joestelmach.natty.generated.TreeRewrite;
+import com.joestelmach.natty.spark.DateLexer;
+import com.joestelmach.natty.spark.DateParser;
+import com.joestelmach.natty.spark.TreeRewrite;
 
 public abstract class AbstractGrammarTest {
   protected String _ruleName;
@@ -38,7 +38,7 @@ public abstract class AbstractGrammarTest {
    */
   protected String buildAST(String value) throws Exception {
     DateParser parser = buildParser(value);
-    Class<?> klass = Class.forName("com.joestelmach.natty.generated.DateParser");
+    Class<?> klass = Class.forName("com.joestelmach.natty.spark.DateParser");
     Method meth = klass.getMethod(_ruleName, (Class<?>[]) null);
     ParserRuleReturnScope ret = (ParserRuleReturnScope) meth.invoke(parser, (Object[]) null);
     
