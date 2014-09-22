@@ -86,7 +86,10 @@ public class WalkerState {
     
     markDateInvocation();
 
+    // BEGIN: Patch
     debug("seekToDayOfWeek: %s, %s, %s, %s", direction,  seekType,  seekAmount,  dayOfWeek);
+    // END: Patch
+
     int sign = direction.equals(DIR_RIGHT) ? 1 : -1;
     if(seekType.equals(SEEK_BY_WEEK)) {
       // set our calendar to this weeks requested day of the week,
@@ -94,7 +97,9 @@ public class WalkerState {
       _calendar.set(Calendar.DAY_OF_WEEK, dayOfWeekInt);
       _calendar.add(Calendar.DAY_OF_YEAR, seekAmountInt * 7 * sign);
 
+      // BEGIN: Patch
       _dateGroup.markDaySpecified();
+      // END: Patch
     }
     
     else if(seekType.equals(SEEK_BY_DAY)) {
@@ -139,11 +144,13 @@ public class WalkerState {
     assert(dayOfYearInt >= 1 && dayOfYearInt <= 366);
     
     markDateInvocation();
+    // BEGIN: Patch
     _dateGroup.markDaySpecified();
+    //debug("seekToDayOfYear: " + dayOfYear);
+    // END: Patch
 
-    //System.out.println("seekToDayOfYear: " + dayOfYear);
 
-    
+
     dayOfYearInt = Math.min(dayOfYearInt, _calendar.getActualMaximum(Calendar.DAY_OF_YEAR));
     _calendar.set(Calendar.DAY_OF_YEAR, dayOfYearInt);
   }
@@ -157,8 +164,10 @@ public class WalkerState {
     assert(yearInt >= 0 && yearInt < 9999);
     
     markDateInvocation();
+    // BEGIN: Patch
     _dateGroup.markYearSpecified();
-    
+    // END: Patch
+
     _calendar.set(Calendar.YEAR, getFullYear(yearInt));
   }
   
@@ -181,7 +190,9 @@ public class WalkerState {
     assert(monthInt >= 1 && monthInt <= 12);
     
     markDateInvocation();
+    // BEGIN: Patch
     _dateGroup.markMonthSpecified();
+    // END: Patch
 
     // set the day to the first of month. This step is necessary because if we seek to the 
     // current day of a month whose number of days is less than the current day, we will 
@@ -224,8 +235,9 @@ public class WalkerState {
       span.equals(MONTH) || span.equals(YEAR);
     if(isDateSeek) markDateInvocation(); else markTimeInvocation();
 
+    // BEGIN: Patch
     //extra precision
-    System.out.print(String.format(" span: %s",span));
+    debug("direction: %s, seekAmount: %s, span: %s", direction, seekAmount, span);
     if (span.equals(YEAR)) {
       _dateGroup.markYearSpecified();
     } else if (MONTH.equals(span)) {
@@ -235,6 +247,7 @@ public class WalkerState {
     } else if (HOUR.equals(span)) {
       _dateGroup.markHourSpecified();
     }
+    // END: Patch
 
     int sign = direction.equals(DIR_RIGHT) ? 1 : -1;
     int field = 
@@ -309,8 +322,10 @@ public class WalkerState {
     
     markDateInvocation();
 
+    // BEGIN: Patch
     _dateGroup.markMonthSpecified();
     _dateGroup.markDaySpecified();
+    // END: Patch
 
     _calendar.set(Calendar.MONTH, monthInt - 1);
     _calendar.set(Calendar.DAY_OF_MONTH, dayOfMonthInt);
@@ -629,8 +644,13 @@ public class WalkerState {
     return CalendarSource.getCurrentCalendar();
   }
 
+  // BEGIN: Patch
   private void debug(String msg, Object... params) {
-//    log.finest(String.format(msg, params));
-    System.out.println(String.format(msg, params));
+    _logger.finest(String.format(msg, params));
   }
+
+  public void setExplicitYearOnlyDate(String year) {
+
+  }
+  // END: Patch
 }
