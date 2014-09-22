@@ -646,5 +646,9 @@ public class WalkerState {
   private void debug(String msg, Object... params) {
     _logger.finest(String.format(msg, params));
   }
+
+  public void setExplicitYearOnlyDate(String year) {
+
+  }
   // END: Patch
 }

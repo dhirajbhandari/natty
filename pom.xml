@@ -91,21 +91,21 @@
       </plugin>
       
       <!-- clean plugin -->
-      <!--<plugin>-->
-        <!--<artifactId>maven-clean-plugin</artifactId>-->
-        <!--<version>2.4.1</version>-->
-        <!--<configuration>-->
-          <!--<filesets>-->
-            <!--<fileset>-->
-              <!--<directory>src/main/java/com/joestelmach/natty/generated-new</directory>-->
-              <!--<includes>-->
-                <!--<include>**/*.java</include>-->
-              <!--</includes>-->
-              <!--<followSymlinks>false</followSymlinks>-->
-            <!--</fileset>-->
-          <!--</filesets>-->
-        <!--</configuration>-->
-      <!--</plugin>-->
+      <plugin>
+        <artifactId>maven-clean-plugin</artifactId>
+        <version>2.4.1</version>
+        <configuration>
+          <filesets>
+            <fileset>
+              <directory>src/main/java/com/joestelmach/natty/generated</directory>
+              <includes>
+                <include>**/*.java</include>
+              </includes>
+              <followSymlinks>false</followSymlinks>
+            </fileset>
+          </filesets>
+        </configuration>
+      </plugin>
 
       <!-- ANTLR code generation plugin -->
       <!--<plugin>-->
