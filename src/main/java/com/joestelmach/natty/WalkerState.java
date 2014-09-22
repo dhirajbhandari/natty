@@ -1,6 +1,7 @@
 package com.joestelmach.natty;
 
 import java.util.*;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -40,7 +41,10 @@ public class WalkerState {
   private boolean _dateGivenInGroup = false;
   private boolean _updatePreviousDates = false;
   private DateGroup _dateGroup;
-  
+
+
+  private static final Logger log = Logger.getLogger(WalkerState.class.getName());
+
   /**
    * Creates a new WalkerState representing the start of
    * the next hour from the current time
@@ -81,13 +85,16 @@ public class WalkerState {
     assert(dayOfWeekInt >= 1 && dayOfWeekInt <= 7);
     
     markDateInvocation();
-    
+
+    debug("seekToDayOfWeek: %s, %s, %s, %s", direction,  seekType,  seekAmount,  dayOfWeek);
     int sign = direction.equals(DIR_RIGHT) ? 1 : -1;
     if(seekType.equals(SEEK_BY_WEEK)) {
       // set our calendar to this weeks requested day of the week,
       // then add or subtract the week(s)
       _calendar.set(Calendar.DAY_OF_WEEK, dayOfWeekInt);
       _calendar.add(Calendar.DAY_OF_YEAR, seekAmountInt * 7 * sign);
+
+      _dateGroup.markDaySpecified();
     }
     
     else if(seekType.equals(SEEK_BY_DAY)) {
@@ -132,6 +139,10 @@ public class WalkerState {
     assert(dayOfYearInt >= 1 && dayOfYearInt <= 366);
     
     markDateInvocation();
+    _dateGroup.markDaySpecified();
+
+    //System.out.println("seekToDayOfYear: " + dayOfYear);
+
     
     dayOfYearInt = Math.min(dayOfYearInt, _calendar.getActualMaximum(Calendar.DAY_OF_YEAR));
     _calendar.set(Calendar.DAY_OF_YEAR, dayOfYearInt);
@@ -146,6 +157,7 @@ public class WalkerState {
     assert(yearInt >= 0 && yearInt < 9999);
     
     markDateInvocation();
+    _dateGroup.markYearSpecified();
     
     _calendar.set(Calendar.YEAR, getFullYear(yearInt));
   }
@@ -169,7 +181,8 @@ public class WalkerState {
     assert(monthInt >= 1 && monthInt <= 12);
     
     markDateInvocation();
-    
+    _dateGroup.markMonthSpecified();
+
     // set the day to the first of month. This step is necessary because if we seek to the 
     // current day of a month whose number of days is less than the current day, we will 
     // pushed into the next month.
@@ -210,7 +223,19 @@ public class WalkerState {
     boolean isDateSeek = span.equals(DAY) || span.equals(WEEK) || 
       span.equals(MONTH) || span.equals(YEAR);
     if(isDateSeek) markDateInvocation(); else markTimeInvocation();
-    
+
+    //extra precision
+    System.out.print(String.format(" span: %s",span));
+    if (span.equals(YEAR)) {
+      _dateGroup.markYearSpecified();
+    } else if (MONTH.equals(span)) {
+      _dateGroup.markMonthSpecified();
+    } else if (DAY.equals(span)) {
+      _dateGroup.markDaySpecified();
+    } else if (HOUR.equals(span)) {
+      _dateGroup.markHourSpecified();
+    }
+
     int sign = direction.equals(DIR_RIGHT) ? 1 : -1;
     int field = 
       span.equals(DAY) ? Calendar.DAY_OF_YEAR : 
@@ -283,14 +308,18 @@ public class WalkerState {
     assert(dayOfMonthInt > 0 && dayOfMonthInt <= 31);
     
     markDateInvocation();
-    
+
+    _dateGroup.markMonthSpecified();
+    _dateGroup.markDaySpecified();
+
     _calendar.set(Calendar.MONTH, monthInt - 1);
     _calendar.set(Calendar.DAY_OF_MONTH, dayOfMonthInt);
     
     if(year != null) {
       seekToYear(year);
     }
-    
+
+
     // if no year is given, but a day of week is, we ensure that the resulting
     // date falls on the given day of week.
     else if(dayOfWeek != null) {
@@ -326,7 +355,9 @@ public class WalkerState {
     assert(amPm == null || amPm.equals(AM) || amPm.equals(PM));
     assert(hoursInt >= 0 && hoursInt <= 23); 
     assert(minutesInt >= 0 && minutesInt < 60); 
-    
+
+    debug("setExplicitTime: %s, %s %s, %s, %s", hours, minutes, seconds, amPm, zoneString);
+
     markTimeInvocation();
     
     // reset milliseconds to 0
@@ -571,6 +602,7 @@ public class WalkerState {
   private void markTimeInvocation() {
     _timeGivenInGroup = true;
     _dateGroup.setIsTimeInferred(false);
+    _dateGroup.markHourSpecified();
   }
   
   private Map<Integer, Date> getDatesFromIcs(String icsFileName, 
@@ -595,5 +627,10 @@ public class WalkerState {
    */
   protected GregorianCalendar getCalendar() {
     return CalendarSource.getCurrentCalendar();
+  }
+
+  private void debug(String msg, Object... params) {
+//    log.finest(String.format(msg, params));
+    System.out.println(String.format(msg, params));
   }
 }

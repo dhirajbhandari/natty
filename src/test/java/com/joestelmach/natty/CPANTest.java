@@ -22,9 +22,18 @@ public class CPANTest {
     while((value = reader.readLine()) != null) {
       if(!value.trim().startsWith("#") && value.trim().length() > 0) {
         Parser parser = new Parser();
+        String s = "[" + value + "] -> ";
+        System.out.print(s);
         List<DateGroup> groups = parser.parse(value);
         Assert.assertEquals(1, groups.size());
+        DateGroup dg = groups.get(0);
+        s = "";
+        if (!dg.isYearSpecified()) s = s + " year";
+        if (!dg.isTimeInferred()) s = s + " time";
+//        System.out.print(String.format(" yearIF: %s timeIF: %s", dg.isYearSpecified(), dg.isTimeInferred()));
+        System.out.print(s);
         Assert.assertTrue(groups.get(0).getDates().size() > 0);
+        System.out.println();
       }
     }
     

@@ -18,12 +18,18 @@ public class DateGroup {
   private int _position;
   private boolean _isRecurring;
   private boolean _isTimeInferred;
+  private boolean yearSpecified;
+  private boolean monthSpecified;
+  private boolean daySpecified;
+  private boolean hourSpecified;
+
   private Date _recurringUntil;
   private Map<String, List<ParseLocation>> _parseLocations;
   private Tree _syntaxTree;
 
   public DateGroup() {
     _dates = new ArrayList<Date>();
+    //assume not specified unless set
     _isTimeInferred = true;
   }
 
@@ -93,5 +99,47 @@ public class DateGroup {
 
   public void setSyntaxTree(Tree syntaxTree) {
     _syntaxTree = syntaxTree;
+  }
+
+  /**
+   * @return true if the year information in this date group has been
+   * explicitly specified in the _text input as opposed to being inferred.
+   * Eg:
+   * <code>
+   *   "last year" -> specified
+   *   "in may"    -> not specified
+   * </code>
+   */
+  public boolean isYearSpecified() {
+    return yearSpecified;
+  }
+
+  public void markYearSpecified() {
+    yearSpecified = true;
+  }
+
+  public boolean isMonthSpecified() {
+    return monthSpecified;
+  }
+
+  public void markMonthSpecified() {
+    this.monthSpecified = true;
+  }
+
+  public boolean isDaySpecified() {
+    return daySpecified;
+  }
+
+  public void markDaySpecified() {
+    this.daySpecified = true;
+  }
+
+  public boolean isHourSet() {
+    return hourSpecified;
+  }
+
+  public void markHourSpecified() {
+    //hour is explicitly set
+    this.hourSpecified = true;
   }
 }
