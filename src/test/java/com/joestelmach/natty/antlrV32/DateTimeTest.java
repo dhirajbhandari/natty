@@ -178,15 +178,6 @@ public class DateTimeTest extends AbstractTest {
   }
 
   @Test
-  public void timeWinsOverDate() throws Exception {
-//    validateDate("2015", 1, 1, 2014);
-    Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("03/16/2012");
-    CalendarSource.setBaseDate(reference);
-    validateDateTime("2015", 3, 16, 2012, 20, 15, 0);
-  }
-
-  @Test
-  @Ignore("2014 is treated as time rather than year")
   public void shouldPreferDateOverTime() throws Exception {
 //    validateDate("2015", 1, 1, 2014);
     Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("05/15/2014");
