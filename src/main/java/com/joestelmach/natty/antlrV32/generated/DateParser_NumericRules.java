@@ -1,17 +1,18 @@
-// $ANTLR 3.2 Sep 23, 2009 14:05:07 NumericRules.g 2014-09-18 18:35:12
+// $ANTLR 3.2 Sep 23, 2009 14:05:07 NumericRules.g 2014-09-22 17:28:09
 
   package com.joestelmach.natty.antlrV32.generated;
 
 
-//import org.antlr.runtime.*;
 import org.antlr.v32.runtime.*;
-
-//import org.antlr.runtime.debug.*;
+import java.util.Stack;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
 import org.antlr.v32.runtime.debug.*;
+import java.io.IOException;
 
-//import org.antlr.runtime.tree.*;
 import org.antlr.v32.runtime.tree.*;
-
 
 public class DateParser_NumericRules extends DebugParser {
     public static final int MONTH=28;
@@ -9146,20 +9147,20 @@ public class DateParser_NumericRules extends DebugParser {
     static final String DFA20_eotS =
         "\71\uffff";
     static final String DFA20_eofS =
-        "\24\uffff\1\32\1\43\1\32\13\uffff\1\43\26\uffff";
+        "\24\uffff\1\27\1\43\1\27\13\uffff\1\43\26\uffff";
     static final String DFA20_minS =
-        "\1\u00a6\23\uffff\2\52\1\5\1\u00a6\12\uffff\1\5\2\uffff\12\0\12"+
-        "\uffff";
-    static final String DFA20_maxS =
-        "\1\u00ba\23\uffff\2\u00f1\1\u0115\1\u00ae\12\uffff\1\u0115\2\uffff"+
+        "\1\u00a6\23\uffff\2\52\1\5\1\uffff\1\u00a6\11\uffff\1\5\2\uffff"+
         "\12\0\12\uffff";
+    static final String DFA20_maxS =
+        "\1\u00ba\23\uffff\2\u00f1\1\u0115\1\uffff\1\u00ae\11\uffff\1\u0115"+
+        "\2\uffff\12\0\12\uffff";
     static final String DFA20_acceptS =
         "\1\uffff\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12\1\13\1\14\1"+
-        "\15\1\16\1\17\1\20\1\21\1\22\1\23\4\uffff\1\37\1\25\1\46\1\43\1"+
-        "\31\1\35\1\41\1\27\1\45\1\33\1\uffff\1\51\1\50\12\uffff\1\24\1\26"+
-        "\1\30\1\32\1\34\1\36\1\40\1\42\1\44\1\47";
+        "\15\1\16\1\17\1\20\1\21\1\22\1\23\3\uffff\1\46\1\uffff\1\43\1\31"+
+        "\1\35\1\41\1\27\1\45\1\33\1\37\1\25\1\uffff\1\51\1\50\12\uffff\1"+
+        "\24\1\26\1\30\1\32\1\34\1\36\1\40\1\42\1\44\1\47";
     static final String DFA20_specialS =
-        "\45\uffff\1\7\1\4\1\2\1\0\1\10\1\6\1\5\1\1\1\11\1\3\12\uffff}>";
+        "\45\uffff\1\6\1\4\1\1\1\7\1\5\1\2\1\0\1\10\1\3\1\11\12\uffff}>";
     static final String[] DFA20_transitionS = {
             "\1\1\1\2\1\3\1\4\1\5\1\6\1\7\1\10\1\11\1\12\1\13\1\14\1\15\1"+
             "\16\1\17\1\20\1\21\1\22\1\23\1\24\1\25",
@@ -9182,16 +9183,16 @@ public class DateParser_NumericRules extends DebugParser {
             "",
             "",
             "",
-            "\1\32\173\uffff\1\31\1\37\1\34\1\41\1\35\1\30\1\36\1\33\1\40"+
-            "\46\uffff\1\32\1\27\32\uffff\1\26",
+            "\1\27\173\uffff\1\41\1\35\1\32\1\37\1\33\1\40\1\34\1\31\1\36"+
+            "\46\uffff\1\27\1\30\32\uffff\1\26",
             "\1\43\173\uffff\1\44\56\uffff\1\43\1\44\32\uffff\1\42",
-            "\32\32\2\uffff\1\32\2\uffff\2\32\1\uffff\1\32\4\uffff\5\32"+
-            "\7\uffff\156\32\1\45\1\46\1\47\1\50\1\51\1\52\1\53\1\54\1\55"+
-            "\14\32\1\uffff\1\32\23\uffff\1\32\5\uffff\1\32\3\uffff\1\32"+
-            "\1\uffff\5\32\1\uffff\2\32\1\uffff\4\32\12\uffff\10\32\2\uffff"+
-            "\12\32\1\uffff\2\32\1\uffff\13\32",
-            "\1\31\1\37\1\34\1\41\1\35\1\30\1\36\1\33\1\40",
+            "\32\27\2\uffff\1\27\2\uffff\2\27\1\uffff\1\27\4\uffff\5\27"+
+            "\7\uffff\156\27\1\45\1\46\1\47\1\50\1\51\1\52\1\53\1\54\1\55"+
+            "\14\27\1\uffff\1\27\23\uffff\1\27\5\uffff\1\27\3\uffff\1\27"+
+            "\1\uffff\5\27\1\uffff\2\27\1\uffff\4\27\12\uffff\10\27\2\uffff"+
+            "\12\27\1\uffff\2\27\1\uffff\13\27",
             "",
+            "\1\41\1\35\1\32\1\37\1\33\1\40\1\34\1\31\1\36",
             "",
             "",
             "",
@@ -9269,36 +9270,21 @@ public class DateParser_NumericRules extends DebugParser {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA20_40 = input.LA(1);
+                        int LA20_43 = input.LA(1);
 
                          
-                        int index20_40 = input.index();
+                        int index20_43 = input.index();
                         input.rewind();
                         s = -1;
-                        if ( (synpred4_NumericRules()) ) {s = 50;}
+                        if ( (synpred7_NumericRules()) ) {s = 53;}
 
-                        else if ( (true) ) {s = 26;}
+                        else if ( (true) ) {s = 23;}
 
                          
-                        input.seek(index20_40);
+                        input.seek(index20_43);
                         if ( s>=0 ) return s;
                         break;
                     case 1 : 
-                        int LA20_44 = input.LA(1);
-
-                         
-                        int index20_44 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred8_NumericRules()) ) {s = 54;}
-
-                        else if ( (true) ) {s = 26;}
-
-                         
-                        input.seek(index20_44);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 2 : 
                         int LA20_39 = input.LA(1);
 
                          
@@ -9307,13 +9293,118 @@ public class DateParser_NumericRules extends DebugParser {
                         s = -1;
                         if ( (synpred3_NumericRules()) ) {s = 49;}
 
-                        else if ( (true) ) {s = 26;}
+                        else if ( (true) ) {s = 23;}
 
                          
                         input.seek(index20_39);
                         if ( s>=0 ) return s;
                         break;
+                    case 2 : 
+                        int LA20_42 = input.LA(1);
+
+                         
+                        int index20_42 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred6_NumericRules()) ) {s = 52;}
+
+                        else if ( (true) ) {s = 23;}
+
+                         
+                        input.seek(index20_42);
+                        if ( s>=0 ) return s;
+                        break;
                     case 3 : 
+                        int LA20_45 = input.LA(1);
+
+                         
+                        int index20_45 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred9_NumericRules()) ) {s = 55;}
+
+                        else if ( (true) ) {s = 23;}
+
+                         
+                        input.seek(index20_45);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 4 : 
+                        int LA20_38 = input.LA(1);
+
+                         
+                        int index20_38 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred2_NumericRules()) ) {s = 48;}
+
+                        else if ( (true) ) {s = 23;}
+
+                         
+                        input.seek(index20_38);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 5 : 
+                        int LA20_41 = input.LA(1);
+
+                         
+                        int index20_41 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred5_NumericRules()) ) {s = 51;}
+
+                        else if ( (true) ) {s = 23;}
+
+                         
+                        input.seek(index20_41);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 6 : 
+                        int LA20_37 = input.LA(1);
+
+                         
+                        int index20_37 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred1_NumericRules()) ) {s = 47;}
+
+                        else if ( (true) ) {s = 23;}
+
+                         
+                        input.seek(index20_37);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 7 : 
+                        int LA20_40 = input.LA(1);
+
+                         
+                        int index20_40 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred4_NumericRules()) ) {s = 50;}
+
+                        else if ( (true) ) {s = 23;}
+
+                         
+                        input.seek(index20_40);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 8 : 
+                        int LA20_44 = input.LA(1);
+
+                         
+                        int index20_44 = input.index();
+                        input.rewind();
+                        s = -1;
+                        if ( (synpred8_NumericRules()) ) {s = 54;}
+
+                        else if ( (true) ) {s = 23;}
+
+                         
+                        input.seek(index20_44);
+                        if ( s>=0 ) return s;
+                        break;
+                    case 9 : 
                         int LA20_46 = input.LA(1);
 
                          
@@ -9326,96 +9417,6 @@ public class DateParser_NumericRules extends DebugParser {
 
                          
                         input.seek(index20_46);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 4 : 
-                        int LA20_38 = input.LA(1);
-
-                         
-                        int index20_38 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred2_NumericRules()) ) {s = 48;}
-
-                        else if ( (true) ) {s = 26;}
-
-                         
-                        input.seek(index20_38);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 5 : 
-                        int LA20_43 = input.LA(1);
-
-                         
-                        int index20_43 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred7_NumericRules()) ) {s = 53;}
-
-                        else if ( (true) ) {s = 26;}
-
-                         
-                        input.seek(index20_43);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 6 : 
-                        int LA20_42 = input.LA(1);
-
-                         
-                        int index20_42 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred6_NumericRules()) ) {s = 52;}
-
-                        else if ( (true) ) {s = 26;}
-
-                         
-                        input.seek(index20_42);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 7 : 
-                        int LA20_37 = input.LA(1);
-
-                         
-                        int index20_37 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred1_NumericRules()) ) {s = 47;}
-
-                        else if ( (true) ) {s = 26;}
-
-                         
-                        input.seek(index20_37);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 8 : 
-                        int LA20_41 = input.LA(1);
-
-                         
-                        int index20_41 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred5_NumericRules()) ) {s = 51;}
-
-                        else if ( (true) ) {s = 26;}
-
-                         
-                        input.seek(index20_41);
-                        if ( s>=0 ) return s;
-                        break;
-                    case 9 : 
-                        int LA20_45 = input.LA(1);
-
-                         
-                        int index20_45 = input.index();
-                        input.rewind();
-                        s = -1;
-                        if ( (synpred9_NumericRules()) ) {s = 55;}
-
-                        else if ( (true) ) {s = 26;}
-
-                         
-                        input.seek(index20_45);
                         if ( s>=0 ) return s;
                         break;
             }

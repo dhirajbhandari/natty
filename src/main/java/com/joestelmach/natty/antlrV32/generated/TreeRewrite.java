@@ -1,8 +1,12 @@
-// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/TreeRewrite.g 2014-09-18 18:35:13
- package com.joestelmach.natty.antlrV32.generated;
+// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/TreeRewrite.g 2014-09-22 17:28:09
+ package com.joestelmach.natty.antlrV32.generated; 
 
 import org.antlr.v32.runtime.*;
-import org.antlr.v32.runtime.tree.*;
+import org.antlr.v32.runtime.tree.*;import java.util.Stack;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
 
 public class TreeRewrite extends TreeRewriter {
     public static final String[] tokenNames = new String[] {
@@ -335,7 +339,7 @@ public class TreeRewrite extends TreeRewriter {
     }
 
     public String[] getTokenNames() { return TreeRewrite.tokenNames; }
-    public String getGrammarFileName() { return "com/joestelmach/natty/antlrV32/generated/TreeRewrite.g"; }
+    public String getGrammarFileName() { return "com/joestelmach/natty/generated/TreeRewrite.g"; }
 
 
       private java.util.logging.Logger _logger = java.util.logging.Logger.getLogger("com.joestelmach.natty");
@@ -353,7 +357,7 @@ public class TreeRewrite extends TreeRewriter {
     };
 
     // $ANTLR start "topdown"
-    // com/joestelmach/natty/spark/TreeRewrite.g:22:1: topdown : ( ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK INT ) ^( DAY_OF_WEEK dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH INT ) ^( DAY_OF_MONTH dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) ^( MONTH_OF_YEAR dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) amount= INT ^( MONTH_OF_YEAR dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY $amount ^( MONTH_OF_YEAR $dow) ) | ^( RELATIVE_DATE ^( SEEK dir= DIRECTION seekby= SEEK_BY day= INT ^( MONTH_OF_YEAR month= INT ) ) ^( EXPLICIT_SEEK amount= INT ^( DAY_OF_WEEK dow= INT ) ) ^( EXPLICIT_SEEK ^( YEAR_OF year= INT ) ) ) -> ^( RELATIVE_DATE ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) ) ^( EXPLICIT_SEEK ^( YEAR_OF $year) ) ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) ) ) );
+    // com/joestelmach/natty/generated/TreeRewrite.g:22:1: topdown : ( ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK INT ) ^( DAY_OF_WEEK dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH INT ) ^( DAY_OF_MONTH dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) ^( MONTH_OF_YEAR dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) amount= INT ^( MONTH_OF_YEAR dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY $amount ^( MONTH_OF_YEAR $dow) ) | ^( RELATIVE_DATE ^( SEEK dir= DIRECTION seekby= SEEK_BY day= INT ^( MONTH_OF_YEAR month= INT ) ) ^( EXPLICIT_SEEK amount= INT ^( DAY_OF_WEEK dow= INT ) ) ^( EXPLICIT_SEEK ^( YEAR_OF year= INT ) ) ) -> ^( RELATIVE_DATE ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) ) ^( EXPLICIT_SEEK ^( YEAR_OF $year) ) ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) ) ) );
     public final TreeRewrite.topdown_return topdown() throws RecognitionException {
         TreeRewrite.topdown_return retval = new TreeRewrite.topdown_return();
         retval.start = input.LT(1);
@@ -460,12 +464,12 @@ public class TreeRewrite extends TreeRewriter {
         RewriteRuleNodeStream stream_RELATIVE_DATE=new RewriteRuleNodeStream(adaptor,"token RELATIVE_DATE");
 
         try {
-            // com/joestelmach/natty/spark/TreeRewrite.g:23:3: ( ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK INT ) ^( DAY_OF_WEEK dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH INT ) ^( DAY_OF_MONTH dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) ^( MONTH_OF_YEAR dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) amount= INT ^( MONTH_OF_YEAR dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY $amount ^( MONTH_OF_YEAR $dow) ) | ^( RELATIVE_DATE ^( SEEK dir= DIRECTION seekby= SEEK_BY day= INT ^( MONTH_OF_YEAR month= INT ) ) ^( EXPLICIT_SEEK amount= INT ^( DAY_OF_WEEK dow= INT ) ) ^( EXPLICIT_SEEK ^( YEAR_OF year= INT ) ) ) -> ^( RELATIVE_DATE ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) ) ^( EXPLICIT_SEEK ^( YEAR_OF $year) ) ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) ) ) )
+            // com/joestelmach/natty/generated/TreeRewrite.g:23:3: ( ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK INT ) ^( DAY_OF_WEEK dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH INT ) ^( DAY_OF_MONTH dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) ^( MONTH_OF_YEAR dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR $dow) ) | ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) amount= INT ^( MONTH_OF_YEAR dow= INT ) ) -> ^( SEEK DIRECTION SEEK_BY $amount ^( MONTH_OF_YEAR $dow) ) | ^( RELATIVE_DATE ^( SEEK dir= DIRECTION seekby= SEEK_BY day= INT ^( MONTH_OF_YEAR month= INT ) ) ^( EXPLICIT_SEEK amount= INT ^( DAY_OF_WEEK dow= INT ) ) ^( EXPLICIT_SEEK ^( YEAR_OF year= INT ) ) ) -> ^( RELATIVE_DATE ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) ) ^( EXPLICIT_SEEK ^( YEAR_OF $year) ) ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) ) ) )
             int alt1=5;
             alt1 = dfa1.predict(input);
             switch (alt1) {
                 case 1 :
-                    // com/joestelmach/natty/spark/TreeRewrite.g:23:5: ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK INT ) ^( DAY_OF_WEEK dow= INT ) )
+                    // com/joestelmach/natty/generated/TreeRewrite.g:23:5: ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK INT ) ^( DAY_OF_WEEK dow= INT ) )
                     {
                     _last = (CommonTree)input.LT(1);
                     {
@@ -538,7 +542,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: SEEK_BY, DIRECTION, INT, DAY_OF_WEEK, SEEK, dow
+                    // elements: INT, DIRECTION, SEEK, SEEK_BY, dow, DAY_OF_WEEK
                     // token labels: dow
                     // rule labels: retval
                     // token list labels: 
@@ -552,7 +556,7 @@ public class TreeRewrite extends TreeRewriter {
                     root_0 = (CommonTree)adaptor.nil();
                     // 24:7: -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK $dow) )
                     {
-                        // com/joestelmach/natty/spark/TreeRewrite.g:24:10: ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK $dow) )
+                        // com/joestelmach/natty/generated/TreeRewrite.g:24:10: ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_WEEK $dow) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(stream_SEEK.nextNode(), root_1);
@@ -560,7 +564,7 @@ public class TreeRewrite extends TreeRewriter {
                         adaptor.addChild(root_1, stream_DIRECTION.nextNode());
                         adaptor.addChild(root_1, stream_SEEK_BY.nextNode());
                         adaptor.addChild(root_1, stream_INT.nextNode());
-                        // com/joestelmach/natty/spark/TreeRewrite.g:24:39: ^( DAY_OF_WEEK $dow)
+                        // com/joestelmach/natty/generated/TreeRewrite.g:24:39: ^( DAY_OF_WEEK $dow)
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(stream_DAY_OF_WEEK.nextNode(), root_2);
@@ -583,7 +587,7 @@ public class TreeRewrite extends TreeRewriter {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/TreeRewrite.g:26:5: ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH INT ) ^( DAY_OF_MONTH dow= INT ) )
+                    // com/joestelmach/natty/generated/TreeRewrite.g:26:5: ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH INT ) ^( DAY_OF_MONTH dow= INT ) )
                     {
                     _last = (CommonTree)input.LT(1);
                     {
@@ -656,7 +660,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: DIRECTION, SEEK_BY, INT, SEEK, DAY_OF_MONTH, dow
+                    // elements: SEEK_BY, dow, INT, SEEK, DIRECTION, DAY_OF_MONTH
                     // token labels: dow
                     // rule labels: retval
                     // token list labels: 
@@ -670,7 +674,7 @@ public class TreeRewrite extends TreeRewriter {
                     root_0 = (CommonTree)adaptor.nil();
                     // 27:7: -> ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH $dow) )
                     {
-                        // com/joestelmach/natty/spark/TreeRewrite.g:27:10: ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH $dow) )
+                        // com/joestelmach/natty/generated/TreeRewrite.g:27:10: ^( SEEK DIRECTION SEEK_BY INT ^( DAY_OF_MONTH $dow) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(stream_SEEK.nextNode(), root_1);
@@ -678,7 +682,7 @@ public class TreeRewrite extends TreeRewriter {
                         adaptor.addChild(root_1, stream_DIRECTION.nextNode());
                         adaptor.addChild(root_1, stream_SEEK_BY.nextNode());
                         adaptor.addChild(root_1, stream_INT.nextNode());
-                        // com/joestelmach/natty/spark/TreeRewrite.g:27:39: ^( DAY_OF_MONTH $dow)
+                        // com/joestelmach/natty/generated/TreeRewrite.g:27:39: ^( DAY_OF_MONTH $dow)
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(stream_DAY_OF_MONTH.nextNode(), root_2);
@@ -701,7 +705,7 @@ public class TreeRewrite extends TreeRewriter {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/TreeRewrite.g:29:5: ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) ^( MONTH_OF_YEAR dow= INT ) )
+                    // com/joestelmach/natty/generated/TreeRewrite.g:29:5: ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) ^( MONTH_OF_YEAR dow= INT ) )
                     {
                     _last = (CommonTree)input.LT(1);
                     {
@@ -774,7 +778,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: MONTH_OF_YEAR, SEEK_BY, dow, INT, SEEK, DIRECTION
+                    // elements: INT, MONTH_OF_YEAR, SEEK_BY, SEEK, DIRECTION, dow
                     // token labels: dow
                     // rule labels: retval
                     // token list labels: 
@@ -788,7 +792,7 @@ public class TreeRewrite extends TreeRewriter {
                     root_0 = (CommonTree)adaptor.nil();
                     // 30:7: -> ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR $dow) )
                     {
-                        // com/joestelmach/natty/spark/TreeRewrite.g:30:10: ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR $dow) )
+                        // com/joestelmach/natty/generated/TreeRewrite.g:30:10: ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR $dow) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(stream_SEEK.nextNode(), root_1);
@@ -796,7 +800,7 @@ public class TreeRewrite extends TreeRewriter {
                         adaptor.addChild(root_1, stream_DIRECTION.nextNode());
                         adaptor.addChild(root_1, stream_SEEK_BY.nextNode());
                         adaptor.addChild(root_1, stream_INT.nextNode());
-                        // com/joestelmach/natty/spark/TreeRewrite.g:30:39: ^( MONTH_OF_YEAR $dow)
+                        // com/joestelmach/natty/generated/TreeRewrite.g:30:39: ^( MONTH_OF_YEAR $dow)
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(stream_MONTH_OF_YEAR.nextNode(), root_2);
@@ -819,7 +823,7 @@ public class TreeRewrite extends TreeRewriter {
                     }
                     break;
                 case 4 :
-                    // com/joestelmach/natty/spark/TreeRewrite.g:32:5: ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) amount= INT ^( MONTH_OF_YEAR dow= INT ) )
+                    // com/joestelmach/natty/generated/TreeRewrite.g:32:5: ^( SEEK DIRECTION SEEK_BY INT ^( MONTH_OF_YEAR INT ) amount= INT ^( MONTH_OF_YEAR dow= INT ) )
                     {
                     _last = (CommonTree)input.LT(1);
                     {
@@ -896,7 +900,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: MONTH_OF_YEAR, dow, SEEK_BY, SEEK, DIRECTION, amount
+                    // elements: dow, SEEK, SEEK_BY, amount, MONTH_OF_YEAR, DIRECTION
                     // token labels: amount, dow
                     // rule labels: retval
                     // token list labels: 
@@ -911,7 +915,7 @@ public class TreeRewrite extends TreeRewriter {
                     root_0 = (CommonTree)adaptor.nil();
                     // 33:7: -> ^( SEEK DIRECTION SEEK_BY $amount ^( MONTH_OF_YEAR $dow) )
                     {
-                        // com/joestelmach/natty/spark/TreeRewrite.g:33:10: ^( SEEK DIRECTION SEEK_BY $amount ^( MONTH_OF_YEAR $dow) )
+                        // com/joestelmach/natty/generated/TreeRewrite.g:33:10: ^( SEEK DIRECTION SEEK_BY $amount ^( MONTH_OF_YEAR $dow) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(stream_SEEK.nextNode(), root_1);
@@ -919,7 +923,7 @@ public class TreeRewrite extends TreeRewriter {
                         adaptor.addChild(root_1, stream_DIRECTION.nextNode());
                         adaptor.addChild(root_1, stream_SEEK_BY.nextNode());
                         adaptor.addChild(root_1, stream_amount.nextNode());
-                        // com/joestelmach/natty/spark/TreeRewrite.g:33:43: ^( MONTH_OF_YEAR $dow)
+                        // com/joestelmach/natty/generated/TreeRewrite.g:33:43: ^( MONTH_OF_YEAR $dow)
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(stream_MONTH_OF_YEAR.nextNode(), root_2);
@@ -942,7 +946,7 @@ public class TreeRewrite extends TreeRewriter {
                     }
                     break;
                 case 5 :
-                    // com/joestelmach/natty/spark/TreeRewrite.g:37:5: ^( RELATIVE_DATE ^( SEEK dir= DIRECTION seekby= SEEK_BY day= INT ^( MONTH_OF_YEAR month= INT ) ) ^( EXPLICIT_SEEK amount= INT ^( DAY_OF_WEEK dow= INT ) ) ^( EXPLICIT_SEEK ^( YEAR_OF year= INT ) ) )
+                    // com/joestelmach/natty/generated/TreeRewrite.g:37:5: ^( RELATIVE_DATE ^( SEEK dir= DIRECTION seekby= SEEK_BY day= INT ^( MONTH_OF_YEAR month= INT ) ) ^( EXPLICIT_SEEK amount= INT ^( DAY_OF_WEEK dow= INT ) ) ^( EXPLICIT_SEEK ^( YEAR_OF year= INT ) ) )
                     {
                     _last = (CommonTree)input.LT(1);
                     {
@@ -1087,7 +1091,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: DAY_OF_WEEK, year, dow, RELATIVE_DATE, month, day, YEAR_OF, seekby, amount, EXPLICIT_SEEK, EXPLICIT_SEEK, SEEK, MONTH_OF_YEAR, dir
+                    // elements: seekby, SEEK, MONTH_OF_YEAR, month, YEAR_OF, EXPLICIT_SEEK, dow, EXPLICIT_SEEK, RELATIVE_DATE, day, dir, year, DAY_OF_WEEK, amount
                     // token labels: amount, seekby, month, year, dir, dow, day
                     // rule labels: retval
                     // token list labels: 
@@ -1107,12 +1111,12 @@ public class TreeRewrite extends TreeRewriter {
                     root_0 = (CommonTree)adaptor.nil();
                     // 42:5: -> ^( RELATIVE_DATE ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) ) ^( EXPLICIT_SEEK ^( YEAR_OF $year) ) ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) ) )
                     {
-                        // com/joestelmach/natty/spark/TreeRewrite.g:42:8: ^( RELATIVE_DATE ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) ) ^( EXPLICIT_SEEK ^( YEAR_OF $year) ) ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) ) )
+                        // com/joestelmach/natty/generated/TreeRewrite.g:42:8: ^( RELATIVE_DATE ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) ) ^( EXPLICIT_SEEK ^( YEAR_OF $year) ) ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) ) )
                         {
                         CommonTree root_1 = (CommonTree)adaptor.nil();
                         root_1 = (CommonTree)adaptor.becomeRoot(stream_RELATIVE_DATE.nextNode(), root_1);
 
-                        // com/joestelmach/natty/spark/TreeRewrite.g:42:24: ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) )
+                        // com/joestelmach/natty/generated/TreeRewrite.g:42:24: ^( SEEK $dir $seekby $day ^( MONTH_OF_YEAR $month) )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(stream_SEEK.nextNode(), root_2);
@@ -1120,7 +1124,7 @@ public class TreeRewrite extends TreeRewriter {
                         adaptor.addChild(root_2, stream_dir.nextNode());
                         adaptor.addChild(root_2, stream_seekby.nextNode());
                         adaptor.addChild(root_2, stream_day.nextNode());
-                        // com/joestelmach/natty/spark/TreeRewrite.g:42:49: ^( MONTH_OF_YEAR $month)
+                        // com/joestelmach/natty/generated/TreeRewrite.g:42:49: ^( MONTH_OF_YEAR $month)
                         {
                         CommonTree root_3 = (CommonTree)adaptor.nil();
                         root_3 = (CommonTree)adaptor.becomeRoot(stream_MONTH_OF_YEAR.nextNode(), root_3);
@@ -1132,12 +1136,12 @@ public class TreeRewrite extends TreeRewriter {
 
                         adaptor.addChild(root_1, root_2);
                         }
-                        // com/joestelmach/natty/spark/TreeRewrite.g:43:8: ^( EXPLICIT_SEEK ^( YEAR_OF $year) )
+                        // com/joestelmach/natty/generated/TreeRewrite.g:43:8: ^( EXPLICIT_SEEK ^( YEAR_OF $year) )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(stream_EXPLICIT_SEEK.nextNode(), root_2);
 
-                        // com/joestelmach/natty/spark/TreeRewrite.g:43:24: ^( YEAR_OF $year)
+                        // com/joestelmach/natty/generated/TreeRewrite.g:43:24: ^( YEAR_OF $year)
                         {
                         CommonTree root_3 = (CommonTree)adaptor.nil();
                         root_3 = (CommonTree)adaptor.becomeRoot(stream_YEAR_OF.nextNode(), root_3);
@@ -1149,13 +1153,13 @@ public class TreeRewrite extends TreeRewriter {
 
                         adaptor.addChild(root_1, root_2);
                         }
-                        // com/joestelmach/natty/spark/TreeRewrite.g:44:8: ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) )
+                        // com/joestelmach/natty/generated/TreeRewrite.g:44:8: ^( EXPLICIT_SEEK $amount ^( DAY_OF_WEEK $dow) )
                         {
                         CommonTree root_2 = (CommonTree)adaptor.nil();
                         root_2 = (CommonTree)adaptor.becomeRoot(stream_EXPLICIT_SEEK.nextNode(), root_2);
 
                         adaptor.addChild(root_2, stream_amount.nextNode());
-                        // com/joestelmach/natty/spark/TreeRewrite.g:44:32: ^( DAY_OF_WEEK $dow)
+                        // com/joestelmach/natty/generated/TreeRewrite.g:44:32: ^( DAY_OF_WEEK $dow)
                         {
                         CommonTree root_3 = (CommonTree)adaptor.nil();
                         root_3 = (CommonTree)adaptor.becomeRoot(stream_DAY_OF_WEEK.nextNode(), root_3);

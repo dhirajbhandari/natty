@@ -1,8 +1,10 @@
-// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/DateLexer.g 2014-09-18 18:34:53
- package com.joestelmach.natty.antlrV32.generated;
+// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/DateLexer.g 2014-09-22 17:27:51
+ package com.joestelmach.natty.antlrV32.generated; 
 
-//import org.antlr.runtime.*;
 import org.antlr.v32.runtime.*;
+import java.util.Stack;
+import java.util.List;
+import java.util.ArrayList;
 
 public class DateLexer extends Lexer {
     public static final int MONTH=28;
@@ -304,14 +306,14 @@ public class DateLexer extends Lexer {
         super(input,state);
 
     }
-    public String getGrammarFileName() { return "com/joestelmach/natty/antlrV32/generated/DateLexer.g"; }
+    public String getGrammarFileName() { return "com/joestelmach/natty/generated/DateLexer.g"; }
 
     // $ANTLR start "JANUARY"
     public final void mJANUARY() throws RecognitionException {
         try {
             int _type = JANUARY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:17:11: ( 'january' ( 's' )? | 'jan' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:17:11: ( 'january' ( 's' )? | 'jan' ( DOT )? )
             int alt3=2;
             switch ( input.LA(1) ) {
             case 'j':
@@ -360,11 +362,11 @@ public class DateLexer extends Lexer {
 
             switch (alt3) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:17:13: 'january' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:17:13: 'january' ( 's' )?
                     {
                     match("january"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:17:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:17:25: ( 's' )?
                     int alt1=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -376,7 +378,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt1) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:17:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:17:25: 's'
                             {
                             match('s'); 
 
@@ -389,11 +391,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:17:33: 'jan' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:17:33: 'jan' ( DOT )?
                     {
                     match("jan"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:17:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:17:39: ( DOT )?
                     int alt2=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -405,7 +407,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt2) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:17:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:17:39: DOT
                             {
                             mDOT(); 
 
@@ -432,7 +434,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = FEBRUARY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:18:11: ( 'february' ( 's' )? | 'feb' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:18:11: ( 'february' ( 's' )? | 'feb' ( DOT )? )
             int alt6=2;
             switch ( input.LA(1) ) {
             case 'f':
@@ -481,11 +483,11 @@ public class DateLexer extends Lexer {
 
             switch (alt6) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:18:13: 'february' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:18:13: 'february' ( 's' )?
                     {
                     match("february"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:18:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:18:25: ( 's' )?
                     int alt4=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -497,7 +499,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt4) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:18:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:18:25: 's'
                             {
                             match('s'); 
 
@@ -510,11 +512,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:18:33: 'feb' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:18:33: 'feb' ( DOT )?
                     {
                     match("feb"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:18:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:18:39: ( DOT )?
                     int alt5=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -526,7 +528,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt5) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:18:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:18:39: DOT
                             {
                             mDOT(); 
 
@@ -553,7 +555,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = MARCH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:19:11: ( 'march' ( 'es' )? | 'mar' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:19:11: ( 'march' ( 'es' )? | 'mar' ( DOT )? )
             int alt9=2;
             switch ( input.LA(1) ) {
             case 'm':
@@ -602,11 +604,11 @@ public class DateLexer extends Lexer {
 
             switch (alt9) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:19:13: 'march' ( 'es' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:19:13: 'march' ( 'es' )?
                     {
                     match("march"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:19:25: ( 'es' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:19:25: ( 'es' )?
                     int alt7=2;
                     switch ( input.LA(1) ) {
                         case 'e':
@@ -618,7 +620,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt7) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:19:25: 'es'
+                            // com/joestelmach/natty/generated/DateLexer.g:19:25: 'es'
                             {
                             match("es"); 
 
@@ -632,11 +634,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:19:33: 'mar' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:19:33: 'mar' ( DOT )?
                     {
                     match("mar"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:19:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:19:39: ( DOT )?
                     int alt8=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -648,7 +650,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt8) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:19:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:19:39: DOT
                             {
                             mDOT(); 
 
@@ -675,7 +677,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = APRIL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:20:11: ( 'april' ( 's' )? | 'apr' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:20:11: ( 'april' ( 's' )? | 'apr' ( DOT )? )
             int alt12=2;
             switch ( input.LA(1) ) {
             case 'a':
@@ -724,11 +726,11 @@ public class DateLexer extends Lexer {
 
             switch (alt12) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:20:13: 'april' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:20:13: 'april' ( 's' )?
                     {
                     match("april"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:20:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:20:25: ( 's' )?
                     int alt10=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -740,7 +742,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt10) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:20:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:20:25: 's'
                             {
                             match('s'); 
 
@@ -753,11 +755,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:20:33: 'apr' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:20:33: 'apr' ( DOT )?
                     {
                     match("apr"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:20:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:20:39: ( DOT )?
                     int alt11=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -769,7 +771,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt11) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:20:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:20:39: DOT
                             {
                             mDOT(); 
 
@@ -796,12 +798,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = MAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:21:11: ( 'may' ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:21:13: 'may' ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:21:11: ( 'may' ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:21:13: 'may' ( 's' )?
             {
             match("may"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:21:25: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:21:25: ( 's' )?
             int alt13=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -813,7 +815,7 @@ public class DateLexer extends Lexer {
 
             switch (alt13) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:21:25: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:21:25: 's'
                     {
                     match('s'); 
 
@@ -838,7 +840,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = JUNE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:22:11: ( 'june' ( 's' )? | 'jun' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:22:11: ( 'june' ( 's' )? | 'jun' ( DOT )? )
             int alt16=2;
             switch ( input.LA(1) ) {
             case 'j':
@@ -887,11 +889,11 @@ public class DateLexer extends Lexer {
 
             switch (alt16) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:22:13: 'june' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:22:13: 'june' ( 's' )?
                     {
                     match("june"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:22:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:22:25: ( 's' )?
                     int alt14=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -903,7 +905,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt14) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:22:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:22:25: 's'
                             {
                             match('s'); 
 
@@ -916,11 +918,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:22:33: 'jun' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:22:33: 'jun' ( DOT )?
                     {
                     match("jun"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:22:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:22:39: ( DOT )?
                     int alt15=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -932,7 +934,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt15) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:22:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:22:39: DOT
                             {
                             mDOT(); 
 
@@ -959,7 +961,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = JULY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:23:11: ( 'july' ( 's' )? | 'jul' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:23:11: ( 'july' ( 's' )? | 'jul' ( DOT )? )
             int alt19=2;
             switch ( input.LA(1) ) {
             case 'j':
@@ -1008,11 +1010,11 @@ public class DateLexer extends Lexer {
 
             switch (alt19) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:23:13: 'july' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:23:13: 'july' ( 's' )?
                     {
                     match("july"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:23:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:23:25: ( 's' )?
                     int alt17=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -1024,7 +1026,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt17) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:23:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:23:25: 's'
                             {
                             match('s'); 
 
@@ -1037,11 +1039,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:23:33: 'jul' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:23:33: 'jul' ( DOT )?
                     {
                     match("jul"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:23:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:23:39: ( DOT )?
                     int alt18=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1053,7 +1055,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt18) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:23:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:23:39: DOT
                             {
                             mDOT(); 
 
@@ -1080,7 +1082,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = AUGUST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:24:11: ( 'august' ( 's' )? | 'aug' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:24:11: ( 'august' ( 's' )? | 'aug' ( DOT )? )
             int alt22=2;
             switch ( input.LA(1) ) {
             case 'a':
@@ -1129,11 +1131,11 @@ public class DateLexer extends Lexer {
 
             switch (alt22) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:24:13: 'august' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:24:13: 'august' ( 's' )?
                     {
                     match("august"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:24:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:24:25: ( 's' )?
                     int alt20=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -1145,7 +1147,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt20) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:24:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:24:25: 's'
                             {
                             match('s'); 
 
@@ -1158,11 +1160,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:24:33: 'aug' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:24:33: 'aug' ( DOT )?
                     {
                     match("aug"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:24:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:24:39: ( DOT )?
                     int alt21=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1174,7 +1176,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt21) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:24:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:24:39: DOT
                             {
                             mDOT(); 
 
@@ -1201,7 +1203,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = SEPTEMBER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:25:11: ( 'september' ( 's' )? | 'sep' ( DOT )? | 'sept' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:25:11: ( 'september' ( 's' )? | 'sep' ( DOT )? | 'sept' ( DOT )? )
             int alt26=3;
             switch ( input.LA(1) ) {
             case 's':
@@ -1258,11 +1260,11 @@ public class DateLexer extends Lexer {
 
             switch (alt26) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:25:13: 'september' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:25:13: 'september' ( 's' )?
                     {
                     match("september"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:25:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:25:25: ( 's' )?
                     int alt23=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -1274,7 +1276,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt23) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:25:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:25:25: 's'
                             {
                             match('s'); 
 
@@ -1287,11 +1289,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:25:33: 'sep' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:25:33: 'sep' ( DOT )?
                     {
                     match("sep"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:25:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:25:39: ( DOT )?
                     int alt24=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1303,7 +1305,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt24) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:25:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:25:39: DOT
                             {
                             mDOT(); 
 
@@ -1316,11 +1318,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:25:46: 'sept' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:25:46: 'sept' ( DOT )?
                     {
                     match("sept"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:25:53: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:25:53: ( DOT )?
                     int alt25=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1332,7 +1334,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt25) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:25:53: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:25:53: DOT
                             {
                             mDOT(); 
 
@@ -1359,7 +1361,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = OCTOBER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:26:11: ( 'october' ( 's' )? | 'oct' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:26:11: ( 'october' ( 's' )? | 'oct' ( DOT )? )
             int alt29=2;
             switch ( input.LA(1) ) {
             case 'o':
@@ -1408,11 +1410,11 @@ public class DateLexer extends Lexer {
 
             switch (alt29) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:26:13: 'october' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:26:13: 'october' ( 's' )?
                     {
                     match("october"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:26:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:26:25: ( 's' )?
                     int alt27=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -1424,7 +1426,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt27) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:26:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:26:25: 's'
                             {
                             match('s'); 
 
@@ -1437,11 +1439,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:26:33: 'oct' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:26:33: 'oct' ( DOT )?
                     {
                     match("oct"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:26:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:26:39: ( DOT )?
                     int alt28=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1453,7 +1455,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt28) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:26:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:26:39: DOT
                             {
                             mDOT(); 
 
@@ -1480,7 +1482,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = NOVEMBER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:27:11: ( 'november' ( 's' )? | 'nov' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:27:11: ( 'november' ( 's' )? | 'nov' ( DOT )? )
             int alt32=2;
             switch ( input.LA(1) ) {
             case 'n':
@@ -1529,11 +1531,11 @@ public class DateLexer extends Lexer {
 
             switch (alt32) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:27:13: 'november' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:27:13: 'november' ( 's' )?
                     {
                     match("november"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:27:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:27:25: ( 's' )?
                     int alt30=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -1545,7 +1547,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt30) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:27:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:27:25: 's'
                             {
                             match('s'); 
 
@@ -1558,11 +1560,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:27:33: 'nov' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:27:33: 'nov' ( DOT )?
                     {
                     match("nov"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:27:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:27:39: ( DOT )?
                     int alt31=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1574,7 +1576,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt31) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:27:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:27:39: DOT
                             {
                             mDOT(); 
 
@@ -1601,7 +1603,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = DECEMBER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:28:11: ( 'december' ( 's' )? | 'dec' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:28:11: ( 'december' ( 's' )? | 'dec' ( DOT )? )
             int alt35=2;
             switch ( input.LA(1) ) {
             case 'd':
@@ -1650,11 +1652,11 @@ public class DateLexer extends Lexer {
 
             switch (alt35) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:28:13: 'december' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:28:13: 'december' ( 's' )?
                     {
                     match("december"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:28:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:28:25: ( 's' )?
                     int alt33=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -1666,7 +1668,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt33) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:28:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:28:25: 's'
                             {
                             match('s'); 
 
@@ -1679,11 +1681,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:28:33: 'dec' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:28:33: 'dec' ( DOT )?
                     {
                     match("dec"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:28:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:28:39: ( DOT )?
                     int alt34=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1695,7 +1697,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt34) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:28:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:28:39: DOT
                             {
                             mDOT(); 
 
@@ -1722,7 +1724,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = SUNDAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:30:11: ( 'sunday' ( 's' )? | 'sun' ( DOT )? | 'suns' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:30:11: ( 'sunday' ( 's' )? | 'sun' ( DOT )? | 'suns' ( DOT )? )
             int alt39=3;
             switch ( input.LA(1) ) {
             case 's':
@@ -1776,11 +1778,11 @@ public class DateLexer extends Lexer {
 
             switch (alt39) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:30:13: 'sunday' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:30:13: 'sunday' ( 's' )?
                     {
                     match("sunday"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:30:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:30:25: ( 's' )?
                     int alt36=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -1792,7 +1794,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt36) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:30:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:30:25: 's'
                             {
                             match('s'); 
 
@@ -1805,11 +1807,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:30:33: 'sun' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:30:33: 'sun' ( DOT )?
                     {
                     match("sun"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:30:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:30:39: ( DOT )?
                     int alt37=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1821,7 +1823,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt37) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:30:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:30:39: DOT
                             {
                             mDOT(); 
 
@@ -1834,11 +1836,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:30:47: 'suns' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:30:47: 'suns' ( DOT )?
                     {
                     match("suns"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:30:54: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:30:54: ( DOT )?
                     int alt38=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1850,7 +1852,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt38) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:30:54: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:30:54: DOT
                             {
                             mDOT(); 
 
@@ -1877,7 +1879,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = MONDAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:31:11: ( 'monday' ( 's' )? | 'mon' ( DOT )? | 'mons' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:31:11: ( 'monday' ( 's' )? | 'mon' ( DOT )? | 'mons' ( DOT )? )
             int alt43=3;
             switch ( input.LA(1) ) {
             case 'm':
@@ -1931,11 +1933,11 @@ public class DateLexer extends Lexer {
 
             switch (alt43) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:31:13: 'monday' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:31:13: 'monday' ( 's' )?
                     {
                     match("monday"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:31:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:31:25: ( 's' )?
                     int alt40=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -1947,7 +1949,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt40) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:31:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:31:25: 's'
                             {
                             match('s'); 
 
@@ -1960,11 +1962,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:31:33: 'mon' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:31:33: 'mon' ( DOT )?
                     {
                     match("mon"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:31:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:31:39: ( DOT )?
                     int alt41=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -1976,7 +1978,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt41) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:31:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:31:39: DOT
                             {
                             mDOT(); 
 
@@ -1989,11 +1991,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:31:47: 'mons' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:31:47: 'mons' ( DOT )?
                     {
                     match("mons"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:31:54: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:31:54: ( DOT )?
                     int alt42=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2005,7 +2007,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt42) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:31:54: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:31:54: DOT
                             {
                             mDOT(); 
 
@@ -2032,7 +2034,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = TUESDAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:32:11: ( 'tuesday' ( 's' )? | 'tues' ( DOT )? | 'tue' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:32:11: ( 'tuesday' ( 's' )? | 'tues' ( DOT )? | 'tue' ( DOT )? )
             int alt47=3;
             switch ( input.LA(1) ) {
             case 't':
@@ -2089,11 +2091,11 @@ public class DateLexer extends Lexer {
 
             switch (alt47) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:32:13: 'tuesday' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:32:13: 'tuesday' ( 's' )?
                     {
                     match("tuesday"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:32:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:32:25: ( 's' )?
                     int alt44=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -2105,7 +2107,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt44) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:32:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:32:25: 's'
                             {
                             match('s'); 
 
@@ -2118,11 +2120,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:32:33: 'tues' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:32:33: 'tues' ( DOT )?
                     {
                     match("tues"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:32:40: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:32:40: ( DOT )?
                     int alt45=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2134,7 +2136,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt45) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:32:40: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:32:40: DOT
                             {
                             mDOT(); 
 
@@ -2147,11 +2149,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:32:47: 'tue' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:32:47: 'tue' ( DOT )?
                     {
                     match("tue"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:32:53: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:32:53: ( DOT )?
                     int alt46=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2163,7 +2165,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt46) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:32:53: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:32:53: DOT
                             {
                             mDOT(); 
 
@@ -2190,7 +2192,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = WEDNESDAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:33:11: ( 'wednesday' ( 's' )? | 'wed' ( DOT )? | 'weds' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:33:11: ( 'wednesday' ( 's' )? | 'wed' ( DOT )? | 'weds' ( DOT )? )
             int alt51=3;
             switch ( input.LA(1) ) {
             case 'w':
@@ -2244,11 +2246,11 @@ public class DateLexer extends Lexer {
 
             switch (alt51) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:33:13: 'wednesday' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:33:13: 'wednesday' ( 's' )?
                     {
                     match("wednesday"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:33:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:33:25: ( 's' )?
                     int alt48=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -2260,7 +2262,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt48) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:33:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:33:25: 's'
                             {
                             match('s'); 
 
@@ -2273,11 +2275,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:33:33: 'wed' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:33:33: 'wed' ( DOT )?
                     {
                     match("wed"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:33:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:33:39: ( DOT )?
                     int alt49=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2289,7 +2291,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt49) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:33:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:33:39: DOT
                             {
                             mDOT(); 
 
@@ -2302,11 +2304,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:33:47: 'weds' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:33:47: 'weds' ( DOT )?
                     {
                     match("weds"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:33:54: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:33:54: ( DOT )?
                     int alt50=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2318,7 +2320,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt50) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:33:54: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:33:54: DOT
                             {
                             mDOT(); 
 
@@ -2345,16 +2347,16 @@ public class DateLexer extends Lexer {
         try {
             int _type = THURSDAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:34:11: ( 'thursday' ( 's' )? | 'thur' ( DOT )? | 'thu' ( DOT )? | 'thus' ( DOT )? | 'thurs' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:34:11: ( 'thursday' ( 's' )? | 'thur' ( DOT )? | 'thu' ( DOT )? | 'thus' ( DOT )? | 'thurs' ( DOT )? )
             int alt57=5;
             alt57 = dfa57.predict(input);
             switch (alt57) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:34:13: 'thursday' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:13: 'thursday' ( 's' )?
                     {
                     match("thursday"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:34:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:25: ( 's' )?
                     int alt52=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -2366,7 +2368,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt52) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:34:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:34:25: 's'
                             {
                             match('s'); 
 
@@ -2379,11 +2381,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:34:33: 'thur' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:33: 'thur' ( DOT )?
                     {
                     match("thur"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:34:40: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:40: ( DOT )?
                     int alt53=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2395,7 +2397,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt53) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:34:40: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:34:40: DOT
                             {
                             mDOT(); 
 
@@ -2408,11 +2410,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:34:47: 'thu' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:47: 'thu' ( DOT )?
                     {
                     match("thu"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:34:53: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:53: ( DOT )?
                     int alt54=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2424,7 +2426,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt54) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:34:53: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:34:53: DOT
                             {
                             mDOT(); 
 
@@ -2437,11 +2439,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // com/joestelmach/natty/spark/DateLexer.g:34:62: 'thus' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:62: 'thus' ( DOT )?
                     {
                     match("thus"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:34:69: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:69: ( DOT )?
                     int alt55=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2453,7 +2455,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt55) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:34:69: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:34:69: DOT
                             {
                             mDOT(); 
 
@@ -2466,11 +2468,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 5 :
-                    // com/joestelmach/natty/spark/DateLexer.g:34:76: 'thurs' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:76: 'thurs' ( DOT )?
                     {
                     match("thurs"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:34:84: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:34:84: ( DOT )?
                     int alt56=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2482,7 +2484,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt56) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:34:84: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:34:84: DOT
                             {
                             mDOT(); 
 
@@ -2509,7 +2511,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = FRIDAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:35:11: ( 'friday' ( 's' )? | 'fri' ( DOT )? | 'fris' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:35:11: ( 'friday' ( 's' )? | 'fri' ( DOT )? | 'fris' ( DOT )? )
             int alt61=3;
             switch ( input.LA(1) ) {
             case 'f':
@@ -2563,11 +2565,11 @@ public class DateLexer extends Lexer {
 
             switch (alt61) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:35:13: 'friday' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:35:13: 'friday' ( 's' )?
                     {
                     match("friday"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:35:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:35:25: ( 's' )?
                     int alt58=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -2579,7 +2581,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt58) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:35:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:35:25: 's'
                             {
                             match('s'); 
 
@@ -2592,11 +2594,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:35:33: 'fri' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:35:33: 'fri' ( DOT )?
                     {
                     match("fri"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:35:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:35:39: ( DOT )?
                     int alt59=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2608,7 +2610,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt59) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:35:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:35:39: DOT
                             {
                             mDOT(); 
 
@@ -2621,11 +2623,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:35:47: 'fris' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:35:47: 'fris' ( DOT )?
                     {
                     match("fris"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:35:54: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:35:54: ( DOT )?
                     int alt60=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2637,7 +2639,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt60) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:35:54: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:35:54: DOT
                             {
                             mDOT(); 
 
@@ -2664,7 +2666,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = SATURDAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:36:11: ( 'saturday' ( 's' )? | 'sat' ( DOT )? | 'sats' ( DOT )? | 'weekend' )
+            // com/joestelmach/natty/generated/DateLexer.g:36:11: ( 'saturday' ( 's' )? | 'sat' ( DOT )? | 'sats' ( DOT )? | 'weekend' )
             int alt65=4;
             switch ( input.LA(1) ) {
             case 's':
@@ -2723,11 +2725,11 @@ public class DateLexer extends Lexer {
 
             switch (alt65) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:36:13: 'saturday' ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:36:13: 'saturday' ( 's' )?
                     {
                     match("saturday"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:36:25: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:36:25: ( 's' )?
                     int alt62=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -2739,7 +2741,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt62) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:36:25: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:36:25: 's'
                             {
                             match('s'); 
 
@@ -2752,11 +2754,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:36:33: 'sat' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:36:33: 'sat' ( DOT )?
                     {
                     match("sat"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:36:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:36:39: ( DOT )?
                     int alt63=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2768,7 +2770,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt63) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:36:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:36:39: DOT
                             {
                             mDOT(); 
 
@@ -2781,11 +2783,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:36:47: 'sats' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:36:47: 'sats' ( DOT )?
                     {
                     match("sats"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:36:54: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:36:54: ( DOT )?
                     int alt64=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2797,7 +2799,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt64) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:36:54: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:36:54: DOT
                             {
                             mDOT(); 
 
@@ -2810,7 +2812,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // com/joestelmach/natty/spark/DateLexer.g:36:62: 'weekend'
+                    // com/joestelmach/natty/generated/DateLexer.g:36:62: 'weekend'
                     {
                     match("weekend"); 
 
@@ -2832,12 +2834,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = HOUR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:38:8: ( 'hour' | 'hours' | 'hr' ( DOT )? | 'hrs' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:38:8: ( 'hour' | 'hours' | 'hr' ( DOT )? | 'hrs' ( DOT )? )
             int alt68=4;
             alt68 = dfa68.predict(input);
             switch (alt68) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:38:10: 'hour'
+                    // com/joestelmach/natty/generated/DateLexer.g:38:10: 'hour'
                     {
                     match("hour"); 
 
@@ -2845,7 +2847,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:38:21: 'hours'
+                    // com/joestelmach/natty/generated/DateLexer.g:38:21: 'hours'
                     {
                     match("hours"); 
 
@@ -2853,11 +2855,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:38:33: 'hr' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:38:33: 'hr' ( DOT )?
                     {
                     match("hr"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:38:38: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:38:38: ( DOT )?
                     int alt66=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2869,7 +2871,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt66) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:38:38: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:38:38: DOT
                             {
                             mDOT(); 
 
@@ -2882,11 +2884,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // com/joestelmach/natty/spark/DateLexer.g:38:46: 'hrs' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:38:46: 'hrs' ( DOT )?
                     {
                     match("hrs"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:38:52: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:38:52: ( DOT )?
                     int alt67=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2898,7 +2900,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt67) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:38:52: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:38:52: DOT
                             {
                             mDOT(); 
 
@@ -2925,12 +2927,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = MINUTE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:39:8: ( 'minute' | 'minutes' | 'min' ( DOT )? | 'mins' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:39:8: ( 'minute' | 'minutes' | 'min' ( DOT )? | 'mins' ( DOT )? )
             int alt71=4;
             alt71 = dfa71.predict(input);
             switch (alt71) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:39:10: 'minute'
+                    // com/joestelmach/natty/generated/DateLexer.g:39:10: 'minute'
                     {
                     match("minute"); 
 
@@ -2938,7 +2940,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:39:21: 'minutes'
+                    // com/joestelmach/natty/generated/DateLexer.g:39:21: 'minutes'
                     {
                     match("minutes"); 
 
@@ -2946,11 +2948,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:39:33: 'min' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:39:33: 'min' ( DOT )?
                     {
                     match("min"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:39:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:39:39: ( DOT )?
                     int alt69=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2962,7 +2964,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt69) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:39:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:39:39: DOT
                             {
                             mDOT(); 
 
@@ -2975,11 +2977,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // com/joestelmach/natty/spark/DateLexer.g:39:46: 'mins' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:39:46: 'mins' ( DOT )?
                     {
                     match("mins"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:39:53: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:39:53: ( DOT )?
                     int alt70=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -2991,7 +2993,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt70) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:39:53: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:39:53: DOT
                             {
                             mDOT(); 
 
@@ -3018,7 +3020,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = DAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:40:8: ( 'day' | 'days' )
+            // com/joestelmach/natty/generated/DateLexer.g:40:8: ( 'day' | 'days' )
             int alt72=2;
             switch ( input.LA(1) ) {
             case 'd':
@@ -3067,7 +3069,7 @@ public class DateLexer extends Lexer {
 
             switch (alt72) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:40:10: 'day'
+                    // com/joestelmach/natty/generated/DateLexer.g:40:10: 'day'
                     {
                     match("day"); 
 
@@ -3075,7 +3077,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:40:21: 'days'
+                    // com/joestelmach/natty/generated/DateLexer.g:40:21: 'days'
                     {
                     match("days"); 
 
@@ -3097,7 +3099,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = WEEK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:41:8: ( 'week' | 'weeks' | 'wks' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:41:8: ( 'week' | 'weeks' | 'wks' ( DOT )? )
             int alt74=3;
             switch ( input.LA(1) ) {
             case 'w':
@@ -3163,7 +3165,7 @@ public class DateLexer extends Lexer {
 
             switch (alt74) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:41:10: 'week'
+                    // com/joestelmach/natty/generated/DateLexer.g:41:10: 'week'
                     {
                     match("week"); 
 
@@ -3171,7 +3173,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:41:21: 'weeks'
+                    // com/joestelmach/natty/generated/DateLexer.g:41:21: 'weeks'
                     {
                     match("weeks"); 
 
@@ -3179,11 +3181,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:41:33: 'wks' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:41:33: 'wks' ( DOT )?
                     {
                     match("wks"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:41:39: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:41:39: ( DOT )?
                     int alt73=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -3195,7 +3197,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt73) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:41:39: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:41:39: DOT
                             {
                             mDOT(); 
 
@@ -3222,7 +3224,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = MONTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:42:8: ( 'month' | 'months' )
+            // com/joestelmach/natty/generated/DateLexer.g:42:8: ( 'month' | 'months' )
             int alt75=2;
             switch ( input.LA(1) ) {
             case 'm':
@@ -3295,7 +3297,7 @@ public class DateLexer extends Lexer {
 
             switch (alt75) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:42:10: 'month'
+                    // com/joestelmach/natty/generated/DateLexer.g:42:10: 'month'
                     {
                     match("month"); 
 
@@ -3303,7 +3305,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:42:21: 'months'
+                    // com/joestelmach/natty/generated/DateLexer.g:42:21: 'months'
                     {
                     match("months"); 
 
@@ -3325,7 +3327,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = YEAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:43:8: ( 'year' | 'year' ( SINGLE_QUOTE )? 's' | 'yrs' ( DOT )? )
+            // com/joestelmach/natty/generated/DateLexer.g:43:8: ( 'year' | 'year' ( SINGLE_QUOTE )? 's' | 'yrs' ( DOT )? )
             int alt78=3;
             switch ( input.LA(1) ) {
             case 'y':
@@ -3392,7 +3394,7 @@ public class DateLexer extends Lexer {
 
             switch (alt78) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:43:10: 'year'
+                    // com/joestelmach/natty/generated/DateLexer.g:43:10: 'year'
                     {
                     match("year"); 
 
@@ -3400,11 +3402,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:43:21: 'year' ( SINGLE_QUOTE )? 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:43:21: 'year' ( SINGLE_QUOTE )? 's'
                     {
                     match("year"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:43:28: ( SINGLE_QUOTE )?
+                    // com/joestelmach/natty/generated/DateLexer.g:43:28: ( SINGLE_QUOTE )?
                     int alt76=2;
                     switch ( input.LA(1) ) {
                         case '\'':
@@ -3416,7 +3418,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt76) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:43:28: SINGLE_QUOTE
+                            // com/joestelmach/natty/generated/DateLexer.g:43:28: SINGLE_QUOTE
                             {
                             mSINGLE_QUOTE(); 
 
@@ -3430,11 +3432,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:43:48: 'yrs' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:43:48: 'yrs' ( DOT )?
                     {
                     match("yrs"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:43:54: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:43:54: ( DOT )?
                     int alt77=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -3446,7 +3448,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt77) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:43:54: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:43:54: DOT
                             {
                             mDOT(); 
 
@@ -3473,8 +3475,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TODAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:45:11: ( 'today' )
-            // com/joestelmach/natty/spark/DateLexer.g:45:13: 'today'
+            // com/joestelmach/natty/generated/DateLexer.g:45:11: ( 'today' )
+            // com/joestelmach/natty/generated/DateLexer.g:45:13: 'today'
             {
             match("today"); 
 
@@ -3494,12 +3496,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = TOMORROW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:46:11: ( 'tomorow' | 'tomorrow' | 'tommorow' | 'tommorrow' )
+            // com/joestelmach/natty/generated/DateLexer.g:46:11: ( 'tomorow' | 'tomorrow' | 'tommorow' | 'tommorrow' )
             int alt79=4;
             alt79 = dfa79.predict(input);
             switch (alt79) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:46:13: 'tomorow'
+                    // com/joestelmach/natty/generated/DateLexer.g:46:13: 'tomorow'
                     {
                     match("tomorow"); 
 
@@ -3507,7 +3509,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:46:27: 'tomorrow'
+                    // com/joestelmach/natty/generated/DateLexer.g:46:27: 'tomorrow'
                     {
                     match("tomorrow"); 
 
@@ -3515,7 +3517,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:46:42: 'tommorow'
+                    // com/joestelmach/natty/generated/DateLexer.g:46:42: 'tommorow'
                     {
                     match("tommorow"); 
 
@@ -3523,7 +3525,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // com/joestelmach/natty/spark/DateLexer.g:46:55: 'tommorrow'
+                    // com/joestelmach/natty/generated/DateLexer.g:46:55: 'tommorrow'
                     {
                     match("tommorrow"); 
 
@@ -3545,8 +3547,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TONIGHT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:47:11: ( 'tonight' )
-            // com/joestelmach/natty/spark/DateLexer.g:47:13: 'tonight'
+            // com/joestelmach/natty/generated/DateLexer.g:47:11: ( 'tonight' )
+            // com/joestelmach/natty/generated/DateLexer.g:47:13: 'tonight'
             {
             match("tonight"); 
 
@@ -3566,8 +3568,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = YESTERDAY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:48:11: ( 'yesterday' )
-            // com/joestelmach/natty/spark/DateLexer.g:48:13: 'yesterday'
+            // com/joestelmach/natty/generated/DateLexer.g:48:11: ( 'yesterday' )
+            // com/joestelmach/natty/generated/DateLexer.g:48:13: 'yesterday'
             {
             match("yesterday"); 
 
@@ -3587,8 +3589,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = EVERY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:52:7: ( 'every' )
-            // com/joestelmach/natty/spark/DateLexer.g:52:9: 'every'
+            // com/joestelmach/natty/generated/DateLexer.g:52:7: ( 'every' )
+            // com/joestelmach/natty/generated/DateLexer.g:52:9: 'every'
             {
             match("every"); 
 
@@ -3608,8 +3610,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = UNTIL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:53:7: ( 'until' )
-            // com/joestelmach/natty/spark/DateLexer.g:53:9: 'until'
+            // com/joestelmach/natty/generated/DateLexer.g:53:7: ( 'until' )
+            // com/joestelmach/natty/generated/DateLexer.g:53:9: 'until'
             {
             match("until"); 
 
@@ -3629,7 +3631,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = AT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:57:11: ( 'at' | '@' )
+            // com/joestelmach/natty/generated/DateLexer.g:57:11: ( 'at' | '@' )
             int alt80=2;
             switch ( input.LA(1) ) {
             case 'a':
@@ -3651,7 +3653,7 @@ public class DateLexer extends Lexer {
 
             switch (alt80) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:57:13: 'at'
+                    // com/joestelmach/natty/generated/DateLexer.g:57:13: 'at'
                     {
                     match("at"); 
 
@@ -3659,7 +3661,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:57:20: '@'
+                    // com/joestelmach/natty/generated/DateLexer.g:57:20: '@'
                     {
                     match('@'); 
 
@@ -3680,8 +3682,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = AFTER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:58:11: ( 'after' )
-            // com/joestelmach/natty/spark/DateLexer.g:58:13: 'after'
+            // com/joestelmach/natty/generated/DateLexer.g:58:11: ( 'after' )
+            // com/joestelmach/natty/generated/DateLexer.g:58:13: 'after'
             {
             match("after"); 
 
@@ -3701,8 +3703,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = PAST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:59:11: ( 'past' )
-            // com/joestelmach/natty/spark/DateLexer.g:59:13: 'past'
+            // com/joestelmach/natty/generated/DateLexer.g:59:11: ( 'past' )
+            // com/joestelmach/natty/generated/DateLexer.g:59:13: 'past'
             {
             match("past"); 
 
@@ -3722,7 +3724,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = AM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:60:4: ( 'am' | 'a.m' ( DOT )? | 'a' )
+            // com/joestelmach/natty/generated/DateLexer.g:60:4: ( 'am' | 'a.m' ( DOT )? | 'a' )
             int alt82=3;
             switch ( input.LA(1) ) {
             case 'a':
@@ -3752,7 +3754,7 @@ public class DateLexer extends Lexer {
 
             switch (alt82) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:60:6: 'am'
+                    // com/joestelmach/natty/generated/DateLexer.g:60:6: 'am'
                     {
                     match("am"); 
 
@@ -3760,11 +3762,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:60:13: 'a.m' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:60:13: 'a.m' ( DOT )?
                     {
                     match("a.m"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:60:19: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:60:19: ( DOT )?
                     int alt81=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -3776,7 +3778,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt81) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:60:19: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:60:19: DOT
                             {
                             mDOT(); 
 
@@ -3789,7 +3791,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:60:26: 'a'
+                    // com/joestelmach/natty/generated/DateLexer.g:60:26: 'a'
                     {
                     match('a'); 
 
@@ -3810,7 +3812,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = PM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:61:4: ( 'pm' | 'p.m' ( DOT )? | 'p' )
+            // com/joestelmach/natty/generated/DateLexer.g:61:4: ( 'pm' | 'p.m' ( DOT )? | 'p' )
             int alt84=3;
             switch ( input.LA(1) ) {
             case 'p':
@@ -3840,7 +3842,7 @@ public class DateLexer extends Lexer {
 
             switch (alt84) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:61:6: 'pm'
+                    // com/joestelmach/natty/generated/DateLexer.g:61:6: 'pm'
                     {
                     match("pm"); 
 
@@ -3848,11 +3850,11 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:61:13: 'p.m' ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:61:13: 'p.m' ( DOT )?
                     {
                     match("p.m"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:61:19: ( DOT )?
+                    // com/joestelmach/natty/generated/DateLexer.g:61:19: ( DOT )?
                     int alt83=2;
                     switch ( input.LA(1) ) {
                         case '.':
@@ -3864,7 +3866,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt83) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:61:19: DOT
+                            // com/joestelmach/natty/generated/DateLexer.g:61:19: DOT
                             {
                             mDOT(); 
 
@@ -3877,7 +3879,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:61:26: 'p'
+                    // com/joestelmach/natty/generated/DateLexer.g:61:26: 'p'
                     {
                     match('p'); 
 
@@ -3898,8 +3900,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = T;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:62:4: ( 't' )
-            // com/joestelmach/natty/spark/DateLexer.g:62:6: 't'
+            // com/joestelmach/natty/generated/DateLexer.g:62:4: ( 't' )
+            // com/joestelmach/natty/generated/DateLexer.g:62:6: 't'
             {
             match('t'); 
 
@@ -3918,8 +3920,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = MILITARY_HOUR_SUFFIX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:64:22: ( 'h' )
-            // com/joestelmach/natty/spark/DateLexer.g:64:24: 'h'
+            // com/joestelmach/natty/generated/DateLexer.g:64:22: ( 'h' )
+            // com/joestelmach/natty/generated/DateLexer.g:64:24: 'h'
             {
             match('h'); 
 
@@ -3938,7 +3940,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = MIDNIGHT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:66:11: ( 'midnight' | 'mid-night' )
+            // com/joestelmach/natty/generated/DateLexer.g:66:11: ( 'midnight' | 'mid-night' )
             int alt85=2;
             switch ( input.LA(1) ) {
             case 'm':
@@ -3996,7 +3998,7 @@ public class DateLexer extends Lexer {
 
             switch (alt85) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:66:13: 'midnight'
+                    // com/joestelmach/natty/generated/DateLexer.g:66:13: 'midnight'
                     {
                     match("midnight"); 
 
@@ -4004,7 +4006,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:66:26: 'mid-night'
+                    // com/joestelmach/natty/generated/DateLexer.g:66:26: 'mid-night'
                     {
                     match("mid-night"); 
 
@@ -4026,7 +4028,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = NOON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:67:11: ( 'noon' | 'afternoon' | 'after-noon' )
+            // com/joestelmach/natty/generated/DateLexer.g:67:11: ( 'noon' | 'afternoon' | 'after-noon' )
             int alt86=3;
             switch ( input.LA(1) ) {
             case 'n':
@@ -4113,7 +4115,7 @@ public class DateLexer extends Lexer {
 
             switch (alt86) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:67:13: 'noon'
+                    // com/joestelmach/natty/generated/DateLexer.g:67:13: 'noon'
                     {
                     match("noon"); 
 
@@ -4121,7 +4123,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:67:26: 'afternoon'
+                    // com/joestelmach/natty/generated/DateLexer.g:67:26: 'afternoon'
                     {
                     match("afternoon"); 
 
@@ -4129,7 +4131,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:67:40: 'after-noon'
+                    // com/joestelmach/natty/generated/DateLexer.g:67:40: 'after-noon'
                     {
                     match("after-noon"); 
 
@@ -4151,8 +4153,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = MORNING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:68:11: ( 'morning' )
-            // com/joestelmach/natty/spark/DateLexer.g:68:13: 'morning'
+            // com/joestelmach/natty/generated/DateLexer.g:68:11: ( 'morning' )
+            // com/joestelmach/natty/generated/DateLexer.g:68:13: 'morning'
             {
             match("morning"); 
 
@@ -4172,7 +4174,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = EVENING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:69:11: ( 'evening' | 'eve' )
+            // com/joestelmach/natty/generated/DateLexer.g:69:11: ( 'evening' | 'eve' )
             int alt87=2;
             switch ( input.LA(1) ) {
             case 'e':
@@ -4221,7 +4223,7 @@ public class DateLexer extends Lexer {
 
             switch (alt87) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:69:13: 'evening'
+                    // com/joestelmach/natty/generated/DateLexer.g:69:13: 'evening'
                     {
                     match("evening"); 
 
@@ -4229,7 +4231,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:69:25: 'eve'
+                    // com/joestelmach/natty/generated/DateLexer.g:69:25: 'eve'
                     {
                     match("eve"); 
 
@@ -4251,8 +4253,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = NIGHT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:70:11: ( 'night' )
-            // com/joestelmach/natty/spark/DateLexer.g:70:13: 'night'
+            // com/joestelmach/natty/generated/DateLexer.g:70:11: ( 'night' )
+            // com/joestelmach/natty/generated/DateLexer.g:70:13: 'night'
             {
             match("night"); 
 
@@ -4272,7 +4274,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = UTC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:72:6: ( 'utc' | 'gmt' | 'z' )
+            // com/joestelmach/natty/generated/DateLexer.g:72:6: ( 'utc' | 'gmt' | 'z' )
             int alt88=3;
             switch ( input.LA(1) ) {
             case 'u':
@@ -4299,7 +4301,7 @@ public class DateLexer extends Lexer {
 
             switch (alt88) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:72:8: 'utc'
+                    // com/joestelmach/natty/generated/DateLexer.g:72:8: 'utc'
                     {
                     match("utc"); 
 
@@ -4307,7 +4309,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:72:17: 'gmt'
+                    // com/joestelmach/natty/generated/DateLexer.g:72:17: 'gmt'
                     {
                     match("gmt"); 
 
@@ -4315,7 +4317,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:72:26: 'z'
+                    // com/joestelmach/natty/generated/DateLexer.g:72:26: 'z'
                     {
                     match('z'); 
 
@@ -4336,7 +4338,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = EST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:73:6: ( 'est' | 'edt' | 'et' )
+            // com/joestelmach/natty/generated/DateLexer.g:73:6: ( 'est' | 'edt' | 'et' )
             int alt89=3;
             switch ( input.LA(1) ) {
             case 'e':
@@ -4375,7 +4377,7 @@ public class DateLexer extends Lexer {
 
             switch (alt89) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:73:8: 'est'
+                    // com/joestelmach/natty/generated/DateLexer.g:73:8: 'est'
                     {
                     match("est"); 
 
@@ -4383,7 +4385,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:73:17: 'edt'
+                    // com/joestelmach/natty/generated/DateLexer.g:73:17: 'edt'
                     {
                     match("edt"); 
 
@@ -4391,7 +4393,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:73:26: 'et'
+                    // com/joestelmach/natty/generated/DateLexer.g:73:26: 'et'
                     {
                     match("et"); 
 
@@ -4413,7 +4415,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = PST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:74:6: ( 'pst' | 'pdt' | 'pt' )
+            // com/joestelmach/natty/generated/DateLexer.g:74:6: ( 'pst' | 'pdt' | 'pt' )
             int alt90=3;
             switch ( input.LA(1) ) {
             case 'p':
@@ -4452,7 +4454,7 @@ public class DateLexer extends Lexer {
 
             switch (alt90) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:74:8: 'pst'
+                    // com/joestelmach/natty/generated/DateLexer.g:74:8: 'pst'
                     {
                     match("pst"); 
 
@@ -4460,7 +4462,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:74:17: 'pdt'
+                    // com/joestelmach/natty/generated/DateLexer.g:74:17: 'pdt'
                     {
                     match("pdt"); 
 
@@ -4468,7 +4470,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:74:26: 'pt'
+                    // com/joestelmach/natty/generated/DateLexer.g:74:26: 'pt'
                     {
                     match("pt"); 
 
@@ -4490,7 +4492,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = CST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:75:6: ( 'cst' | 'cdt' | 'ct' )
+            // com/joestelmach/natty/generated/DateLexer.g:75:6: ( 'cst' | 'cdt' | 'ct' )
             int alt91=3;
             switch ( input.LA(1) ) {
             case 'c':
@@ -4529,7 +4531,7 @@ public class DateLexer extends Lexer {
 
             switch (alt91) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:75:8: 'cst'
+                    // com/joestelmach/natty/generated/DateLexer.g:75:8: 'cst'
                     {
                     match("cst"); 
 
@@ -4537,7 +4539,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:75:17: 'cdt'
+                    // com/joestelmach/natty/generated/DateLexer.g:75:17: 'cdt'
                     {
                     match("cdt"); 
 
@@ -4545,7 +4547,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:75:26: 'ct'
+                    // com/joestelmach/natty/generated/DateLexer.g:75:26: 'ct'
                     {
                     match("ct"); 
 
@@ -4567,7 +4569,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = MST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:76:6: ( 'mst' | 'mdt' | 'mt' )
+            // com/joestelmach/natty/generated/DateLexer.g:76:6: ( 'mst' | 'mdt' | 'mt' )
             int alt92=3;
             switch ( input.LA(1) ) {
             case 'm':
@@ -4606,7 +4608,7 @@ public class DateLexer extends Lexer {
 
             switch (alt92) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:76:8: 'mst'
+                    // com/joestelmach/natty/generated/DateLexer.g:76:8: 'mst'
                     {
                     match("mst"); 
 
@@ -4614,7 +4616,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:76:17: 'mdt'
+                    // com/joestelmach/natty/generated/DateLexer.g:76:17: 'mdt'
                     {
                     match("mdt"); 
 
@@ -4622,7 +4624,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:76:26: 'mt'
+                    // com/joestelmach/natty/generated/DateLexer.g:76:26: 'mt'
                     {
                     match("mt"); 
 
@@ -4644,7 +4646,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = AKST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:77:6: ( 'akst' | 'akdt' | 'akt' )
+            // com/joestelmach/natty/generated/DateLexer.g:77:6: ( 'akst' | 'akdt' | 'akt' )
             int alt93=3;
             switch ( input.LA(1) ) {
             case 'a':
@@ -4695,7 +4697,7 @@ public class DateLexer extends Lexer {
 
             switch (alt93) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:77:8: 'akst'
+                    // com/joestelmach/natty/generated/DateLexer.g:77:8: 'akst'
                     {
                     match("akst"); 
 
@@ -4703,7 +4705,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:77:17: 'akdt'
+                    // com/joestelmach/natty/generated/DateLexer.g:77:17: 'akdt'
                     {
                     match("akdt"); 
 
@@ -4711,7 +4713,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:77:26: 'akt'
+                    // com/joestelmach/natty/generated/DateLexer.g:77:26: 'akt'
                     {
                     match("akt"); 
 
@@ -4733,7 +4735,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = HAST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:78:6: ( 'hast' | 'hadt' | 'hat' | 'hst' )
+            // com/joestelmach/natty/generated/DateLexer.g:78:6: ( 'hast' | 'hadt' | 'hat' | 'hst' )
             int alt94=4;
             switch ( input.LA(1) ) {
             case 'h':
@@ -4789,7 +4791,7 @@ public class DateLexer extends Lexer {
 
             switch (alt94) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:78:8: 'hast'
+                    // com/joestelmach/natty/generated/DateLexer.g:78:8: 'hast'
                     {
                     match("hast"); 
 
@@ -4797,7 +4799,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:78:17: 'hadt'
+                    // com/joestelmach/natty/generated/DateLexer.g:78:17: 'hadt'
                     {
                     match("hadt"); 
 
@@ -4805,7 +4807,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:78:26: 'hat'
+                    // com/joestelmach/natty/generated/DateLexer.g:78:26: 'hat'
                     {
                     match("hat"); 
 
@@ -4813,7 +4815,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // com/joestelmach/natty/spark/DateLexer.g:78:34: 'hst'
+                    // com/joestelmach/natty/generated/DateLexer.g:78:34: 'hst'
                     {
                     match("hst"); 
 
@@ -4835,8 +4837,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_00;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:82:8: ( '00' )
-            // com/joestelmach/natty/spark/DateLexer.g:82:10: '00'
+            // com/joestelmach/natty/generated/DateLexer.g:82:8: ( '00' )
+            // com/joestelmach/natty/generated/DateLexer.g:82:10: '00'
             {
             match("00"); 
 
@@ -4856,8 +4858,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_01;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:83:8: ( '01' )
-            // com/joestelmach/natty/spark/DateLexer.g:83:10: '01'
+            // com/joestelmach/natty/generated/DateLexer.g:83:8: ( '01' )
+            // com/joestelmach/natty/generated/DateLexer.g:83:10: '01'
             {
             match("01"); 
 
@@ -4877,8 +4879,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_02;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:84:8: ( '02' )
-            // com/joestelmach/natty/spark/DateLexer.g:84:10: '02'
+            // com/joestelmach/natty/generated/DateLexer.g:84:8: ( '02' )
+            // com/joestelmach/natty/generated/DateLexer.g:84:10: '02'
             {
             match("02"); 
 
@@ -4898,8 +4900,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_03;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:85:8: ( '03' )
-            // com/joestelmach/natty/spark/DateLexer.g:85:10: '03'
+            // com/joestelmach/natty/generated/DateLexer.g:85:8: ( '03' )
+            // com/joestelmach/natty/generated/DateLexer.g:85:10: '03'
             {
             match("03"); 
 
@@ -4919,8 +4921,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_04;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:86:8: ( '04' )
-            // com/joestelmach/natty/spark/DateLexer.g:86:10: '04'
+            // com/joestelmach/natty/generated/DateLexer.g:86:8: ( '04' )
+            // com/joestelmach/natty/generated/DateLexer.g:86:10: '04'
             {
             match("04"); 
 
@@ -4940,8 +4942,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_05;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:87:8: ( '05' )
-            // com/joestelmach/natty/spark/DateLexer.g:87:10: '05'
+            // com/joestelmach/natty/generated/DateLexer.g:87:8: ( '05' )
+            // com/joestelmach/natty/generated/DateLexer.g:87:10: '05'
             {
             match("05"); 
 
@@ -4961,8 +4963,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_06;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:88:8: ( '06' )
-            // com/joestelmach/natty/spark/DateLexer.g:88:10: '06'
+            // com/joestelmach/natty/generated/DateLexer.g:88:8: ( '06' )
+            // com/joestelmach/natty/generated/DateLexer.g:88:10: '06'
             {
             match("06"); 
 
@@ -4982,8 +4984,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_07;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:89:8: ( '07' )
-            // com/joestelmach/natty/spark/DateLexer.g:89:10: '07'
+            // com/joestelmach/natty/generated/DateLexer.g:89:8: ( '07' )
+            // com/joestelmach/natty/generated/DateLexer.g:89:10: '07'
             {
             match("07"); 
 
@@ -5003,8 +5005,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_08;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:90:8: ( '08' )
-            // com/joestelmach/natty/spark/DateLexer.g:90:10: '08'
+            // com/joestelmach/natty/generated/DateLexer.g:90:8: ( '08' )
+            // com/joestelmach/natty/generated/DateLexer.g:90:10: '08'
             {
             match("08"); 
 
@@ -5024,8 +5026,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_09;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:91:8: ( '09' )
-            // com/joestelmach/natty/spark/DateLexer.g:91:10: '09'
+            // com/joestelmach/natty/generated/DateLexer.g:91:8: ( '09' )
+            // com/joestelmach/natty/generated/DateLexer.g:91:10: '09'
             {
             match("09"); 
 
@@ -5045,8 +5047,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_0;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:92:8: ( '0' )
-            // com/joestelmach/natty/spark/DateLexer.g:92:10: '0'
+            // com/joestelmach/natty/generated/DateLexer.g:92:8: ( '0' )
+            // com/joestelmach/natty/generated/DateLexer.g:92:10: '0'
             {
             match('0'); 
 
@@ -5065,8 +5067,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_1;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:93:8: ( '1' )
-            // com/joestelmach/natty/spark/DateLexer.g:93:10: '1'
+            // com/joestelmach/natty/generated/DateLexer.g:93:8: ( '1' )
+            // com/joestelmach/natty/generated/DateLexer.g:93:10: '1'
             {
             match('1'); 
 
@@ -5085,8 +5087,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_2;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:94:8: ( '2' )
-            // com/joestelmach/natty/spark/DateLexer.g:94:10: '2'
+            // com/joestelmach/natty/generated/DateLexer.g:94:8: ( '2' )
+            // com/joestelmach/natty/generated/DateLexer.g:94:10: '2'
             {
             match('2'); 
 
@@ -5105,8 +5107,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_3;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:95:8: ( '3' )
-            // com/joestelmach/natty/spark/DateLexer.g:95:10: '3'
+            // com/joestelmach/natty/generated/DateLexer.g:95:8: ( '3' )
+            // com/joestelmach/natty/generated/DateLexer.g:95:10: '3'
             {
             match('3'); 
 
@@ -5125,8 +5127,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_4;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:96:8: ( '4' )
-            // com/joestelmach/natty/spark/DateLexer.g:96:10: '4'
+            // com/joestelmach/natty/generated/DateLexer.g:96:8: ( '4' )
+            // com/joestelmach/natty/generated/DateLexer.g:96:10: '4'
             {
             match('4'); 
 
@@ -5145,8 +5147,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_5;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:97:8: ( '5' )
-            // com/joestelmach/natty/spark/DateLexer.g:97:10: '5'
+            // com/joestelmach/natty/generated/DateLexer.g:97:8: ( '5' )
+            // com/joestelmach/natty/generated/DateLexer.g:97:10: '5'
             {
             match('5'); 
 
@@ -5165,8 +5167,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_6;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:98:8: ( '6' )
-            // com/joestelmach/natty/spark/DateLexer.g:98:10: '6'
+            // com/joestelmach/natty/generated/DateLexer.g:98:8: ( '6' )
+            // com/joestelmach/natty/generated/DateLexer.g:98:10: '6'
             {
             match('6'); 
 
@@ -5185,8 +5187,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_7;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:99:8: ( '7' )
-            // com/joestelmach/natty/spark/DateLexer.g:99:10: '7'
+            // com/joestelmach/natty/generated/DateLexer.g:99:8: ( '7' )
+            // com/joestelmach/natty/generated/DateLexer.g:99:10: '7'
             {
             match('7'); 
 
@@ -5205,8 +5207,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_8;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:100:8: ( '8' )
-            // com/joestelmach/natty/spark/DateLexer.g:100:10: '8'
+            // com/joestelmach/natty/generated/DateLexer.g:100:8: ( '8' )
+            // com/joestelmach/natty/generated/DateLexer.g:100:10: '8'
             {
             match('8'); 
 
@@ -5225,8 +5227,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_9;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:101:8: ( '9' )
-            // com/joestelmach/natty/spark/DateLexer.g:101:10: '9'
+            // com/joestelmach/natty/generated/DateLexer.g:101:8: ( '9' )
+            // com/joestelmach/natty/generated/DateLexer.g:101:10: '9'
             {
             match('9'); 
 
@@ -5245,8 +5247,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_10;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:102:8: ( '10' )
-            // com/joestelmach/natty/spark/DateLexer.g:102:10: '10'
+            // com/joestelmach/natty/generated/DateLexer.g:102:8: ( '10' )
+            // com/joestelmach/natty/generated/DateLexer.g:102:10: '10'
             {
             match("10"); 
 
@@ -5266,8 +5268,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_11;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:103:8: ( '11' )
-            // com/joestelmach/natty/spark/DateLexer.g:103:10: '11'
+            // com/joestelmach/natty/generated/DateLexer.g:103:8: ( '11' )
+            // com/joestelmach/natty/generated/DateLexer.g:103:10: '11'
             {
             match("11"); 
 
@@ -5287,8 +5289,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_12;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:104:8: ( '12' )
-            // com/joestelmach/natty/spark/DateLexer.g:104:10: '12'
+            // com/joestelmach/natty/generated/DateLexer.g:104:8: ( '12' )
+            // com/joestelmach/natty/generated/DateLexer.g:104:10: '12'
             {
             match("12"); 
 
@@ -5308,8 +5310,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_13;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:105:8: ( '13' )
-            // com/joestelmach/natty/spark/DateLexer.g:105:10: '13'
+            // com/joestelmach/natty/generated/DateLexer.g:105:8: ( '13' )
+            // com/joestelmach/natty/generated/DateLexer.g:105:10: '13'
             {
             match("13"); 
 
@@ -5329,8 +5331,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_14;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:106:8: ( '14' )
-            // com/joestelmach/natty/spark/DateLexer.g:106:10: '14'
+            // com/joestelmach/natty/generated/DateLexer.g:106:8: ( '14' )
+            // com/joestelmach/natty/generated/DateLexer.g:106:10: '14'
             {
             match("14"); 
 
@@ -5350,8 +5352,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_15;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:107:8: ( '15' )
-            // com/joestelmach/natty/spark/DateLexer.g:107:10: '15'
+            // com/joestelmach/natty/generated/DateLexer.g:107:8: ( '15' )
+            // com/joestelmach/natty/generated/DateLexer.g:107:10: '15'
             {
             match("15"); 
 
@@ -5371,8 +5373,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:108:8: ( '16' )
-            // com/joestelmach/natty/spark/DateLexer.g:108:10: '16'
+            // com/joestelmach/natty/generated/DateLexer.g:108:8: ( '16' )
+            // com/joestelmach/natty/generated/DateLexer.g:108:10: '16'
             {
             match("16"); 
 
@@ -5392,8 +5394,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:109:8: ( '17' )
-            // com/joestelmach/natty/spark/DateLexer.g:109:10: '17'
+            // com/joestelmach/natty/generated/DateLexer.g:109:8: ( '17' )
+            // com/joestelmach/natty/generated/DateLexer.g:109:10: '17'
             {
             match("17"); 
 
@@ -5413,8 +5415,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:110:8: ( '18' )
-            // com/joestelmach/natty/spark/DateLexer.g:110:10: '18'
+            // com/joestelmach/natty/generated/DateLexer.g:110:8: ( '18' )
+            // com/joestelmach/natty/generated/DateLexer.g:110:10: '18'
             {
             match("18"); 
 
@@ -5434,8 +5436,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:111:8: ( '19' )
-            // com/joestelmach/natty/spark/DateLexer.g:111:10: '19'
+            // com/joestelmach/natty/generated/DateLexer.g:111:8: ( '19' )
+            // com/joestelmach/natty/generated/DateLexer.g:111:10: '19'
             {
             match("19"); 
 
@@ -5455,8 +5457,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:112:8: ( '20' )
-            // com/joestelmach/natty/spark/DateLexer.g:112:10: '20'
+            // com/joestelmach/natty/generated/DateLexer.g:112:8: ( '20' )
+            // com/joestelmach/natty/generated/DateLexer.g:112:10: '20'
             {
             match("20"); 
 
@@ -5476,8 +5478,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:113:8: ( '21' )
-            // com/joestelmach/natty/spark/DateLexer.g:113:10: '21'
+            // com/joestelmach/natty/generated/DateLexer.g:113:8: ( '21' )
+            // com/joestelmach/natty/generated/DateLexer.g:113:10: '21'
             {
             match("21"); 
 
@@ -5497,8 +5499,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:114:8: ( '22' )
-            // com/joestelmach/natty/spark/DateLexer.g:114:10: '22'
+            // com/joestelmach/natty/generated/DateLexer.g:114:8: ( '22' )
+            // com/joestelmach/natty/generated/DateLexer.g:114:10: '22'
             {
             match("22"); 
 
@@ -5518,8 +5520,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:115:8: ( '23' )
-            // com/joestelmach/natty/spark/DateLexer.g:115:10: '23'
+            // com/joestelmach/natty/generated/DateLexer.g:115:8: ( '23' )
+            // com/joestelmach/natty/generated/DateLexer.g:115:10: '23'
             {
             match("23"); 
 
@@ -5539,8 +5541,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:116:8: ( '24' )
-            // com/joestelmach/natty/spark/DateLexer.g:116:10: '24'
+            // com/joestelmach/natty/generated/DateLexer.g:116:8: ( '24' )
+            // com/joestelmach/natty/generated/DateLexer.g:116:10: '24'
             {
             match("24"); 
 
@@ -5560,8 +5562,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:117:8: ( '25' )
-            // com/joestelmach/natty/spark/DateLexer.g:117:10: '25'
+            // com/joestelmach/natty/generated/DateLexer.g:117:8: ( '25' )
+            // com/joestelmach/natty/generated/DateLexer.g:117:10: '25'
             {
             match("25"); 
 
@@ -5581,8 +5583,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:118:8: ( '26' )
-            // com/joestelmach/natty/spark/DateLexer.g:118:10: '26'
+            // com/joestelmach/natty/generated/DateLexer.g:118:8: ( '26' )
+            // com/joestelmach/natty/generated/DateLexer.g:118:10: '26'
             {
             match("26"); 
 
@@ -5602,8 +5604,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:119:8: ( '27' )
-            // com/joestelmach/natty/spark/DateLexer.g:119:10: '27'
+            // com/joestelmach/natty/generated/DateLexer.g:119:8: ( '27' )
+            // com/joestelmach/natty/generated/DateLexer.g:119:10: '27'
             {
             match("27"); 
 
@@ -5623,8 +5625,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:120:8: ( '28' )
-            // com/joestelmach/natty/spark/DateLexer.g:120:10: '28'
+            // com/joestelmach/natty/generated/DateLexer.g:120:8: ( '28' )
+            // com/joestelmach/natty/generated/DateLexer.g:120:10: '28'
             {
             match("28"); 
 
@@ -5644,8 +5646,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:121:8: ( '29' )
-            // com/joestelmach/natty/spark/DateLexer.g:121:10: '29'
+            // com/joestelmach/natty/generated/DateLexer.g:121:8: ( '29' )
+            // com/joestelmach/natty/generated/DateLexer.g:121:10: '29'
             {
             match("29"); 
 
@@ -5665,8 +5667,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:122:8: ( '30' )
-            // com/joestelmach/natty/spark/DateLexer.g:122:10: '30'
+            // com/joestelmach/natty/generated/DateLexer.g:122:8: ( '30' )
+            // com/joestelmach/natty/generated/DateLexer.g:122:10: '30'
             {
             match("30"); 
 
@@ -5686,8 +5688,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:123:8: ( '31' )
-            // com/joestelmach/natty/spark/DateLexer.g:123:10: '31'
+            // com/joestelmach/natty/generated/DateLexer.g:123:8: ( '31' )
+            // com/joestelmach/natty/generated/DateLexer.g:123:10: '31'
             {
             match("31"); 
 
@@ -5707,8 +5709,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:124:8: ( '32' )
-            // com/joestelmach/natty/spark/DateLexer.g:124:10: '32'
+            // com/joestelmach/natty/generated/DateLexer.g:124:8: ( '32' )
+            // com/joestelmach/natty/generated/DateLexer.g:124:10: '32'
             {
             match("32"); 
 
@@ -5728,8 +5730,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:125:8: ( '33' )
-            // com/joestelmach/natty/spark/DateLexer.g:125:10: '33'
+            // com/joestelmach/natty/generated/DateLexer.g:125:8: ( '33' )
+            // com/joestelmach/natty/generated/DateLexer.g:125:10: '33'
             {
             match("33"); 
 
@@ -5749,8 +5751,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:126:8: ( '34' )
-            // com/joestelmach/natty/spark/DateLexer.g:126:10: '34'
+            // com/joestelmach/natty/generated/DateLexer.g:126:8: ( '34' )
+            // com/joestelmach/natty/generated/DateLexer.g:126:10: '34'
             {
             match("34"); 
 
@@ -5770,8 +5772,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:127:8: ( '35' )
-            // com/joestelmach/natty/spark/DateLexer.g:127:10: '35'
+            // com/joestelmach/natty/generated/DateLexer.g:127:8: ( '35' )
+            // com/joestelmach/natty/generated/DateLexer.g:127:10: '35'
             {
             match("35"); 
 
@@ -5791,8 +5793,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:128:8: ( '36' )
-            // com/joestelmach/natty/spark/DateLexer.g:128:10: '36'
+            // com/joestelmach/natty/generated/DateLexer.g:128:8: ( '36' )
+            // com/joestelmach/natty/generated/DateLexer.g:128:10: '36'
             {
             match("36"); 
 
@@ -5812,8 +5814,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_37;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:129:8: ( '37' )
-            // com/joestelmach/natty/spark/DateLexer.g:129:10: '37'
+            // com/joestelmach/natty/generated/DateLexer.g:129:8: ( '37' )
+            // com/joestelmach/natty/generated/DateLexer.g:129:10: '37'
             {
             match("37"); 
 
@@ -5833,8 +5835,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:130:8: ( '38' )
-            // com/joestelmach/natty/spark/DateLexer.g:130:10: '38'
+            // com/joestelmach/natty/generated/DateLexer.g:130:8: ( '38' )
+            // com/joestelmach/natty/generated/DateLexer.g:130:10: '38'
             {
             match("38"); 
 
@@ -5854,8 +5856,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:131:8: ( '39' )
-            // com/joestelmach/natty/spark/DateLexer.g:131:10: '39'
+            // com/joestelmach/natty/generated/DateLexer.g:131:8: ( '39' )
+            // com/joestelmach/natty/generated/DateLexer.g:131:10: '39'
             {
             match("39"); 
 
@@ -5875,8 +5877,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:132:8: ( '40' )
-            // com/joestelmach/natty/spark/DateLexer.g:132:10: '40'
+            // com/joestelmach/natty/generated/DateLexer.g:132:8: ( '40' )
+            // com/joestelmach/natty/generated/DateLexer.g:132:10: '40'
             {
             match("40"); 
 
@@ -5896,8 +5898,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:133:8: ( '41' )
-            // com/joestelmach/natty/spark/DateLexer.g:133:10: '41'
+            // com/joestelmach/natty/generated/DateLexer.g:133:8: ( '41' )
+            // com/joestelmach/natty/generated/DateLexer.g:133:10: '41'
             {
             match("41"); 
 
@@ -5917,8 +5919,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:134:8: ( '42' )
-            // com/joestelmach/natty/spark/DateLexer.g:134:10: '42'
+            // com/joestelmach/natty/generated/DateLexer.g:134:8: ( '42' )
+            // com/joestelmach/natty/generated/DateLexer.g:134:10: '42'
             {
             match("42"); 
 
@@ -5938,8 +5940,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:135:8: ( '43' )
-            // com/joestelmach/natty/spark/DateLexer.g:135:10: '43'
+            // com/joestelmach/natty/generated/DateLexer.g:135:8: ( '43' )
+            // com/joestelmach/natty/generated/DateLexer.g:135:10: '43'
             {
             match("43"); 
 
@@ -5959,8 +5961,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:136:8: ( '44' )
-            // com/joestelmach/natty/spark/DateLexer.g:136:10: '44'
+            // com/joestelmach/natty/generated/DateLexer.g:136:8: ( '44' )
+            // com/joestelmach/natty/generated/DateLexer.g:136:10: '44'
             {
             match("44"); 
 
@@ -5980,8 +5982,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:137:8: ( '45' )
-            // com/joestelmach/natty/spark/DateLexer.g:137:10: '45'
+            // com/joestelmach/natty/generated/DateLexer.g:137:8: ( '45' )
+            // com/joestelmach/natty/generated/DateLexer.g:137:10: '45'
             {
             match("45"); 
 
@@ -6001,8 +6003,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:138:8: ( '46' )
-            // com/joestelmach/natty/spark/DateLexer.g:138:10: '46'
+            // com/joestelmach/natty/generated/DateLexer.g:138:8: ( '46' )
+            // com/joestelmach/natty/generated/DateLexer.g:138:10: '46'
             {
             match("46"); 
 
@@ -6022,8 +6024,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:139:8: ( '47' )
-            // com/joestelmach/natty/spark/DateLexer.g:139:10: '47'
+            // com/joestelmach/natty/generated/DateLexer.g:139:8: ( '47' )
+            // com/joestelmach/natty/generated/DateLexer.g:139:10: '47'
             {
             match("47"); 
 
@@ -6043,8 +6045,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:140:8: ( '48' )
-            // com/joestelmach/natty/spark/DateLexer.g:140:10: '48'
+            // com/joestelmach/natty/generated/DateLexer.g:140:8: ( '48' )
+            // com/joestelmach/natty/generated/DateLexer.g:140:10: '48'
             {
             match("48"); 
 
@@ -6064,8 +6066,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:141:8: ( '49' )
-            // com/joestelmach/natty/spark/DateLexer.g:141:10: '49'
+            // com/joestelmach/natty/generated/DateLexer.g:141:8: ( '49' )
+            // com/joestelmach/natty/generated/DateLexer.g:141:10: '49'
             {
             match("49"); 
 
@@ -6085,8 +6087,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:142:8: ( '50' )
-            // com/joestelmach/natty/spark/DateLexer.g:142:10: '50'
+            // com/joestelmach/natty/generated/DateLexer.g:142:8: ( '50' )
+            // com/joestelmach/natty/generated/DateLexer.g:142:10: '50'
             {
             match("50"); 
 
@@ -6106,8 +6108,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:143:8: ( '51' )
-            // com/joestelmach/natty/spark/DateLexer.g:143:10: '51'
+            // com/joestelmach/natty/generated/DateLexer.g:143:8: ( '51' )
+            // com/joestelmach/natty/generated/DateLexer.g:143:10: '51'
             {
             match("51"); 
 
@@ -6127,8 +6129,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:144:8: ( '52' )
-            // com/joestelmach/natty/spark/DateLexer.g:144:10: '52'
+            // com/joestelmach/natty/generated/DateLexer.g:144:8: ( '52' )
+            // com/joestelmach/natty/generated/DateLexer.g:144:10: '52'
             {
             match("52"); 
 
@@ -6148,8 +6150,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:145:8: ( '53' )
-            // com/joestelmach/natty/spark/DateLexer.g:145:10: '53'
+            // com/joestelmach/natty/generated/DateLexer.g:145:8: ( '53' )
+            // com/joestelmach/natty/generated/DateLexer.g:145:10: '53'
             {
             match("53"); 
 
@@ -6169,8 +6171,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:146:8: ( '54' )
-            // com/joestelmach/natty/spark/DateLexer.g:146:10: '54'
+            // com/joestelmach/natty/generated/DateLexer.g:146:8: ( '54' )
+            // com/joestelmach/natty/generated/DateLexer.g:146:10: '54'
             {
             match("54"); 
 
@@ -6190,8 +6192,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:147:8: ( '55' )
-            // com/joestelmach/natty/spark/DateLexer.g:147:10: '55'
+            // com/joestelmach/natty/generated/DateLexer.g:147:8: ( '55' )
+            // com/joestelmach/natty/generated/DateLexer.g:147:10: '55'
             {
             match("55"); 
 
@@ -6211,8 +6213,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:148:8: ( '56' )
-            // com/joestelmach/natty/spark/DateLexer.g:148:10: '56'
+            // com/joestelmach/natty/generated/DateLexer.g:148:8: ( '56' )
+            // com/joestelmach/natty/generated/DateLexer.g:148:10: '56'
             {
             match("56"); 
 
@@ -6232,8 +6234,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:149:8: ( '57' )
-            // com/joestelmach/natty/spark/DateLexer.g:149:10: '57'
+            // com/joestelmach/natty/generated/DateLexer.g:149:8: ( '57' )
+            // com/joestelmach/natty/generated/DateLexer.g:149:10: '57'
             {
             match("57"); 
 
@@ -6253,8 +6255,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:150:8: ( '58' )
-            // com/joestelmach/natty/spark/DateLexer.g:150:10: '58'
+            // com/joestelmach/natty/generated/DateLexer.g:150:8: ( '58' )
+            // com/joestelmach/natty/generated/DateLexer.g:150:10: '58'
             {
             match("58"); 
 
@@ -6274,8 +6276,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_59;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:151:8: ( '59' )
-            // com/joestelmach/natty/spark/DateLexer.g:151:10: '59'
+            // com/joestelmach/natty/generated/DateLexer.g:151:8: ( '59' )
+            // com/joestelmach/natty/generated/DateLexer.g:151:10: '59'
             {
             match("59"); 
 
@@ -6295,8 +6297,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_60;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:152:8: ( '60' )
-            // com/joestelmach/natty/spark/DateLexer.g:152:10: '60'
+            // com/joestelmach/natty/generated/DateLexer.g:152:8: ( '60' )
+            // com/joestelmach/natty/generated/DateLexer.g:152:10: '60'
             {
             match("60"); 
 
@@ -6316,8 +6318,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_61;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:153:8: ( '61' )
-            // com/joestelmach/natty/spark/DateLexer.g:153:10: '61'
+            // com/joestelmach/natty/generated/DateLexer.g:153:8: ( '61' )
+            // com/joestelmach/natty/generated/DateLexer.g:153:10: '61'
             {
             match("61"); 
 
@@ -6337,8 +6339,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_62;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:154:8: ( '62' )
-            // com/joestelmach/natty/spark/DateLexer.g:154:10: '62'
+            // com/joestelmach/natty/generated/DateLexer.g:154:8: ( '62' )
+            // com/joestelmach/natty/generated/DateLexer.g:154:10: '62'
             {
             match("62"); 
 
@@ -6358,8 +6360,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_63;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:155:8: ( '63' )
-            // com/joestelmach/natty/spark/DateLexer.g:155:10: '63'
+            // com/joestelmach/natty/generated/DateLexer.g:155:8: ( '63' )
+            // com/joestelmach/natty/generated/DateLexer.g:155:10: '63'
             {
             match("63"); 
 
@@ -6379,8 +6381,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_64;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:156:8: ( '64' )
-            // com/joestelmach/natty/spark/DateLexer.g:156:10: '64'
+            // com/joestelmach/natty/generated/DateLexer.g:156:8: ( '64' )
+            // com/joestelmach/natty/generated/DateLexer.g:156:10: '64'
             {
             match("64"); 
 
@@ -6400,8 +6402,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_65;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:157:8: ( '65' )
-            // com/joestelmach/natty/spark/DateLexer.g:157:10: '65'
+            // com/joestelmach/natty/generated/DateLexer.g:157:8: ( '65' )
+            // com/joestelmach/natty/generated/DateLexer.g:157:10: '65'
             {
             match("65"); 
 
@@ -6421,8 +6423,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_66;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:158:8: ( '66' )
-            // com/joestelmach/natty/spark/DateLexer.g:158:10: '66'
+            // com/joestelmach/natty/generated/DateLexer.g:158:8: ( '66' )
+            // com/joestelmach/natty/generated/DateLexer.g:158:10: '66'
             {
             match("66"); 
 
@@ -6442,8 +6444,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_67;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:159:8: ( '67' )
-            // com/joestelmach/natty/spark/DateLexer.g:159:10: '67'
+            // com/joestelmach/natty/generated/DateLexer.g:159:8: ( '67' )
+            // com/joestelmach/natty/generated/DateLexer.g:159:10: '67'
             {
             match("67"); 
 
@@ -6463,8 +6465,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_68;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:160:8: ( '68' )
-            // com/joestelmach/natty/spark/DateLexer.g:160:10: '68'
+            // com/joestelmach/natty/generated/DateLexer.g:160:8: ( '68' )
+            // com/joestelmach/natty/generated/DateLexer.g:160:10: '68'
             {
             match("68"); 
 
@@ -6484,8 +6486,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_69;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:161:8: ( '69' )
-            // com/joestelmach/natty/spark/DateLexer.g:161:10: '69'
+            // com/joestelmach/natty/generated/DateLexer.g:161:8: ( '69' )
+            // com/joestelmach/natty/generated/DateLexer.g:161:10: '69'
             {
             match("69"); 
 
@@ -6505,8 +6507,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_70;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:162:8: ( '70' )
-            // com/joestelmach/natty/spark/DateLexer.g:162:10: '70'
+            // com/joestelmach/natty/generated/DateLexer.g:162:8: ( '70' )
+            // com/joestelmach/natty/generated/DateLexer.g:162:10: '70'
             {
             match("70"); 
 
@@ -6526,8 +6528,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_71;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:163:8: ( '71' )
-            // com/joestelmach/natty/spark/DateLexer.g:163:10: '71'
+            // com/joestelmach/natty/generated/DateLexer.g:163:8: ( '71' )
+            // com/joestelmach/natty/generated/DateLexer.g:163:10: '71'
             {
             match("71"); 
 
@@ -6547,8 +6549,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_72;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:164:8: ( '72' )
-            // com/joestelmach/natty/spark/DateLexer.g:164:10: '72'
+            // com/joestelmach/natty/generated/DateLexer.g:164:8: ( '72' )
+            // com/joestelmach/natty/generated/DateLexer.g:164:10: '72'
             {
             match("72"); 
 
@@ -6568,8 +6570,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_73;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:165:8: ( '73' )
-            // com/joestelmach/natty/spark/DateLexer.g:165:10: '73'
+            // com/joestelmach/natty/generated/DateLexer.g:165:8: ( '73' )
+            // com/joestelmach/natty/generated/DateLexer.g:165:10: '73'
             {
             match("73"); 
 
@@ -6589,8 +6591,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_74;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:166:8: ( '74' )
-            // com/joestelmach/natty/spark/DateLexer.g:166:10: '74'
+            // com/joestelmach/natty/generated/DateLexer.g:166:8: ( '74' )
+            // com/joestelmach/natty/generated/DateLexer.g:166:10: '74'
             {
             match("74"); 
 
@@ -6610,8 +6612,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_75;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:167:8: ( '75' )
-            // com/joestelmach/natty/spark/DateLexer.g:167:10: '75'
+            // com/joestelmach/natty/generated/DateLexer.g:167:8: ( '75' )
+            // com/joestelmach/natty/generated/DateLexer.g:167:10: '75'
             {
             match("75"); 
 
@@ -6631,8 +6633,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_76;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:168:8: ( '76' )
-            // com/joestelmach/natty/spark/DateLexer.g:168:10: '76'
+            // com/joestelmach/natty/generated/DateLexer.g:168:8: ( '76' )
+            // com/joestelmach/natty/generated/DateLexer.g:168:10: '76'
             {
             match("76"); 
 
@@ -6652,8 +6654,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_77;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:169:8: ( '77' )
-            // com/joestelmach/natty/spark/DateLexer.g:169:10: '77'
+            // com/joestelmach/natty/generated/DateLexer.g:169:8: ( '77' )
+            // com/joestelmach/natty/generated/DateLexer.g:169:10: '77'
             {
             match("77"); 
 
@@ -6673,8 +6675,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_78;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:170:8: ( '78' )
-            // com/joestelmach/natty/spark/DateLexer.g:170:10: '78'
+            // com/joestelmach/natty/generated/DateLexer.g:170:8: ( '78' )
+            // com/joestelmach/natty/generated/DateLexer.g:170:10: '78'
             {
             match("78"); 
 
@@ -6694,8 +6696,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_79;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:171:8: ( '79' )
-            // com/joestelmach/natty/spark/DateLexer.g:171:10: '79'
+            // com/joestelmach/natty/generated/DateLexer.g:171:8: ( '79' )
+            // com/joestelmach/natty/generated/DateLexer.g:171:10: '79'
             {
             match("79"); 
 
@@ -6715,8 +6717,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_80;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:172:8: ( '80' )
-            // com/joestelmach/natty/spark/DateLexer.g:172:10: '80'
+            // com/joestelmach/natty/generated/DateLexer.g:172:8: ( '80' )
+            // com/joestelmach/natty/generated/DateLexer.g:172:10: '80'
             {
             match("80"); 
 
@@ -6736,8 +6738,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_81;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:173:8: ( '81' )
-            // com/joestelmach/natty/spark/DateLexer.g:173:10: '81'
+            // com/joestelmach/natty/generated/DateLexer.g:173:8: ( '81' )
+            // com/joestelmach/natty/generated/DateLexer.g:173:10: '81'
             {
             match("81"); 
 
@@ -6757,8 +6759,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_82;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:174:8: ( '82' )
-            // com/joestelmach/natty/spark/DateLexer.g:174:10: '82'
+            // com/joestelmach/natty/generated/DateLexer.g:174:8: ( '82' )
+            // com/joestelmach/natty/generated/DateLexer.g:174:10: '82'
             {
             match("82"); 
 
@@ -6778,8 +6780,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_83;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:175:8: ( '83' )
-            // com/joestelmach/natty/spark/DateLexer.g:175:10: '83'
+            // com/joestelmach/natty/generated/DateLexer.g:175:8: ( '83' )
+            // com/joestelmach/natty/generated/DateLexer.g:175:10: '83'
             {
             match("83"); 
 
@@ -6799,8 +6801,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_84;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:176:8: ( '84' )
-            // com/joestelmach/natty/spark/DateLexer.g:176:10: '84'
+            // com/joestelmach/natty/generated/DateLexer.g:176:8: ( '84' )
+            // com/joestelmach/natty/generated/DateLexer.g:176:10: '84'
             {
             match("84"); 
 
@@ -6820,8 +6822,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_85;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:177:8: ( '85' )
-            // com/joestelmach/natty/spark/DateLexer.g:177:10: '85'
+            // com/joestelmach/natty/generated/DateLexer.g:177:8: ( '85' )
+            // com/joestelmach/natty/generated/DateLexer.g:177:10: '85'
             {
             match("85"); 
 
@@ -6841,8 +6843,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_86;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:178:8: ( '86' )
-            // com/joestelmach/natty/spark/DateLexer.g:178:10: '86'
+            // com/joestelmach/natty/generated/DateLexer.g:178:8: ( '86' )
+            // com/joestelmach/natty/generated/DateLexer.g:178:10: '86'
             {
             match("86"); 
 
@@ -6862,8 +6864,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_87;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:179:8: ( '87' )
-            // com/joestelmach/natty/spark/DateLexer.g:179:10: '87'
+            // com/joestelmach/natty/generated/DateLexer.g:179:8: ( '87' )
+            // com/joestelmach/natty/generated/DateLexer.g:179:10: '87'
             {
             match("87"); 
 
@@ -6883,8 +6885,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_88;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:180:8: ( '88' )
-            // com/joestelmach/natty/spark/DateLexer.g:180:10: '88'
+            // com/joestelmach/natty/generated/DateLexer.g:180:8: ( '88' )
+            // com/joestelmach/natty/generated/DateLexer.g:180:10: '88'
             {
             match("88"); 
 
@@ -6904,8 +6906,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_89;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:181:8: ( '89' )
-            // com/joestelmach/natty/spark/DateLexer.g:181:10: '89'
+            // com/joestelmach/natty/generated/DateLexer.g:181:8: ( '89' )
+            // com/joestelmach/natty/generated/DateLexer.g:181:10: '89'
             {
             match("89"); 
 
@@ -6925,8 +6927,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_90;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:182:8: ( '90' )
-            // com/joestelmach/natty/spark/DateLexer.g:182:10: '90'
+            // com/joestelmach/natty/generated/DateLexer.g:182:8: ( '90' )
+            // com/joestelmach/natty/generated/DateLexer.g:182:10: '90'
             {
             match("90"); 
 
@@ -6946,8 +6948,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_91;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:183:8: ( '91' )
-            // com/joestelmach/natty/spark/DateLexer.g:183:10: '91'
+            // com/joestelmach/natty/generated/DateLexer.g:183:8: ( '91' )
+            // com/joestelmach/natty/generated/DateLexer.g:183:10: '91'
             {
             match("91"); 
 
@@ -6967,8 +6969,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_92;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:184:8: ( '92' )
-            // com/joestelmach/natty/spark/DateLexer.g:184:10: '92'
+            // com/joestelmach/natty/generated/DateLexer.g:184:8: ( '92' )
+            // com/joestelmach/natty/generated/DateLexer.g:184:10: '92'
             {
             match("92"); 
 
@@ -6988,8 +6990,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_93;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:185:8: ( '93' )
-            // com/joestelmach/natty/spark/DateLexer.g:185:10: '93'
+            // com/joestelmach/natty/generated/DateLexer.g:185:8: ( '93' )
+            // com/joestelmach/natty/generated/DateLexer.g:185:10: '93'
             {
             match("93"); 
 
@@ -7009,8 +7011,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_94;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:186:8: ( '94' )
-            // com/joestelmach/natty/spark/DateLexer.g:186:10: '94'
+            // com/joestelmach/natty/generated/DateLexer.g:186:8: ( '94' )
+            // com/joestelmach/natty/generated/DateLexer.g:186:10: '94'
             {
             match("94"); 
 
@@ -7030,8 +7032,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_95;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:187:8: ( '95' )
-            // com/joestelmach/natty/spark/DateLexer.g:187:10: '95'
+            // com/joestelmach/natty/generated/DateLexer.g:187:8: ( '95' )
+            // com/joestelmach/natty/generated/DateLexer.g:187:10: '95'
             {
             match("95"); 
 
@@ -7051,8 +7053,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_96;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:188:8: ( '96' )
-            // com/joestelmach/natty/spark/DateLexer.g:188:10: '96'
+            // com/joestelmach/natty/generated/DateLexer.g:188:8: ( '96' )
+            // com/joestelmach/natty/generated/DateLexer.g:188:10: '96'
             {
             match("96"); 
 
@@ -7072,8 +7074,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_97;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:189:8: ( '97' )
-            // com/joestelmach/natty/spark/DateLexer.g:189:10: '97'
+            // com/joestelmach/natty/generated/DateLexer.g:189:8: ( '97' )
+            // com/joestelmach/natty/generated/DateLexer.g:189:10: '97'
             {
             match("97"); 
 
@@ -7093,8 +7095,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_98;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:190:8: ( '98' )
-            // com/joestelmach/natty/spark/DateLexer.g:190:10: '98'
+            // com/joestelmach/natty/generated/DateLexer.g:190:8: ( '98' )
+            // com/joestelmach/natty/generated/DateLexer.g:190:10: '98'
             {
             match("98"); 
 
@@ -7114,8 +7116,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = INT_99;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:191:8: ( '99' )
-            // com/joestelmach/natty/spark/DateLexer.g:191:10: '99'
+            // com/joestelmach/natty/generated/DateLexer.g:191:8: ( '99' )
+            // com/joestelmach/natty/generated/DateLexer.g:191:10: '99'
             {
             match("99"); 
 
@@ -7135,8 +7137,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = ONE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:193:11: ( 'one' )
-            // com/joestelmach/natty/spark/DateLexer.g:193:13: 'one'
+            // com/joestelmach/natty/generated/DateLexer.g:193:11: ( 'one' )
+            // com/joestelmach/natty/generated/DateLexer.g:193:13: 'one'
             {
             match("one"); 
 
@@ -7156,8 +7158,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TWO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:194:11: ( 'two' )
-            // com/joestelmach/natty/spark/DateLexer.g:194:13: 'two'
+            // com/joestelmach/natty/generated/DateLexer.g:194:11: ( 'two' )
+            // com/joestelmach/natty/generated/DateLexer.g:194:13: 'two'
             {
             match("two"); 
 
@@ -7177,8 +7179,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THREE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:195:11: ( 'three' )
-            // com/joestelmach/natty/spark/DateLexer.g:195:13: 'three'
+            // com/joestelmach/natty/generated/DateLexer.g:195:11: ( 'three' )
+            // com/joestelmach/natty/generated/DateLexer.g:195:13: 'three'
             {
             match("three"); 
 
@@ -7198,8 +7200,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FOUR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:196:11: ( 'four' )
-            // com/joestelmach/natty/spark/DateLexer.g:196:13: 'four'
+            // com/joestelmach/natty/generated/DateLexer.g:196:11: ( 'four' )
+            // com/joestelmach/natty/generated/DateLexer.g:196:13: 'four'
             {
             match("four"); 
 
@@ -7219,8 +7221,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FIVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:197:11: ( 'five' )
-            // com/joestelmach/natty/spark/DateLexer.g:197:13: 'five'
+            // com/joestelmach/natty/generated/DateLexer.g:197:11: ( 'five' )
+            // com/joestelmach/natty/generated/DateLexer.g:197:13: 'five'
             {
             match("five"); 
 
@@ -7240,8 +7242,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SIX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:198:11: ( 'six' )
-            // com/joestelmach/natty/spark/DateLexer.g:198:13: 'six'
+            // com/joestelmach/natty/generated/DateLexer.g:198:11: ( 'six' )
+            // com/joestelmach/natty/generated/DateLexer.g:198:13: 'six'
             {
             match("six"); 
 
@@ -7261,8 +7263,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SEVEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:199:11: ( 'seven' )
-            // com/joestelmach/natty/spark/DateLexer.g:199:13: 'seven'
+            // com/joestelmach/natty/generated/DateLexer.g:199:11: ( 'seven' )
+            // com/joestelmach/natty/generated/DateLexer.g:199:13: 'seven'
             {
             match("seven"); 
 
@@ -7282,8 +7284,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = EIGHT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:200:11: ( 'eight' )
-            // com/joestelmach/natty/spark/DateLexer.g:200:13: 'eight'
+            // com/joestelmach/natty/generated/DateLexer.g:200:11: ( 'eight' )
+            // com/joestelmach/natty/generated/DateLexer.g:200:13: 'eight'
             {
             match("eight"); 
 
@@ -7303,8 +7305,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = NINE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:201:11: ( 'nine' )
-            // com/joestelmach/natty/spark/DateLexer.g:201:13: 'nine'
+            // com/joestelmach/natty/generated/DateLexer.g:201:11: ( 'nine' )
+            // com/joestelmach/natty/generated/DateLexer.g:201:13: 'nine'
             {
             match("nine"); 
 
@@ -7324,8 +7326,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:202:11: ( 'ten' )
-            // com/joestelmach/natty/spark/DateLexer.g:202:13: 'ten'
+            // com/joestelmach/natty/generated/DateLexer.g:202:11: ( 'ten' )
+            // com/joestelmach/natty/generated/DateLexer.g:202:13: 'ten'
             {
             match("ten"); 
 
@@ -7345,8 +7347,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = ELEVEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:203:11: ( 'eleven' )
-            // com/joestelmach/natty/spark/DateLexer.g:203:13: 'eleven'
+            // com/joestelmach/natty/generated/DateLexer.g:203:11: ( 'eleven' )
+            // com/joestelmach/natty/generated/DateLexer.g:203:13: 'eleven'
             {
             match("eleven"); 
 
@@ -7366,8 +7368,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TWELVE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:204:11: ( 'twelve' )
-            // com/joestelmach/natty/spark/DateLexer.g:204:13: 'twelve'
+            // com/joestelmach/natty/generated/DateLexer.g:204:11: ( 'twelve' )
+            // com/joestelmach/natty/generated/DateLexer.g:204:13: 'twelve'
             {
             match("twelve"); 
 
@@ -7387,8 +7389,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THIRTEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:205:11: ( 'thirteen' )
-            // com/joestelmach/natty/spark/DateLexer.g:205:13: 'thirteen'
+            // com/joestelmach/natty/generated/DateLexer.g:205:11: ( 'thirteen' )
+            // com/joestelmach/natty/generated/DateLexer.g:205:13: 'thirteen'
             {
             match("thirteen"); 
 
@@ -7408,8 +7410,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FOURTEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:206:11: ( 'fourteen' )
-            // com/joestelmach/natty/spark/DateLexer.g:206:13: 'fourteen'
+            // com/joestelmach/natty/generated/DateLexer.g:206:11: ( 'fourteen' )
+            // com/joestelmach/natty/generated/DateLexer.g:206:13: 'fourteen'
             {
             match("fourteen"); 
 
@@ -7429,8 +7431,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FIFTEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:207:11: ( 'fifteen' )
-            // com/joestelmach/natty/spark/DateLexer.g:207:13: 'fifteen'
+            // com/joestelmach/natty/generated/DateLexer.g:207:11: ( 'fifteen' )
+            // com/joestelmach/natty/generated/DateLexer.g:207:13: 'fifteen'
             {
             match("fifteen"); 
 
@@ -7450,8 +7452,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SIXTEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:208:11: ( 'sixteen' )
-            // com/joestelmach/natty/spark/DateLexer.g:208:13: 'sixteen'
+            // com/joestelmach/natty/generated/DateLexer.g:208:11: ( 'sixteen' )
+            // com/joestelmach/natty/generated/DateLexer.g:208:13: 'sixteen'
             {
             match("sixteen"); 
 
@@ -7471,8 +7473,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SEVENTEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:209:11: ( 'seventeen' )
-            // com/joestelmach/natty/spark/DateLexer.g:209:13: 'seventeen'
+            // com/joestelmach/natty/generated/DateLexer.g:209:11: ( 'seventeen' )
+            // com/joestelmach/natty/generated/DateLexer.g:209:13: 'seventeen'
             {
             match("seventeen"); 
 
@@ -7492,7 +7494,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = EIGHTEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:210:11: ( 'eighteen' | 'eightteen' )
+            // com/joestelmach/natty/generated/DateLexer.g:210:11: ( 'eighteen' | 'eightteen' )
             int alt95=2;
             switch ( input.LA(1) ) {
             case 'e':
@@ -7574,7 +7576,7 @@ public class DateLexer extends Lexer {
 
             switch (alt95) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:210:13: 'eighteen'
+                    // com/joestelmach/natty/generated/DateLexer.g:210:13: 'eighteen'
                     {
                     match("eighteen"); 
 
@@ -7582,7 +7584,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:210:26: 'eightteen'
+                    // com/joestelmach/natty/generated/DateLexer.g:210:26: 'eightteen'
                     {
                     match("eightteen"); 
 
@@ -7604,8 +7606,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = NINETEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:211:11: ( 'nineteen' )
-            // com/joestelmach/natty/spark/DateLexer.g:211:13: 'nineteen'
+            // com/joestelmach/natty/generated/DateLexer.g:211:11: ( 'nineteen' )
+            // com/joestelmach/natty/generated/DateLexer.g:211:13: 'nineteen'
             {
             match("nineteen"); 
 
@@ -7625,8 +7627,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TWENTY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:212:11: ( 'twenty' )
-            // com/joestelmach/natty/spark/DateLexer.g:212:13: 'twenty'
+            // com/joestelmach/natty/generated/DateLexer.g:212:11: ( 'twenty' )
+            // com/joestelmach/natty/generated/DateLexer.g:212:13: 'twenty'
             {
             match("twenty"); 
 
@@ -7646,8 +7648,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THIRTY;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:213:11: ( 'thirty' )
-            // com/joestelmach/natty/spark/DateLexer.g:213:13: 'thirty'
+            // com/joestelmach/natty/generated/DateLexer.g:213:11: ( 'thirty' )
+            // com/joestelmach/natty/generated/DateLexer.g:213:13: 'thirty'
             {
             match("thirty"); 
 
@@ -7667,8 +7669,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FIRST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:215:16: ( 'first' )
-            // com/joestelmach/natty/spark/DateLexer.g:215:18: 'first'
+            // com/joestelmach/natty/generated/DateLexer.g:215:16: ( 'first' )
+            // com/joestelmach/natty/generated/DateLexer.g:215:18: 'first'
             {
             match("first"); 
 
@@ -7688,12 +7690,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = SECOND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:216:16: ( 'second' | 'seconds' | 'sec' | 'secs' )
+            // com/joestelmach/natty/generated/DateLexer.g:216:16: ( 'second' | 'seconds' | 'sec' | 'secs' )
             int alt96=4;
             alt96 = dfa96.predict(input);
             switch (alt96) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:216:18: 'second'
+                    // com/joestelmach/natty/generated/DateLexer.g:216:18: 'second'
                     {
                     match("second"); 
 
@@ -7701,7 +7703,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:216:29: 'seconds'
+                    // com/joestelmach/natty/generated/DateLexer.g:216:29: 'seconds'
                     {
                     match("seconds"); 
 
@@ -7709,7 +7711,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:216:41: 'sec'
+                    // com/joestelmach/natty/generated/DateLexer.g:216:41: 'sec'
                     {
                     match("sec"); 
 
@@ -7717,7 +7719,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 4 :
-                    // com/joestelmach/natty/spark/DateLexer.g:216:49: 'secs'
+                    // com/joestelmach/natty/generated/DateLexer.g:216:49: 'secs'
                     {
                     match("secs"); 
 
@@ -7739,8 +7741,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THIRD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:217:16: ( 'third' )
-            // com/joestelmach/natty/spark/DateLexer.g:217:18: 'third'
+            // com/joestelmach/natty/generated/DateLexer.g:217:16: ( 'third' )
+            // com/joestelmach/natty/generated/DateLexer.g:217:18: 'third'
             {
             match("third"); 
 
@@ -7760,8 +7762,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FOURTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:218:16: ( 'fourth' )
-            // com/joestelmach/natty/spark/DateLexer.g:218:18: 'fourth'
+            // com/joestelmach/natty/generated/DateLexer.g:218:16: ( 'fourth' )
+            // com/joestelmach/natty/generated/DateLexer.g:218:18: 'fourth'
             {
             match("fourth"); 
 
@@ -7781,8 +7783,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FIFTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:219:16: ( 'fifth' )
-            // com/joestelmach/natty/spark/DateLexer.g:219:18: 'fifth'
+            // com/joestelmach/natty/generated/DateLexer.g:219:16: ( 'fifth' )
+            // com/joestelmach/natty/generated/DateLexer.g:219:18: 'fifth'
             {
             match("fifth"); 
 
@@ -7802,8 +7804,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SIXTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:220:16: ( 'sixth' )
-            // com/joestelmach/natty/spark/DateLexer.g:220:18: 'sixth'
+            // com/joestelmach/natty/generated/DateLexer.g:220:16: ( 'sixth' )
+            // com/joestelmach/natty/generated/DateLexer.g:220:18: 'sixth'
             {
             match("sixth"); 
 
@@ -7823,8 +7825,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SEVENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:221:16: ( 'seventh' )
-            // com/joestelmach/natty/spark/DateLexer.g:221:18: 'seventh'
+            // com/joestelmach/natty/generated/DateLexer.g:221:16: ( 'seventh' )
+            // com/joestelmach/natty/generated/DateLexer.g:221:18: 'seventh'
             {
             match("seventh"); 
 
@@ -7844,8 +7846,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = EIGHTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:222:16: ( 'eighth' )
-            // com/joestelmach/natty/spark/DateLexer.g:222:18: 'eighth'
+            // com/joestelmach/natty/generated/DateLexer.g:222:16: ( 'eighth' )
+            // com/joestelmach/natty/generated/DateLexer.g:222:18: 'eighth'
             {
             match("eighth"); 
 
@@ -7865,8 +7867,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = NINTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:223:16: ( 'ninth' )
-            // com/joestelmach/natty/spark/DateLexer.g:223:18: 'ninth'
+            // com/joestelmach/natty/generated/DateLexer.g:223:16: ( 'ninth' )
+            // com/joestelmach/natty/generated/DateLexer.g:223:18: 'ninth'
             {
             match("ninth"); 
 
@@ -7886,8 +7888,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:224:16: ( 'tenth' )
-            // com/joestelmach/natty/spark/DateLexer.g:224:18: 'tenth'
+            // com/joestelmach/natty/generated/DateLexer.g:224:16: ( 'tenth' )
+            // com/joestelmach/natty/generated/DateLexer.g:224:18: 'tenth'
             {
             match("tenth"); 
 
@@ -7907,8 +7909,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = ELEVENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:225:16: ( 'eleventh' )
-            // com/joestelmach/natty/spark/DateLexer.g:225:18: 'eleventh'
+            // com/joestelmach/natty/generated/DateLexer.g:225:16: ( 'eleventh' )
+            // com/joestelmach/natty/generated/DateLexer.g:225:18: 'eleventh'
             {
             match("eleventh"); 
 
@@ -7928,8 +7930,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TWELFTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:226:16: ( 'twelfth' )
-            // com/joestelmach/natty/spark/DateLexer.g:226:18: 'twelfth'
+            // com/joestelmach/natty/generated/DateLexer.g:226:16: ( 'twelfth' )
+            // com/joestelmach/natty/generated/DateLexer.g:226:18: 'twelfth'
             {
             match("twelfth"); 
 
@@ -7949,8 +7951,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THIRTEENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:227:16: ( 'thirteenth' )
-            // com/joestelmach/natty/spark/DateLexer.g:227:18: 'thirteenth'
+            // com/joestelmach/natty/generated/DateLexer.g:227:16: ( 'thirteenth' )
+            // com/joestelmach/natty/generated/DateLexer.g:227:18: 'thirteenth'
             {
             match("thirteenth"); 
 
@@ -7970,8 +7972,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FOURTEENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:228:16: ( 'fourteenth' )
-            // com/joestelmach/natty/spark/DateLexer.g:228:18: 'fourteenth'
+            // com/joestelmach/natty/generated/DateLexer.g:228:16: ( 'fourteenth' )
+            // com/joestelmach/natty/generated/DateLexer.g:228:18: 'fourteenth'
             {
             match("fourteenth"); 
 
@@ -7991,8 +7993,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FIFTEENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:229:16: ( 'fifteenth' )
-            // com/joestelmach/natty/spark/DateLexer.g:229:18: 'fifteenth'
+            // com/joestelmach/natty/generated/DateLexer.g:229:16: ( 'fifteenth' )
+            // com/joestelmach/natty/generated/DateLexer.g:229:18: 'fifteenth'
             {
             match("fifteenth"); 
 
@@ -8012,8 +8014,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SIXTEENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:230:16: ( 'sixteenth' )
-            // com/joestelmach/natty/spark/DateLexer.g:230:18: 'sixteenth'
+            // com/joestelmach/natty/generated/DateLexer.g:230:16: ( 'sixteenth' )
+            // com/joestelmach/natty/generated/DateLexer.g:230:18: 'sixteenth'
             {
             match("sixteenth"); 
 
@@ -8033,8 +8035,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SEVENTEENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:231:16: ( 'seventeenth' )
-            // com/joestelmach/natty/spark/DateLexer.g:231:18: 'seventeenth'
+            // com/joestelmach/natty/generated/DateLexer.g:231:16: ( 'seventeenth' )
+            // com/joestelmach/natty/generated/DateLexer.g:231:18: 'seventeenth'
             {
             match("seventeenth"); 
 
@@ -8054,8 +8056,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = EIGHTEENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:232:16: ( 'eighteenth' )
-            // com/joestelmach/natty/spark/DateLexer.g:232:18: 'eighteenth'
+            // com/joestelmach/natty/generated/DateLexer.g:232:16: ( 'eighteenth' )
+            // com/joestelmach/natty/generated/DateLexer.g:232:18: 'eighteenth'
             {
             match("eighteenth"); 
 
@@ -8075,8 +8077,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = NINETEENTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:233:16: ( 'nineteenth' )
-            // com/joestelmach/natty/spark/DateLexer.g:233:18: 'nineteenth'
+            // com/joestelmach/natty/generated/DateLexer.g:233:16: ( 'nineteenth' )
+            // com/joestelmach/natty/generated/DateLexer.g:233:18: 'nineteenth'
             {
             match("nineteenth"); 
 
@@ -8096,8 +8098,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TWENTIETH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:234:16: ( 'twentieth' )
-            // com/joestelmach/natty/spark/DateLexer.g:234:18: 'twentieth'
+            // com/joestelmach/natty/generated/DateLexer.g:234:16: ( 'twentieth' )
+            // com/joestelmach/natty/generated/DateLexer.g:234:18: 'twentieth'
             {
             match("twentieth"); 
 
@@ -8117,8 +8119,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THIRTIETH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:235:16: ( 'thirtieth' )
-            // com/joestelmach/natty/spark/DateLexer.g:235:18: 'thirtieth'
+            // com/joestelmach/natty/generated/DateLexer.g:235:16: ( 'thirtieth' )
+            // com/joestelmach/natty/generated/DateLexer.g:235:18: 'thirtieth'
             {
             match("thirtieth"); 
 
@@ -8138,8 +8140,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = ST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:238:4: ( 'st' )
-            // com/joestelmach/natty/spark/DateLexer.g:238:6: 'st'
+            // com/joestelmach/natty/generated/DateLexer.g:238:4: ( 'st' )
+            // com/joestelmach/natty/generated/DateLexer.g:238:6: 'st'
             {
             match("st"); 
 
@@ -8159,8 +8161,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = ND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:239:4: ( 'nd' )
-            // com/joestelmach/natty/spark/DateLexer.g:239:6: 'nd'
+            // com/joestelmach/natty/generated/DateLexer.g:239:4: ( 'nd' )
+            // com/joestelmach/natty/generated/DateLexer.g:239:6: 'nd'
             {
             match("nd"); 
 
@@ -8180,8 +8182,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = RD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:240:4: ( 'rd' )
-            // com/joestelmach/natty/spark/DateLexer.g:240:6: 'rd'
+            // com/joestelmach/natty/generated/DateLexer.g:240:4: ( 'rd' )
+            // com/joestelmach/natty/generated/DateLexer.g:240:6: 'rd'
             {
             match("rd"); 
 
@@ -8201,8 +8203,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:241:4: ( 'th' )
-            // com/joestelmach/natty/spark/DateLexer.g:241:6: 'th'
+            // com/joestelmach/natty/generated/DateLexer.g:241:4: ( 'th' )
+            // com/joestelmach/natty/generated/DateLexer.g:241:6: 'th'
             {
             match("th"); 
 
@@ -8222,8 +8224,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = COLON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:245:7: ( ':' )
-            // com/joestelmach/natty/spark/DateLexer.g:245:9: ':'
+            // com/joestelmach/natty/generated/DateLexer.g:245:7: ( ':' )
+            // com/joestelmach/natty/generated/DateLexer.g:245:9: ':'
             {
             match(':'); 
 
@@ -8242,8 +8244,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = COMMA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:246:7: ( ',' )
-            // com/joestelmach/natty/spark/DateLexer.g:246:9: ','
+            // com/joestelmach/natty/generated/DateLexer.g:246:7: ( ',' )
+            // com/joestelmach/natty/generated/DateLexer.g:246:9: ','
             {
             match(','); 
 
@@ -8262,8 +8264,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = DASH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:247:7: ( '-' )
-            // com/joestelmach/natty/spark/DateLexer.g:247:9: '-'
+            // com/joestelmach/natty/generated/DateLexer.g:247:7: ( '-' )
+            // com/joestelmach/natty/generated/DateLexer.g:247:9: '-'
             {
             match('-'); 
 
@@ -8282,8 +8284,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SLASH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:248:7: ( '/' )
-            // com/joestelmach/natty/spark/DateLexer.g:248:9: '/'
+            // com/joestelmach/natty/generated/DateLexer.g:248:7: ( '/' )
+            // com/joestelmach/natty/generated/DateLexer.g:248:9: '/'
             {
             match('/'); 
 
@@ -8302,8 +8304,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = DOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:249:7: ( '.' )
-            // com/joestelmach/natty/spark/DateLexer.g:249:9: '.'
+            // com/joestelmach/natty/generated/DateLexer.g:249:7: ( '.' )
+            // com/joestelmach/natty/generated/DateLexer.g:249:9: '.'
             {
             match('.'); 
 
@@ -8322,8 +8324,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = PLUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:250:7: ( '+' )
-            // com/joestelmach/natty/spark/DateLexer.g:250:9: '+'
+            // com/joestelmach/natty/generated/DateLexer.g:250:7: ( '+' )
+            // com/joestelmach/natty/generated/DateLexer.g:250:9: '+'
             {
             match('+'); 
 
@@ -8342,8 +8344,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SINGLE_QUOTE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:251:14: ( '\\'' )
-            // com/joestelmach/natty/spark/DateLexer.g:251:16: '\\''
+            // com/joestelmach/natty/generated/DateLexer.g:251:14: ( '\\'' )
+            // com/joestelmach/natty/generated/DateLexer.g:251:16: '\\''
             {
             match('\''); 
 
@@ -8362,8 +8364,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:253:11: ( 'for' )
-            // com/joestelmach/natty/spark/DateLexer.g:253:13: 'for'
+            // com/joestelmach/natty/generated/DateLexer.g:253:11: ( 'for' )
+            // com/joestelmach/natty/generated/DateLexer.g:253:13: 'for'
             {
             match("for"); 
 
@@ -8383,8 +8385,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = IN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:254:11: ( 'in' )
-            // com/joestelmach/natty/spark/DateLexer.g:254:13: 'in'
+            // com/joestelmach/natty/generated/DateLexer.g:254:11: ( 'in' )
+            // com/joestelmach/natty/generated/DateLexer.g:254:13: 'in'
             {
             match("in"); 
 
@@ -8404,8 +8406,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = AN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:255:11: ( 'an' )
-            // com/joestelmach/natty/spark/DateLexer.g:255:13: 'an'
+            // com/joestelmach/natty/generated/DateLexer.g:255:11: ( 'an' )
+            // com/joestelmach/natty/generated/DateLexer.g:255:13: 'an'
             {
             match("an"); 
 
@@ -8425,8 +8427,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:256:11: ( 'the' )
-            // com/joestelmach/natty/spark/DateLexer.g:256:13: 'the'
+            // com/joestelmach/natty/generated/DateLexer.g:256:11: ( 'the' )
+            // com/joestelmach/natty/generated/DateLexer.g:256:13: 'the'
             {
             match("the"); 
 
@@ -8446,8 +8448,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = OR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:257:11: ( 'or' )
-            // com/joestelmach/natty/spark/DateLexer.g:257:13: 'or'
+            // com/joestelmach/natty/generated/DateLexer.g:257:11: ( 'or' )
+            // com/joestelmach/natty/generated/DateLexer.g:257:13: 'or'
             {
             match("or"); 
 
@@ -8467,8 +8469,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = AND;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:258:11: ( 'and' )
-            // com/joestelmach/natty/spark/DateLexer.g:258:13: 'and'
+            // com/joestelmach/natty/generated/DateLexer.g:258:11: ( 'and' )
+            // com/joestelmach/natty/generated/DateLexer.g:258:13: 'and'
             {
             match("and"); 
 
@@ -8488,8 +8490,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:259:11: ( 'to' )
-            // com/joestelmach/natty/spark/DateLexer.g:259:13: 'to'
+            // com/joestelmach/natty/generated/DateLexer.g:259:11: ( 'to' )
+            // com/joestelmach/natty/generated/DateLexer.g:259:13: 'to'
             {
             match("to"); 
 
@@ -8509,8 +8511,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THROUGH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:260:11: ( 'through' )
-            // com/joestelmach/natty/spark/DateLexer.g:260:13: 'through'
+            // com/joestelmach/natty/generated/DateLexer.g:260:11: ( 'through' )
+            // com/joestelmach/natty/generated/DateLexer.g:260:13: 'through'
             {
             match("through"); 
 
@@ -8530,8 +8532,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = ON;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:261:11: ( 'on' )
-            // com/joestelmach/natty/spark/DateLexer.g:261:13: 'on'
+            // com/joestelmach/natty/generated/DateLexer.g:261:11: ( 'on' )
+            // com/joestelmach/natty/generated/DateLexer.g:261:13: 'on'
             {
             match("on"); 
 
@@ -8551,8 +8553,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = OF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:262:11: ( 'of' )
-            // com/joestelmach/natty/spark/DateLexer.g:262:13: 'of'
+            // com/joestelmach/natty/generated/DateLexer.g:262:11: ( 'of' )
+            // com/joestelmach/natty/generated/DateLexer.g:262:13: 'of'
             {
             match("of"); 
 
@@ -8572,8 +8574,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THIS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:263:11: ( 'this' )
-            // com/joestelmach/natty/spark/DateLexer.g:263:13: 'this'
+            // com/joestelmach/natty/generated/DateLexer.g:263:11: ( 'this' )
+            // com/joestelmach/natty/generated/DateLexer.g:263:13: 'this'
             {
             match("this"); 
 
@@ -8593,8 +8595,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = THAT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:264:11: ( 'that' )
-            // com/joestelmach/natty/spark/DateLexer.g:264:13: 'that'
+            // com/joestelmach/natty/generated/DateLexer.g:264:11: ( 'that' )
+            // com/joestelmach/natty/generated/DateLexer.g:264:13: 'that'
             {
             match("that"); 
 
@@ -8614,7 +8616,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = LAST;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:265:11: ( 'last' | 'final' )
+            // com/joestelmach/natty/generated/DateLexer.g:265:11: ( 'last' | 'final' )
             int alt97=2;
             switch ( input.LA(1) ) {
             case 'l':
@@ -8636,7 +8638,7 @@ public class DateLexer extends Lexer {
 
             switch (alt97) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:265:13: 'last'
+                    // com/joestelmach/natty/generated/DateLexer.g:265:13: 'last'
                     {
                     match("last"); 
 
@@ -8644,7 +8646,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:265:22: 'final'
+                    // com/joestelmach/natty/generated/DateLexer.g:265:22: 'final'
                     {
                     match("final"); 
 
@@ -8666,8 +8668,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = NEXT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:266:11: ( 'next' )
-            // com/joestelmach/natty/spark/DateLexer.g:266:13: 'next'
+            // com/joestelmach/natty/generated/DateLexer.g:266:11: ( 'next' )
+            // com/joestelmach/natty/generated/DateLexer.g:266:13: 'next'
             {
             match("next"); 
 
@@ -8687,8 +8689,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = COMING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:267:11: ( 'coming' )
-            // com/joestelmach/natty/spark/DateLexer.g:267:13: 'coming'
+            // com/joestelmach/natty/generated/DateLexer.g:267:11: ( 'coming' )
+            // com/joestelmach/natty/generated/DateLexer.g:267:13: 'coming'
             {
             match("coming"); 
 
@@ -8708,8 +8710,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = UPCOMING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:268:11: ( 'upcoming' )
-            // com/joestelmach/natty/spark/DateLexer.g:268:13: 'upcoming'
+            // com/joestelmach/natty/generated/DateLexer.g:268:11: ( 'upcoming' )
+            // com/joestelmach/natty/generated/DateLexer.g:268:13: 'upcoming'
             {
             match("upcoming"); 
 
@@ -8729,8 +8731,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FROM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:269:11: ( 'from' )
-            // com/joestelmach/natty/spark/DateLexer.g:269:13: 'from'
+            // com/joestelmach/natty/generated/DateLexer.g:269:11: ( 'from' )
+            // com/joestelmach/natty/generated/DateLexer.g:269:13: 'from'
             {
             match("from"); 
 
@@ -8750,8 +8752,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = NOW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:270:11: ( 'now' )
-            // com/joestelmach/natty/spark/DateLexer.g:270:13: 'now'
+            // com/joestelmach/natty/generated/DateLexer.g:270:11: ( 'now' )
+            // com/joestelmach/natty/generated/DateLexer.g:270:13: 'now'
             {
             match("now"); 
 
@@ -8771,8 +8773,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = AGO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:271:11: ( 'ago' )
-            // com/joestelmach/natty/spark/DateLexer.g:271:13: 'ago'
+            // com/joestelmach/natty/generated/DateLexer.g:271:11: ( 'ago' )
+            // com/joestelmach/natty/generated/DateLexer.g:271:13: 'ago'
             {
             match("ago"); 
 
@@ -8792,8 +8794,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = BEFORE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:272:11: ( 'before' )
-            // com/joestelmach/natty/spark/DateLexer.g:272:13: 'before'
+            // com/joestelmach/natty/generated/DateLexer.g:272:11: ( 'before' )
+            // com/joestelmach/natty/generated/DateLexer.g:272:13: 'before'
             {
             match("before"); 
 
@@ -8813,7 +8815,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = BEGINNING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:273:11: ( 'beginning' | 'begining' )
+            // com/joestelmach/natty/generated/DateLexer.g:273:11: ( 'beginning' | 'begining' )
             int alt98=2;
             switch ( input.LA(1) ) {
             case 'b':
@@ -8895,7 +8897,7 @@ public class DateLexer extends Lexer {
 
             switch (alt98) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:273:13: 'beginning'
+                    // com/joestelmach/natty/generated/DateLexer.g:273:13: 'beginning'
                     {
                     match("beginning"); 
 
@@ -8903,7 +8905,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:273:27: 'begining'
+                    // com/joestelmach/natty/generated/DateLexer.g:273:27: 'begining'
                     {
                     match("begining"); 
 
@@ -8925,8 +8927,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = START;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:274:11: ( 'start' )
-            // com/joestelmach/natty/spark/DateLexer.g:274:13: 'start'
+            // com/joestelmach/natty/generated/DateLexer.g:274:11: ( 'start' )
+            // com/joestelmach/natty/generated/DateLexer.g:274:13: 'start'
             {
             match("start"); 
 
@@ -8946,8 +8948,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = END;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:275:11: ( 'end' )
-            // com/joestelmach/natty/spark/DateLexer.g:275:13: 'end'
+            // com/joestelmach/natty/generated/DateLexer.g:275:11: ( 'end' )
+            // com/joestelmach/natty/generated/DateLexer.g:275:13: 'end'
             {
             match("end"); 
 
@@ -8967,10 +8969,10 @@ public class DateLexer extends Lexer {
         try {
             int _type = WHITE_SPACE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:278:3: ( ( DOT | SPACE )+ )
-            // com/joestelmach/natty/spark/DateLexer.g:278:5: ( DOT | SPACE )+
+            // com/joestelmach/natty/generated/DateLexer.g:278:3: ( ( DOT | SPACE )+ )
+            // com/joestelmach/natty/generated/DateLexer.g:278:5: ( DOT | SPACE )+
             {
-            // com/joestelmach/natty/spark/DateLexer.g:278:5: ( DOT | SPACE )+
+            // com/joestelmach/natty/generated/DateLexer.g:278:5: ( DOT | SPACE )+
             int cnt99=0;
             loop99:
             do {
@@ -8991,7 +8993,7 @@ public class DateLexer extends Lexer {
 
                 switch (alt99) {
             	case 1 :
-            	    // com/joestelmach/natty/spark/DateLexer.g:
+            	    // com/joestelmach/natty/generated/DateLexer.g:
             	    {
             	    if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' '||input.LA(1)=='.'||input.LA(1)=='\u00A0' ) {
             	        input.consume();
@@ -9031,7 +9033,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = FOOL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:283:14: ( 'fool' | 'fools' | 'fool' SINGLE_QUOTE 's' )
+            // com/joestelmach/natty/generated/DateLexer.g:283:14: ( 'fool' | 'fools' | 'fool' SINGLE_QUOTE 's' )
             int alt100=3;
             switch ( input.LA(1) ) {
             case 'f':
@@ -9097,7 +9099,7 @@ public class DateLexer extends Lexer {
 
             switch (alt100) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:283:16: 'fool'
+                    // com/joestelmach/natty/generated/DateLexer.g:283:16: 'fool'
                     {
                     match("fool"); 
 
@@ -9105,7 +9107,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:283:25: 'fools'
+                    // com/joestelmach/natty/generated/DateLexer.g:283:25: 'fools'
                     {
                     match("fools"); 
 
@@ -9113,7 +9115,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:283:35: 'fool' SINGLE_QUOTE 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:283:35: 'fool' SINGLE_QUOTE 's'
                     {
                     match("fool"); 
 
@@ -9137,8 +9139,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = BLACK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:284:14: ( 'black' )
-            // com/joestelmach/natty/spark/DateLexer.g:284:16: 'black'
+            // com/joestelmach/natty/generated/DateLexer.g:284:14: ( 'black' )
+            // com/joestelmach/natty/generated/DateLexer.g:284:16: 'black'
             {
             match("black"); 
 
@@ -9158,10 +9160,10 @@ public class DateLexer extends Lexer {
         try {
             int _type = CHRISTMAS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:285:14: ( ( 'christmas' | 'xmas' | 'x-mas' ) ( 'es' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:285:16: ( 'christmas' | 'xmas' | 'x-mas' ) ( 'es' )?
+            // com/joestelmach/natty/generated/DateLexer.g:285:14: ( ( 'christmas' | 'xmas' | 'x-mas' ) ( 'es' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:285:16: ( 'christmas' | 'xmas' | 'x-mas' ) ( 'es' )?
             {
-            // com/joestelmach/natty/spark/DateLexer.g:285:16: ( 'christmas' | 'xmas' | 'x-mas' )
+            // com/joestelmach/natty/generated/DateLexer.g:285:16: ( 'christmas' | 'xmas' | 'x-mas' )
             int alt101=3;
             switch ( input.LA(1) ) {
             case 'c':
@@ -9200,7 +9202,7 @@ public class DateLexer extends Lexer {
 
             switch (alt101) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:285:17: 'christmas'
+                    // com/joestelmach/natty/generated/DateLexer.g:285:17: 'christmas'
                     {
                     match("christmas"); 
 
@@ -9208,7 +9210,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:285:31: 'xmas'
+                    // com/joestelmach/natty/generated/DateLexer.g:285:31: 'xmas'
                     {
                     match("xmas"); 
 
@@ -9216,7 +9218,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:285:40: 'x-mas'
+                    // com/joestelmach/natty/generated/DateLexer.g:285:40: 'x-mas'
                     {
                     match("x-mas"); 
 
@@ -9226,7 +9228,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:285:49: ( 'es' )?
+            // com/joestelmach/natty/generated/DateLexer.g:285:49: ( 'es' )?
             int alt102=2;
             switch ( input.LA(1) ) {
                 case 'e':
@@ -9238,7 +9240,7 @@ public class DateLexer extends Lexer {
 
             switch (alt102) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:285:49: 'es'
+                    // com/joestelmach/natty/generated/DateLexer.g:285:49: 'es'
                     {
                     match("es"); 
 
@@ -9264,8 +9266,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = COLUMBUS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:286:14: ( 'columbus' )
-            // com/joestelmach/natty/spark/DateLexer.g:286:16: 'columbus'
+            // com/joestelmach/natty/generated/DateLexer.g:286:14: ( 'columbus' )
+            // com/joestelmach/natty/generated/DateLexer.g:286:16: 'columbus'
             {
             match("columbus"); 
 
@@ -9285,8 +9287,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = EARTH;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:287:14: ( 'earth' )
-            // com/joestelmach/natty/spark/DateLexer.g:287:16: 'earth'
+            // com/joestelmach/natty/generated/DateLexer.g:287:14: ( 'earth' )
+            // com/joestelmach/natty/generated/DateLexer.g:287:16: 'earth'
             {
             match("earth"); 
 
@@ -9306,8 +9308,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = EASTER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:288:14: ( 'easter' )
-            // com/joestelmach/natty/spark/DateLexer.g:288:16: 'easter'
+            // com/joestelmach/natty/generated/DateLexer.g:288:14: ( 'easter' )
+            // com/joestelmach/natty/generated/DateLexer.g:288:16: 'easter'
             {
             match("easter"); 
 
@@ -9327,12 +9329,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = FATHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:289:14: ( 'father' | 'fathers' | 'father' SINGLE_QUOTE 's' )
+            // com/joestelmach/natty/generated/DateLexer.g:289:14: ( 'father' | 'fathers' | 'father' SINGLE_QUOTE 's' )
             int alt103=3;
             alt103 = dfa103.predict(input);
             switch (alt103) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:289:16: 'father'
+                    // com/joestelmach/natty/generated/DateLexer.g:289:16: 'father'
                     {
                     match("father"); 
 
@@ -9340,7 +9342,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:289:27: 'fathers'
+                    // com/joestelmach/natty/generated/DateLexer.g:289:27: 'fathers'
                     {
                     match("fathers"); 
 
@@ -9348,7 +9350,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:289:39: 'father' SINGLE_QUOTE 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:289:39: 'father' SINGLE_QUOTE 's'
                     {
                     match("father"); 
 
@@ -9372,8 +9374,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = FLAG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:290:14: ( 'flag' )
-            // com/joestelmach/natty/spark/DateLexer.g:290:16: 'flag'
+            // com/joestelmach/natty/generated/DateLexer.g:290:14: ( 'flag' )
+            // com/joestelmach/natty/generated/DateLexer.g:290:16: 'flag'
             {
             match("flag"); 
 
@@ -9393,8 +9395,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = GOOD;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:291:14: ( 'good' )
-            // com/joestelmach/natty/spark/DateLexer.g:291:16: 'good'
+            // com/joestelmach/natty/generated/DateLexer.g:291:14: ( 'good' )
+            // com/joestelmach/natty/generated/DateLexer.g:291:16: 'good'
             {
             match("good"); 
 
@@ -9414,11 +9416,11 @@ public class DateLexer extends Lexer {
         try {
             int _type = GROUNDHOG;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:292:14: ( GROUND ( WHITE_SPACE )? HOG ( SINGLE_QUOTE )? ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:292:16: GROUND ( WHITE_SPACE )? HOG ( SINGLE_QUOTE )? ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:292:14: ( GROUND ( WHITE_SPACE )? HOG ( SINGLE_QUOTE )? ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:292:16: GROUND ( WHITE_SPACE )? HOG ( SINGLE_QUOTE )? ( 's' )?
             {
             mGROUND(); 
-            // com/joestelmach/natty/spark/DateLexer.g:292:23: ( WHITE_SPACE )?
+            // com/joestelmach/natty/generated/DateLexer.g:292:23: ( WHITE_SPACE )?
             int alt104=2;
             switch ( input.LA(1) ) {
                 case '\t':
@@ -9435,7 +9437,7 @@ public class DateLexer extends Lexer {
 
             switch (alt104) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:292:23: WHITE_SPACE
+                    // com/joestelmach/natty/generated/DateLexer.g:292:23: WHITE_SPACE
                     {
                     mWHITE_SPACE(); 
 
@@ -9445,7 +9447,7 @@ public class DateLexer extends Lexer {
             }
 
             mHOG(); 
-            // com/joestelmach/natty/spark/DateLexer.g:292:40: ( SINGLE_QUOTE )?
+            // com/joestelmach/natty/generated/DateLexer.g:292:40: ( SINGLE_QUOTE )?
             int alt105=2;
             switch ( input.LA(1) ) {
                 case '\'':
@@ -9457,7 +9459,7 @@ public class DateLexer extends Lexer {
 
             switch (alt105) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:292:40: SINGLE_QUOTE
+                    // com/joestelmach/natty/generated/DateLexer.g:292:40: SINGLE_QUOTE
                     {
                     mSINGLE_QUOTE(); 
 
@@ -9466,7 +9468,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:292:54: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:292:54: ( 's' )?
             int alt106=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -9478,7 +9480,7 @@ public class DateLexer extends Lexer {
 
             switch (alt106) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:292:54: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:292:54: 's'
                     {
                     match('s'); 
 
@@ -9503,10 +9505,10 @@ public class DateLexer extends Lexer {
         try {
             int _type = HALLOWEEN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:293:14: ( ( 'halloween' | 'haloween' ) ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:293:16: ( 'halloween' | 'haloween' ) ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:293:14: ( ( 'halloween' | 'haloween' ) ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:293:16: ( 'halloween' | 'haloween' ) ( 's' )?
             {
-            // com/joestelmach/natty/spark/DateLexer.g:293:16: ( 'halloween' | 'haloween' )
+            // com/joestelmach/natty/generated/DateLexer.g:293:16: ( 'halloween' | 'haloween' )
             int alt107=2;
             switch ( input.LA(1) ) {
             case 'h':
@@ -9564,7 +9566,7 @@ public class DateLexer extends Lexer {
 
             switch (alt107) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:293:17: 'halloween'
+                    // com/joestelmach/natty/generated/DateLexer.g:293:17: 'halloween'
                     {
                     match("halloween"); 
 
@@ -9572,7 +9574,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:293:31: 'haloween'
+                    // com/joestelmach/natty/generated/DateLexer.g:293:31: 'haloween'
                     {
                     match("haloween"); 
 
@@ -9582,7 +9584,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:293:43: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:293:43: ( 's' )?
             int alt108=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -9594,7 +9596,7 @@ public class DateLexer extends Lexer {
 
             switch (alt108) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:293:43: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:293:43: 's'
                     {
                     match('s'); 
 
@@ -9619,7 +9621,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = INAUGURATION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:294:14: ( 'inauguration' | 'inaugaration' )
+            // com/joestelmach/natty/generated/DateLexer.g:294:14: ( 'inauguration' | 'inaugaration' )
             int alt109=2;
             switch ( input.LA(1) ) {
             case 'i':
@@ -9701,7 +9703,7 @@ public class DateLexer extends Lexer {
 
             switch (alt109) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:294:16: 'inauguration'
+                    // com/joestelmach/natty/generated/DateLexer.g:294:16: 'inauguration'
                     {
                     match("inauguration"); 
 
@@ -9709,7 +9711,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:294:33: 'inaugaration'
+                    // com/joestelmach/natty/generated/DateLexer.g:294:33: 'inaugaration'
                     {
                     match("inaugaration"); 
 
@@ -9731,12 +9733,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = INDEPENDENCE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:295:14: ( 'independence' | 'independance' )
+            // com/joestelmach/natty/generated/DateLexer.g:295:14: ( 'independence' | 'independance' )
             int alt110=2;
             alt110 = dfa110.predict(input);
             switch (alt110) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:295:16: 'independence'
+                    // com/joestelmach/natty/generated/DateLexer.g:295:16: 'independence'
                     {
                     match("independence"); 
 
@@ -9744,7 +9746,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:295:33: 'independance'
+                    // com/joestelmach/natty/generated/DateLexer.g:295:33: 'independance'
                     {
                     match("independance"); 
 
@@ -9766,15 +9768,15 @@ public class DateLexer extends Lexer {
         try {
             int _type = KWANZAA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:296:14: ( ( 'kwanza' ( 'a' )? ) ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:296:16: ( 'kwanza' ( 'a' )? ) ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:296:14: ( ( 'kwanza' ( 'a' )? ) ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:296:16: ( 'kwanza' ( 'a' )? ) ( 's' )?
             {
-            // com/joestelmach/natty/spark/DateLexer.g:296:16: ( 'kwanza' ( 'a' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:296:17: 'kwanza' ( 'a' )?
+            // com/joestelmach/natty/generated/DateLexer.g:296:16: ( 'kwanza' ( 'a' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:296:17: 'kwanza' ( 'a' )?
             {
             match("kwanza"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:296:26: ( 'a' )?
+            // com/joestelmach/natty/generated/DateLexer.g:296:26: ( 'a' )?
             int alt111=2;
             switch ( input.LA(1) ) {
                 case 'a':
@@ -9786,7 +9788,7 @@ public class DateLexer extends Lexer {
 
             switch (alt111) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:296:26: 'a'
+                    // com/joestelmach/natty/generated/DateLexer.g:296:26: 'a'
                     {
                     match('a'); 
 
@@ -9798,7 +9800,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:296:32: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:296:32: ( 's' )?
             int alt112=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -9810,7 +9812,7 @@ public class DateLexer extends Lexer {
 
             switch (alt112) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:296:32: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:296:32: 's'
                     {
                     match('s'); 
 
@@ -9835,8 +9837,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = LABOR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:297:14: ( 'labor' )
-            // com/joestelmach/natty/spark/DateLexer.g:297:16: 'labor'
+            // com/joestelmach/natty/generated/DateLexer.g:297:14: ( 'labor' )
+            // com/joestelmach/natty/generated/DateLexer.g:297:16: 'labor'
             {
             match("labor"); 
 
@@ -9856,7 +9858,7 @@ public class DateLexer extends Lexer {
         try {
             int _type = MLK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:298:14: ( 'mlk' | 'martin' WHITE_SPACE 'luther' WHITE_SPACE 'king' ( SINGLE_QUOTE )? ( 's' )? ( 'jr' ( DOT )? ( SINGLE_QUOTE )? ( 's' )? )? )
+            // com/joestelmach/natty/generated/DateLexer.g:298:14: ( 'mlk' | 'martin' WHITE_SPACE 'luther' WHITE_SPACE 'king' ( SINGLE_QUOTE )? ( 's' )? ( 'jr' ( DOT )? ( SINGLE_QUOTE )? ( 's' )? )? )
             int alt119=2;
             switch ( input.LA(1) ) {
             case 'm':
@@ -9890,7 +9892,7 @@ public class DateLexer extends Lexer {
 
             switch (alt119) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:298:16: 'mlk'
+                    // com/joestelmach/natty/generated/DateLexer.g:298:16: 'mlk'
                     {
                     match("mlk"); 
 
@@ -9898,7 +9900,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:298:24: 'martin' WHITE_SPACE 'luther' WHITE_SPACE 'king' ( SINGLE_QUOTE )? ( 's' )? ( 'jr' ( DOT )? ( SINGLE_QUOTE )? ( 's' )? )?
+                    // com/joestelmach/natty/generated/DateLexer.g:298:24: 'martin' WHITE_SPACE 'luther' WHITE_SPACE 'king' ( SINGLE_QUOTE )? ( 's' )? ( 'jr' ( DOT )? ( SINGLE_QUOTE )? ( 's' )? )?
                     {
                     match("martin"); 
 
@@ -9908,7 +9910,7 @@ public class DateLexer extends Lexer {
                     mWHITE_SPACE(); 
                     match("king"); 
 
-                    // com/joestelmach/natty/spark/DateLexer.g:298:73: ( SINGLE_QUOTE )?
+                    // com/joestelmach/natty/generated/DateLexer.g:298:73: ( SINGLE_QUOTE )?
                     int alt113=2;
                     switch ( input.LA(1) ) {
                         case '\'':
@@ -9920,7 +9922,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt113) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:298:73: SINGLE_QUOTE
+                            // com/joestelmach/natty/generated/DateLexer.g:298:73: SINGLE_QUOTE
                             {
                             mSINGLE_QUOTE(); 
 
@@ -9929,7 +9931,7 @@ public class DateLexer extends Lexer {
 
                     }
 
-                    // com/joestelmach/natty/spark/DateLexer.g:298:87: ( 's' )?
+                    // com/joestelmach/natty/generated/DateLexer.g:298:87: ( 's' )?
                     int alt114=2;
                     switch ( input.LA(1) ) {
                         case 's':
@@ -9941,7 +9943,7 @@ public class DateLexer extends Lexer {
 
                     switch (alt114) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:298:87: 's'
+                            // com/joestelmach/natty/generated/DateLexer.g:298:87: 's'
                             {
                             match('s'); 
 
@@ -9950,7 +9952,7 @@ public class DateLexer extends Lexer {
 
                     }
 
-                    // com/joestelmach/natty/spark/DateLexer.g:298:92: ( 'jr' ( DOT )? ( SINGLE_QUOTE )? ( 's' )? )?
+                    // com/joestelmach/natty/generated/DateLexer.g:298:92: ( 'jr' ( DOT )? ( SINGLE_QUOTE )? ( 's' )? )?
                     int alt118=2;
                     switch ( input.LA(1) ) {
                         case 'j':
@@ -9962,11 +9964,11 @@ public class DateLexer extends Lexer {
 
                     switch (alt118) {
                         case 1 :
-                            // com/joestelmach/natty/spark/DateLexer.g:298:93: 'jr' ( DOT )? ( SINGLE_QUOTE )? ( 's' )?
+                            // com/joestelmach/natty/generated/DateLexer.g:298:93: 'jr' ( DOT )? ( SINGLE_QUOTE )? ( 's' )?
                             {
                             match("jr"); 
 
-                            // com/joestelmach/natty/spark/DateLexer.g:298:98: ( DOT )?
+                            // com/joestelmach/natty/generated/DateLexer.g:298:98: ( DOT )?
                             int alt115=2;
                             switch ( input.LA(1) ) {
                                 case '.':
@@ -9978,7 +9980,7 @@ public class DateLexer extends Lexer {
 
                             switch (alt115) {
                                 case 1 :
-                                    // com/joestelmach/natty/spark/DateLexer.g:298:98: DOT
+                                    // com/joestelmach/natty/generated/DateLexer.g:298:98: DOT
                                     {
                                     mDOT(); 
 
@@ -9987,7 +9989,7 @@ public class DateLexer extends Lexer {
 
                             }
 
-                            // com/joestelmach/natty/spark/DateLexer.g:298:103: ( SINGLE_QUOTE )?
+                            // com/joestelmach/natty/generated/DateLexer.g:298:103: ( SINGLE_QUOTE )?
                             int alt116=2;
                             switch ( input.LA(1) ) {
                                 case '\'':
@@ -9999,7 +10001,7 @@ public class DateLexer extends Lexer {
 
                             switch (alt116) {
                                 case 1 :
-                                    // com/joestelmach/natty/spark/DateLexer.g:298:103: SINGLE_QUOTE
+                                    // com/joestelmach/natty/generated/DateLexer.g:298:103: SINGLE_QUOTE
                                     {
                                     mSINGLE_QUOTE(); 
 
@@ -10008,7 +10010,7 @@ public class DateLexer extends Lexer {
 
                             }
 
-                            // com/joestelmach/natty/spark/DateLexer.g:298:117: ( 's' )?
+                            // com/joestelmach/natty/generated/DateLexer.g:298:117: ( 's' )?
                             int alt117=2;
                             switch ( input.LA(1) ) {
                                 case 's':
@@ -10020,7 +10022,7 @@ public class DateLexer extends Lexer {
 
                             switch (alt117) {
                                 case 1 :
-                                    // com/joestelmach/natty/spark/DateLexer.g:298:117: 's'
+                                    // com/joestelmach/natty/generated/DateLexer.g:298:117: 's'
                                     {
                                     match('s'); 
 
@@ -10053,8 +10055,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = MEMORIAL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:299:14: ( 'memorial' )
-            // com/joestelmach/natty/spark/DateLexer.g:299:16: 'memorial'
+            // com/joestelmach/natty/generated/DateLexer.g:299:14: ( 'memorial' )
+            // com/joestelmach/natty/generated/DateLexer.g:299:16: 'memorial'
             {
             match("memorial"); 
 
@@ -10074,12 +10076,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = MOTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:300:14: ( 'mother' ( SINGLE_QUOTE )? ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:300:16: 'mother' ( SINGLE_QUOTE )? ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:300:14: ( 'mother' ( SINGLE_QUOTE )? ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:300:16: 'mother' ( SINGLE_QUOTE )? ( 's' )?
             {
             match("mother"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:300:25: ( SINGLE_QUOTE )?
+            // com/joestelmach/natty/generated/DateLexer.g:300:25: ( SINGLE_QUOTE )?
             int alt120=2;
             switch ( input.LA(1) ) {
                 case '\'':
@@ -10091,7 +10093,7 @@ public class DateLexer extends Lexer {
 
             switch (alt120) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:300:25: SINGLE_QUOTE
+                    // com/joestelmach/natty/generated/DateLexer.g:300:25: SINGLE_QUOTE
                     {
                     mSINGLE_QUOTE(); 
 
@@ -10100,7 +10102,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:300:39: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:300:39: ( 's' )?
             int alt121=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10112,7 +10114,7 @@ public class DateLexer extends Lexer {
 
             switch (alt121) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:300:39: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:300:39: 's'
                     {
                     match('s'); 
 
@@ -10137,8 +10139,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = NEW;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:301:14: ( 'new' )
-            // com/joestelmach/natty/spark/DateLexer.g:301:16: 'new'
+            // com/joestelmach/natty/generated/DateLexer.g:301:14: ( 'new' )
+            // com/joestelmach/natty/generated/DateLexer.g:301:16: 'new'
             {
             match("new"); 
 
@@ -10158,8 +10160,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = PALM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:302:14: ( 'palm' )
-            // com/joestelmach/natty/spark/DateLexer.g:302:16: 'palm'
+            // com/joestelmach/natty/generated/DateLexer.g:302:14: ( 'palm' )
+            // com/joestelmach/natty/generated/DateLexer.g:302:16: 'palm'
             {
             match("palm"); 
 
@@ -10179,12 +10181,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = PATRIOT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:303:14: ( 'patriot' ( SINGLE_QUOTE )? ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:303:16: 'patriot' ( SINGLE_QUOTE )? ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:303:14: ( 'patriot' ( SINGLE_QUOTE )? ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:303:16: 'patriot' ( SINGLE_QUOTE )? ( 's' )?
             {
             match("patriot"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:303:26: ( SINGLE_QUOTE )?
+            // com/joestelmach/natty/generated/DateLexer.g:303:26: ( SINGLE_QUOTE )?
             int alt122=2;
             switch ( input.LA(1) ) {
                 case '\'':
@@ -10196,7 +10198,7 @@ public class DateLexer extends Lexer {
 
             switch (alt122) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:303:26: SINGLE_QUOTE
+                    // com/joestelmach/natty/generated/DateLexer.g:303:26: SINGLE_QUOTE
                     {
                     mSINGLE_QUOTE(); 
 
@@ -10205,7 +10207,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:303:40: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:303:40: ( 's' )?
             int alt123=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10217,7 +10219,7 @@ public class DateLexer extends Lexer {
 
             switch (alt123) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:303:40: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:303:40: 's'
                     {
                     match('s'); 
 
@@ -10242,12 +10244,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = PRESIDENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:304:14: ( 'president' ( SINGLE_QUOTE )? ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:304:16: 'president' ( SINGLE_QUOTE )? ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:304:14: ( 'president' ( SINGLE_QUOTE )? ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:304:16: 'president' ( SINGLE_QUOTE )? ( 's' )?
             {
             match("president"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:304:28: ( SINGLE_QUOTE )?
+            // com/joestelmach/natty/generated/DateLexer.g:304:28: ( SINGLE_QUOTE )?
             int alt124=2;
             switch ( input.LA(1) ) {
                 case '\'':
@@ -10259,7 +10261,7 @@ public class DateLexer extends Lexer {
 
             switch (alt124) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:304:28: SINGLE_QUOTE
+                    // com/joestelmach/natty/generated/DateLexer.g:304:28: SINGLE_QUOTE
                     {
                     mSINGLE_QUOTE(); 
 
@@ -10268,7 +10270,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:304:42: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:304:42: ( 's' )?
             int alt125=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10280,7 +10282,7 @@ public class DateLexer extends Lexer {
 
             switch (alt125) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:304:42: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:304:42: 's'
                     {
                     match('s'); 
 
@@ -10305,10 +10307,10 @@ public class DateLexer extends Lexer {
         try {
             int _type = PATRICK;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:305:14: ( ( 'patrick' | 'patty' | 'paddy' ) ( SINGLE_QUOTE )? ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:305:16: ( 'patrick' | 'patty' | 'paddy' ) ( SINGLE_QUOTE )? ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:305:14: ( ( 'patrick' | 'patty' | 'paddy' ) ( SINGLE_QUOTE )? ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:305:16: ( 'patrick' | 'patty' | 'paddy' ) ( SINGLE_QUOTE )? ( 's' )?
             {
-            // com/joestelmach/natty/spark/DateLexer.g:305:16: ( 'patrick' | 'patty' | 'paddy' )
+            // com/joestelmach/natty/generated/DateLexer.g:305:16: ( 'patrick' | 'patty' | 'paddy' )
             int alt126=3;
             switch ( input.LA(1) ) {
             case 'p':
@@ -10371,7 +10373,7 @@ public class DateLexer extends Lexer {
 
             switch (alt126) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:305:17: 'patrick'
+                    // com/joestelmach/natty/generated/DateLexer.g:305:17: 'patrick'
                     {
                     match("patrick"); 
 
@@ -10379,7 +10381,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // com/joestelmach/natty/spark/DateLexer.g:305:29: 'patty'
+                    // com/joestelmach/natty/generated/DateLexer.g:305:29: 'patty'
                     {
                     match("patty"); 
 
@@ -10387,7 +10389,7 @@ public class DateLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // com/joestelmach/natty/spark/DateLexer.g:305:39: 'paddy'
+                    // com/joestelmach/natty/generated/DateLexer.g:305:39: 'paddy'
                     {
                     match("paddy"); 
 
@@ -10397,7 +10399,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:305:48: ( SINGLE_QUOTE )?
+            // com/joestelmach/natty/generated/DateLexer.g:305:48: ( SINGLE_QUOTE )?
             int alt127=2;
             switch ( input.LA(1) ) {
                 case '\'':
@@ -10409,7 +10411,7 @@ public class DateLexer extends Lexer {
 
             switch (alt127) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:305:48: SINGLE_QUOTE
+                    // com/joestelmach/natty/generated/DateLexer.g:305:48: SINGLE_QUOTE
                     {
                     mSINGLE_QUOTE(); 
 
@@ -10418,7 +10420,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:305:62: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:305:62: ( 's' )?
             int alt128=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10430,7 +10432,7 @@ public class DateLexer extends Lexer {
 
             switch (alt128) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:305:62: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:305:62: 's'
                     {
                     match('s'); 
 
@@ -10455,8 +10457,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = SAINT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:306:14: ( 'saint' )
-            // com/joestelmach/natty/spark/DateLexer.g:306:16: 'saint'
+            // com/joestelmach/natty/generated/DateLexer.g:306:14: ( 'saint' )
+            // com/joestelmach/natty/generated/DateLexer.g:306:16: 'saint'
             {
             match("saint"); 
 
@@ -10476,8 +10478,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = TAX;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:307:14: ( 'tax' )
-            // com/joestelmach/natty/spark/DateLexer.g:307:16: 'tax'
+            // com/joestelmach/natty/generated/DateLexer.g:307:14: ( 'tax' )
+            // com/joestelmach/natty/generated/DateLexer.g:307:16: 'tax'
             {
             match("tax"); 
 
@@ -10497,12 +10499,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = THANKSGIVING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:308:14: ( 'thanksgiving' ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:308:16: 'thanksgiving' ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:308:14: ( 'thanksgiving' ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:308:16: 'thanksgiving' ( 's' )?
             {
             match("thanksgiving"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:308:31: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:308:31: ( 's' )?
             int alt129=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10514,7 +10516,7 @@ public class DateLexer extends Lexer {
 
             switch (alt129) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:308:31: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:308:31: 's'
                     {
                     match('s'); 
 
@@ -10539,8 +10541,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = ELECTION;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:309:14: ( 'election' )
-            // com/joestelmach/natty/spark/DateLexer.g:309:16: 'election'
+            // com/joestelmach/natty/generated/DateLexer.g:309:14: ( 'election' )
+            // com/joestelmach/natty/generated/DateLexer.g:309:16: 'election'
             {
             match("election"); 
 
@@ -10560,12 +10562,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = VALENTINE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:310:14: ( 'valentine' ( SINGLE_QUOTE )? ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:310:16: 'valentine' ( SINGLE_QUOTE )? ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:310:14: ( 'valentine' ( SINGLE_QUOTE )? ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:310:16: 'valentine' ( SINGLE_QUOTE )? ( 's' )?
             {
             match("valentine"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:310:28: ( SINGLE_QUOTE )?
+            // com/joestelmach/natty/generated/DateLexer.g:310:28: ( SINGLE_QUOTE )?
             int alt130=2;
             switch ( input.LA(1) ) {
                 case '\'':
@@ -10577,7 +10579,7 @@ public class DateLexer extends Lexer {
 
             switch (alt130) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:310:28: SINGLE_QUOTE
+                    // com/joestelmach/natty/generated/DateLexer.g:310:28: SINGLE_QUOTE
                     {
                     mSINGLE_QUOTE(); 
 
@@ -10586,7 +10588,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:310:42: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:310:42: ( 's' )?
             int alt131=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10598,7 +10600,7 @@ public class DateLexer extends Lexer {
 
             switch (alt131) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:310:42: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:310:42: 's'
                     {
                     match('s'); 
 
@@ -10623,12 +10625,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = VETERAN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:311:14: ( 'veteran' ( SINGLE_QUOTE )? ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:311:16: 'veteran' ( SINGLE_QUOTE )? ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:311:14: ( 'veteran' ( SINGLE_QUOTE )? ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:311:16: 'veteran' ( SINGLE_QUOTE )? ( 's' )?
             {
             match("veteran"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:311:26: ( SINGLE_QUOTE )?
+            // com/joestelmach/natty/generated/DateLexer.g:311:26: ( SINGLE_QUOTE )?
             int alt132=2;
             switch ( input.LA(1) ) {
                 case '\'':
@@ -10640,7 +10642,7 @@ public class DateLexer extends Lexer {
 
             switch (alt132) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:311:26: SINGLE_QUOTE
+                    // com/joestelmach/natty/generated/DateLexer.g:311:26: SINGLE_QUOTE
                     {
                     mSINGLE_QUOTE(); 
 
@@ -10649,7 +10651,7 @@ public class DateLexer extends Lexer {
 
             }
 
-            // com/joestelmach/natty/spark/DateLexer.g:311:40: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:311:40: ( 's' )?
             int alt133=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10661,7 +10663,7 @@ public class DateLexer extends Lexer {
 
             switch (alt133) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:311:40: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:311:40: 's'
                     {
                     match('s'); 
 
@@ -10684,8 +10686,8 @@ public class DateLexer extends Lexer {
     // $ANTLR start "GROUND"
     public final void mGROUND() throws RecognitionException {
         try {
-            // com/joestelmach/natty/spark/DateLexer.g:312:17: ( 'ground' )
-            // com/joestelmach/natty/spark/DateLexer.g:312:19: 'ground'
+            // com/joestelmach/natty/generated/DateLexer.g:312:17: ( 'ground' )
+            // com/joestelmach/natty/generated/DateLexer.g:312:19: 'ground'
             {
             match("ground"); 
 
@@ -10701,8 +10703,8 @@ public class DateLexer extends Lexer {
     // $ANTLR start "HOG"
     public final void mHOG() throws RecognitionException {
         try {
-            // com/joestelmach/natty/spark/DateLexer.g:313:17: ( 'hog' )
-            // com/joestelmach/natty/spark/DateLexer.g:313:19: 'hog'
+            // com/joestelmach/natty/generated/DateLexer.g:313:17: ( 'hog' )
+            // com/joestelmach/natty/generated/DateLexer.g:313:19: 'hog'
             {
             match("hog"); 
 
@@ -10720,12 +10722,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = WINTER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:317:8: ( 'winter' ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:317:10: 'winter' ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:317:8: ( 'winter' ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:317:10: 'winter' ( 's' )?
             {
             match("winter"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:317:19: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:317:19: ( 's' )?
             int alt134=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10737,7 +10739,7 @@ public class DateLexer extends Lexer {
 
             switch (alt134) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:317:19: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:317:19: 's'
                     {
                     match('s'); 
 
@@ -10762,12 +10764,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = FALL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:318:8: ( 'fall' ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:318:10: 'fall' ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:318:8: ( 'fall' ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:318:10: 'fall' ( 's' )?
             {
             match("fall"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:318:19: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:318:19: ( 's' )?
             int alt135=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10779,7 +10781,7 @@ public class DateLexer extends Lexer {
 
             switch (alt135) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:318:19: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:318:19: 's'
                     {
                     match('s'); 
 
@@ -10804,12 +10806,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = AUTUMN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:319:8: ( 'autumn' ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:319:10: 'autumn' ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:319:8: ( 'autumn' ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:319:10: 'autumn' ( 's' )?
             {
             match("autumn"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:319:19: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:319:19: ( 's' )?
             int alt136=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10821,7 +10823,7 @@ public class DateLexer extends Lexer {
 
             switch (alt136) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:319:19: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:319:19: 's'
                     {
                     match('s'); 
 
@@ -10846,12 +10848,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = SPRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:320:8: ( 'spring' ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:320:10: 'spring' ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:320:8: ( 'spring' ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:320:10: 'spring' ( 's' )?
             {
             match("spring"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:320:19: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:320:19: ( 's' )?
             int alt137=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10863,7 +10865,7 @@ public class DateLexer extends Lexer {
 
             switch (alt137) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:320:19: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:320:19: 's'
                     {
                     match('s'); 
 
@@ -10888,12 +10890,12 @@ public class DateLexer extends Lexer {
         try {
             int _type = SUMMER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:321:8: ( 'summer' ( 's' )? )
-            // com/joestelmach/natty/spark/DateLexer.g:321:10: 'summer' ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:321:8: ( 'summer' ( 's' )? )
+            // com/joestelmach/natty/generated/DateLexer.g:321:10: 'summer' ( 's' )?
             {
             match("summer"); 
 
-            // com/joestelmach/natty/spark/DateLexer.g:321:19: ( 's' )?
+            // com/joestelmach/natty/generated/DateLexer.g:321:19: ( 's' )?
             int alt138=2;
             switch ( input.LA(1) ) {
                 case 's':
@@ -10905,7 +10907,7 @@ public class DateLexer extends Lexer {
 
             switch (alt138) {
                 case 1 :
-                    // com/joestelmach/natty/spark/DateLexer.g:321:19: 's'
+                    // com/joestelmach/natty/generated/DateLexer.g:321:19: 's'
                     {
                     match('s'); 
 
@@ -10930,8 +10932,8 @@ public class DateLexer extends Lexer {
         try {
             int _type = UNKNOWN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // com/joestelmach/natty/spark/DateLexer.g:324:3: ( UNKNOWN_CHAR )
-            // com/joestelmach/natty/spark/DateLexer.g:324:5: UNKNOWN_CHAR
+            // com/joestelmach/natty/generated/DateLexer.g:324:3: ( UNKNOWN_CHAR )
+            // com/joestelmach/natty/generated/DateLexer.g:324:5: UNKNOWN_CHAR
             {
             mUNKNOWN_CHAR(); 
 
@@ -10948,8 +10950,8 @@ public class DateLexer extends Lexer {
     // $ANTLR start "UNKNOWN_CHAR"
     public final void mUNKNOWN_CHAR() throws RecognitionException {
         try {
-            // com/joestelmach/natty/spark/DateLexer.g:328:3: (~ ( SPACE | DOT ) )
-            // com/joestelmach/natty/spark/DateLexer.g:328:5: ~ ( SPACE | DOT )
+            // com/joestelmach/natty/generated/DateLexer.g:328:3: (~ ( SPACE | DOT ) )
+            // com/joestelmach/natty/generated/DateLexer.g:328:5: ~ ( SPACE | DOT )
             {
             if ( (input.LA(1)>='\u0000' && input.LA(1)<='\b')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\u001F')||(input.LA(1)>='!' && input.LA(1)<='-')||(input.LA(1)>='/' && input.LA(1)<='\u009F')||(input.LA(1)>='\u00A1' && input.LA(1)<='\uFFFF') ) {
                 input.consume();
@@ -10972,8 +10974,8 @@ public class DateLexer extends Lexer {
     // $ANTLR start "DIGIT"
     public final void mDIGIT() throws RecognitionException {
         try {
-            // com/joestelmach/natty/spark/DateLexer.g:331:16: ( '0' .. '9' )
-            // com/joestelmach/natty/spark/DateLexer.g:331:18: '0' .. '9'
+            // com/joestelmach/natty/generated/DateLexer.g:331:16: ( '0' .. '9' )
+            // com/joestelmach/natty/generated/DateLexer.g:331:18: '0' .. '9'
             {
             matchRange('0','9'); 
 
@@ -10988,8 +10990,8 @@ public class DateLexer extends Lexer {
     // $ANTLR start "SPACE"
     public final void mSPACE() throws RecognitionException {
         try {
-            // com/joestelmach/natty/spark/DateLexer.g:333:16: ( ' ' | '\\t' | '\\n' | '\\r' | '\\u00A0' )
-            // com/joestelmach/natty/spark/DateLexer.g:
+            // com/joestelmach/natty/generated/DateLexer.g:333:16: ( ' ' | '\\t' | '\\n' | '\\r' | '\\u00A0' )
+            // com/joestelmach/natty/generated/DateLexer.g:
             {
             if ( (input.LA(1)>='\t' && input.LA(1)<='\n')||input.LA(1)=='\r'||input.LA(1)==' '||input.LA(1)=='\u00A0' ) {
                 input.consume();
@@ -11010,1909 +11012,1909 @@ public class DateLexer extends Lexer {
     // $ANTLR end "SPACE"
 
     public void mTokens() throws RecognitionException {
-        // com/joestelmach/natty/spark/DateLexer.g:1:8: ( JANUARY | FEBRUARY | MARCH | APRIL | MAY | JUNE | JULY | AUGUST | SEPTEMBER | OCTOBER | NOVEMBER | DECEMBER | SUNDAY | MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY | HOUR | MINUTE | DAY | WEEK | MONTH | YEAR | TODAY | TOMORROW | TONIGHT | YESTERDAY | EVERY | UNTIL | AT | AFTER | PAST | AM | PM | T | MILITARY_HOUR_SUFFIX | MIDNIGHT | NOON | MORNING | EVENING | NIGHT | UTC | EST | PST | CST | MST | AKST | HAST | INT_00 | INT_01 | INT_02 | INT_03 | INT_04 | INT_05 | INT_06 | INT_07 | INT_08 | INT_09 | INT_0 | INT_1 | INT_2 | INT_3 | INT_4 | INT_5 | INT_6 | INT_7 | INT_8 | INT_9 | INT_10 | INT_11 | INT_12 | INT_13 | INT_14 | INT_15 | INT_16 | INT_17 | INT_18 | INT_19 | INT_20 | INT_21 | INT_22 | INT_23 | INT_24 | INT_25 | INT_26 | INT_27 | INT_28 | INT_29 | INT_30 | INT_31 | INT_32 | INT_33 | INT_34 | INT_35 | INT_36 | INT_37 | INT_38 | INT_39 | INT_40 | INT_41 | INT_42 | INT_43 | INT_44 | INT_45 | INT_46 | INT_47 | INT_48 | INT_49 | INT_50 | INT_51 | INT_52 | INT_53 | INT_54 | INT_55 | INT_56 | INT_57 | INT_58 | INT_59 | INT_60 | INT_61 | INT_62 | INT_63 | INT_64 | INT_65 | INT_66 | INT_67 | INT_68 | INT_69 | INT_70 | INT_71 | INT_72 | INT_73 | INT_74 | INT_75 | INT_76 | INT_77 | INT_78 | INT_79 | INT_80 | INT_81 | INT_82 | INT_83 | INT_84 | INT_85 | INT_86 | INT_87 | INT_88 | INT_89 | INT_90 | INT_91 | INT_92 | INT_93 | INT_94 | INT_95 | INT_96 | INT_97 | INT_98 | INT_99 | ONE | TWO | THREE | FOUR | FIVE | SIX | SEVEN | EIGHT | NINE | TEN | ELEVEN | TWELVE | THIRTEEN | FOURTEEN | FIFTEEN | SIXTEEN | SEVENTEEN | EIGHTEEN | NINETEEN | TWENTY | THIRTY | FIRST | SECOND | THIRD | FOURTH | FIFTH | SIXTH | SEVENTH | EIGHTH | NINTH | TENTH | ELEVENTH | TWELFTH | THIRTEENTH | FOURTEENTH | FIFTEENTH | SIXTEENTH | SEVENTEENTH | EIGHTEENTH | NINETEENTH | TWENTIETH | THIRTIETH | ST | ND | RD | TH | COLON | COMMA | DASH | SLASH | DOT | PLUS | SINGLE_QUOTE | FOR | IN | AN | THE | OR | AND | TO | THROUGH | ON | OF | THIS | THAT | LAST | NEXT | COMING | UPCOMING | FROM | NOW | AGO | BEFORE | BEGINNING | START | END | WHITE_SPACE | FOOL | BLACK | CHRISTMAS | COLUMBUS | EARTH | EASTER | FATHER | FLAG | GOOD | GROUNDHOG | HALLOWEEN | INAUGURATION | INDEPENDENCE | KWANZAA | LABOR | MLK | MEMORIAL | MOTHER | NEW | PALM | PATRIOT | PRESIDENT | PATRICK | SAINT | TAX | THANKSGIVING | ELECTION | VALENTINE | VETERAN | WINTER | FALL | AUTUMN | SPRING | SUMMER | UNKNOWN )
+        // com/joestelmach/natty/generated/DateLexer.g:1:8: ( JANUARY | FEBRUARY | MARCH | APRIL | MAY | JUNE | JULY | AUGUST | SEPTEMBER | OCTOBER | NOVEMBER | DECEMBER | SUNDAY | MONDAY | TUESDAY | WEDNESDAY | THURSDAY | FRIDAY | SATURDAY | HOUR | MINUTE | DAY | WEEK | MONTH | YEAR | TODAY | TOMORROW | TONIGHT | YESTERDAY | EVERY | UNTIL | AT | AFTER | PAST | AM | PM | T | MILITARY_HOUR_SUFFIX | MIDNIGHT | NOON | MORNING | EVENING | NIGHT | UTC | EST | PST | CST | MST | AKST | HAST | INT_00 | INT_01 | INT_02 | INT_03 | INT_04 | INT_05 | INT_06 | INT_07 | INT_08 | INT_09 | INT_0 | INT_1 | INT_2 | INT_3 | INT_4 | INT_5 | INT_6 | INT_7 | INT_8 | INT_9 | INT_10 | INT_11 | INT_12 | INT_13 | INT_14 | INT_15 | INT_16 | INT_17 | INT_18 | INT_19 | INT_20 | INT_21 | INT_22 | INT_23 | INT_24 | INT_25 | INT_26 | INT_27 | INT_28 | INT_29 | INT_30 | INT_31 | INT_32 | INT_33 | INT_34 | INT_35 | INT_36 | INT_37 | INT_38 | INT_39 | INT_40 | INT_41 | INT_42 | INT_43 | INT_44 | INT_45 | INT_46 | INT_47 | INT_48 | INT_49 | INT_50 | INT_51 | INT_52 | INT_53 | INT_54 | INT_55 | INT_56 | INT_57 | INT_58 | INT_59 | INT_60 | INT_61 | INT_62 | INT_63 | INT_64 | INT_65 | INT_66 | INT_67 | INT_68 | INT_69 | INT_70 | INT_71 | INT_72 | INT_73 | INT_74 | INT_75 | INT_76 | INT_77 | INT_78 | INT_79 | INT_80 | INT_81 | INT_82 | INT_83 | INT_84 | INT_85 | INT_86 | INT_87 | INT_88 | INT_89 | INT_90 | INT_91 | INT_92 | INT_93 | INT_94 | INT_95 | INT_96 | INT_97 | INT_98 | INT_99 | ONE | TWO | THREE | FOUR | FIVE | SIX | SEVEN | EIGHT | NINE | TEN | ELEVEN | TWELVE | THIRTEEN | FOURTEEN | FIFTEEN | SIXTEEN | SEVENTEEN | EIGHTEEN | NINETEEN | TWENTY | THIRTY | FIRST | SECOND | THIRD | FOURTH | FIFTH | SIXTH | SEVENTH | EIGHTH | NINTH | TENTH | ELEVENTH | TWELFTH | THIRTEENTH | FOURTEENTH | FIFTEENTH | SIXTEENTH | SEVENTEENTH | EIGHTEENTH | NINETEENTH | TWENTIETH | THIRTIETH | ST | ND | RD | TH | COLON | COMMA | DASH | SLASH | DOT | PLUS | SINGLE_QUOTE | FOR | IN | AN | THE | OR | AND | TO | THROUGH | ON | OF | THIS | THAT | LAST | NEXT | COMING | UPCOMING | FROM | NOW | AGO | BEFORE | BEGINNING | START | END | WHITE_SPACE | FOOL | BLACK | CHRISTMAS | COLUMBUS | EARTH | EASTER | FATHER | FLAG | GOOD | GROUNDHOG | HALLOWEEN | INAUGURATION | INDEPENDENCE | KWANZAA | LABOR | MLK | MEMORIAL | MOTHER | NEW | PALM | PATRIOT | PRESIDENT | PATRICK | SAINT | TAX | THANKSGIVING | ELECTION | VALENTINE | VETERAN | WINTER | FALL | AUTUMN | SPRING | SUMMER | UNKNOWN )
         int alt139=272;
         alt139 = dfa139.predict(input);
         switch (alt139) {
             case 1 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:10: JANUARY
+                // com/joestelmach/natty/generated/DateLexer.g:1:10: JANUARY
                 {
                 mJANUARY(); 
 
                 }
                 break;
             case 2 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:18: FEBRUARY
+                // com/joestelmach/natty/generated/DateLexer.g:1:18: FEBRUARY
                 {
                 mFEBRUARY(); 
 
                 }
                 break;
             case 3 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:27: MARCH
+                // com/joestelmach/natty/generated/DateLexer.g:1:27: MARCH
                 {
                 mMARCH(); 
 
                 }
                 break;
             case 4 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:33: APRIL
+                // com/joestelmach/natty/generated/DateLexer.g:1:33: APRIL
                 {
                 mAPRIL(); 
 
                 }
                 break;
             case 5 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:39: MAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:39: MAY
                 {
                 mMAY(); 
 
                 }
                 break;
             case 6 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:43: JUNE
+                // com/joestelmach/natty/generated/DateLexer.g:1:43: JUNE
                 {
                 mJUNE(); 
 
                 }
                 break;
             case 7 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:48: JULY
+                // com/joestelmach/natty/generated/DateLexer.g:1:48: JULY
                 {
                 mJULY(); 
 
                 }
                 break;
             case 8 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:53: AUGUST
+                // com/joestelmach/natty/generated/DateLexer.g:1:53: AUGUST
                 {
                 mAUGUST(); 
 
                 }
                 break;
             case 9 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:60: SEPTEMBER
+                // com/joestelmach/natty/generated/DateLexer.g:1:60: SEPTEMBER
                 {
                 mSEPTEMBER(); 
 
                 }
                 break;
             case 10 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:70: OCTOBER
+                // com/joestelmach/natty/generated/DateLexer.g:1:70: OCTOBER
                 {
                 mOCTOBER(); 
 
                 }
                 break;
             case 11 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:78: NOVEMBER
+                // com/joestelmach/natty/generated/DateLexer.g:1:78: NOVEMBER
                 {
                 mNOVEMBER(); 
 
                 }
                 break;
             case 12 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:87: DECEMBER
+                // com/joestelmach/natty/generated/DateLexer.g:1:87: DECEMBER
                 {
                 mDECEMBER(); 
 
                 }
                 break;
             case 13 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:96: SUNDAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:96: SUNDAY
                 {
                 mSUNDAY(); 
 
                 }
                 break;
             case 14 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:103: MONDAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:103: MONDAY
                 {
                 mMONDAY(); 
 
                 }
                 break;
             case 15 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:110: TUESDAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:110: TUESDAY
                 {
                 mTUESDAY(); 
 
                 }
                 break;
             case 16 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:118: WEDNESDAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:118: WEDNESDAY
                 {
                 mWEDNESDAY(); 
 
                 }
                 break;
             case 17 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:128: THURSDAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:128: THURSDAY
                 {
                 mTHURSDAY(); 
 
                 }
                 break;
             case 18 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:137: FRIDAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:137: FRIDAY
                 {
                 mFRIDAY(); 
 
                 }
                 break;
             case 19 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:144: SATURDAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:144: SATURDAY
                 {
                 mSATURDAY(); 
 
                 }
                 break;
             case 20 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:153: HOUR
+                // com/joestelmach/natty/generated/DateLexer.g:1:153: HOUR
                 {
                 mHOUR(); 
 
                 }
                 break;
             case 21 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:158: MINUTE
+                // com/joestelmach/natty/generated/DateLexer.g:1:158: MINUTE
                 {
                 mMINUTE(); 
 
                 }
                 break;
             case 22 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:165: DAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:165: DAY
                 {
                 mDAY(); 
 
                 }
                 break;
             case 23 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:169: WEEK
+                // com/joestelmach/natty/generated/DateLexer.g:1:169: WEEK
                 {
                 mWEEK(); 
 
                 }
                 break;
             case 24 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:174: MONTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:174: MONTH
                 {
                 mMONTH(); 
 
                 }
                 break;
             case 25 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:180: YEAR
+                // com/joestelmach/natty/generated/DateLexer.g:1:180: YEAR
                 {
                 mYEAR(); 
 
                 }
                 break;
             case 26 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:185: TODAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:185: TODAY
                 {
                 mTODAY(); 
 
                 }
                 break;
             case 27 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:191: TOMORROW
+                // com/joestelmach/natty/generated/DateLexer.g:1:191: TOMORROW
                 {
                 mTOMORROW(); 
 
                 }
                 break;
             case 28 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:200: TONIGHT
+                // com/joestelmach/natty/generated/DateLexer.g:1:200: TONIGHT
                 {
                 mTONIGHT(); 
 
                 }
                 break;
             case 29 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:208: YESTERDAY
+                // com/joestelmach/natty/generated/DateLexer.g:1:208: YESTERDAY
                 {
                 mYESTERDAY(); 
 
                 }
                 break;
             case 30 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:218: EVERY
+                // com/joestelmach/natty/generated/DateLexer.g:1:218: EVERY
                 {
                 mEVERY(); 
 
                 }
                 break;
             case 31 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:224: UNTIL
+                // com/joestelmach/natty/generated/DateLexer.g:1:224: UNTIL
                 {
                 mUNTIL(); 
 
                 }
                 break;
             case 32 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:230: AT
+                // com/joestelmach/natty/generated/DateLexer.g:1:230: AT
                 {
                 mAT(); 
 
                 }
                 break;
             case 33 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:233: AFTER
+                // com/joestelmach/natty/generated/DateLexer.g:1:233: AFTER
                 {
                 mAFTER(); 
 
                 }
                 break;
             case 34 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:239: PAST
+                // com/joestelmach/natty/generated/DateLexer.g:1:239: PAST
                 {
                 mPAST(); 
 
                 }
                 break;
             case 35 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:244: AM
+                // com/joestelmach/natty/generated/DateLexer.g:1:244: AM
                 {
                 mAM(); 
 
                 }
                 break;
             case 36 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:247: PM
+                // com/joestelmach/natty/generated/DateLexer.g:1:247: PM
                 {
                 mPM(); 
 
                 }
                 break;
             case 37 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:250: T
+                // com/joestelmach/natty/generated/DateLexer.g:1:250: T
                 {
                 mT(); 
 
                 }
                 break;
             case 38 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:252: MILITARY_HOUR_SUFFIX
+                // com/joestelmach/natty/generated/DateLexer.g:1:252: MILITARY_HOUR_SUFFIX
                 {
                 mMILITARY_HOUR_SUFFIX(); 
 
                 }
                 break;
             case 39 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:273: MIDNIGHT
+                // com/joestelmach/natty/generated/DateLexer.g:1:273: MIDNIGHT
                 {
                 mMIDNIGHT(); 
 
                 }
                 break;
             case 40 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:282: NOON
+                // com/joestelmach/natty/generated/DateLexer.g:1:282: NOON
                 {
                 mNOON(); 
 
                 }
                 break;
             case 41 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:287: MORNING
+                // com/joestelmach/natty/generated/DateLexer.g:1:287: MORNING
                 {
                 mMORNING(); 
 
                 }
                 break;
             case 42 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:295: EVENING
+                // com/joestelmach/natty/generated/DateLexer.g:1:295: EVENING
                 {
                 mEVENING(); 
 
                 }
                 break;
             case 43 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:303: NIGHT
+                // com/joestelmach/natty/generated/DateLexer.g:1:303: NIGHT
                 {
                 mNIGHT(); 
 
                 }
                 break;
             case 44 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:309: UTC
+                // com/joestelmach/natty/generated/DateLexer.g:1:309: UTC
                 {
                 mUTC(); 
 
                 }
                 break;
             case 45 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:313: EST
+                // com/joestelmach/natty/generated/DateLexer.g:1:313: EST
                 {
                 mEST(); 
 
                 }
                 break;
             case 46 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:317: PST
+                // com/joestelmach/natty/generated/DateLexer.g:1:317: PST
                 {
                 mPST(); 
 
                 }
                 break;
             case 47 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:321: CST
+                // com/joestelmach/natty/generated/DateLexer.g:1:321: CST
                 {
                 mCST(); 
 
                 }
                 break;
             case 48 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:325: MST
+                // com/joestelmach/natty/generated/DateLexer.g:1:325: MST
                 {
                 mMST(); 
 
                 }
                 break;
             case 49 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:329: AKST
+                // com/joestelmach/natty/generated/DateLexer.g:1:329: AKST
                 {
                 mAKST(); 
 
                 }
                 break;
             case 50 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:334: HAST
+                // com/joestelmach/natty/generated/DateLexer.g:1:334: HAST
                 {
                 mHAST(); 
 
                 }
                 break;
             case 51 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:339: INT_00
+                // com/joestelmach/natty/generated/DateLexer.g:1:339: INT_00
                 {
                 mINT_00(); 
 
                 }
                 break;
             case 52 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:346: INT_01
+                // com/joestelmach/natty/generated/DateLexer.g:1:346: INT_01
                 {
                 mINT_01(); 
 
                 }
                 break;
             case 53 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:353: INT_02
+                // com/joestelmach/natty/generated/DateLexer.g:1:353: INT_02
                 {
                 mINT_02(); 
 
                 }
                 break;
             case 54 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:360: INT_03
+                // com/joestelmach/natty/generated/DateLexer.g:1:360: INT_03
                 {
                 mINT_03(); 
 
                 }
                 break;
             case 55 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:367: INT_04
+                // com/joestelmach/natty/generated/DateLexer.g:1:367: INT_04
                 {
                 mINT_04(); 
 
                 }
                 break;
             case 56 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:374: INT_05
+                // com/joestelmach/natty/generated/DateLexer.g:1:374: INT_05
                 {
                 mINT_05(); 
 
                 }
                 break;
             case 57 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:381: INT_06
+                // com/joestelmach/natty/generated/DateLexer.g:1:381: INT_06
                 {
                 mINT_06(); 
 
                 }
                 break;
             case 58 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:388: INT_07
+                // com/joestelmach/natty/generated/DateLexer.g:1:388: INT_07
                 {
                 mINT_07(); 
 
                 }
                 break;
             case 59 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:395: INT_08
+                // com/joestelmach/natty/generated/DateLexer.g:1:395: INT_08
                 {
                 mINT_08(); 
 
                 }
                 break;
             case 60 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:402: INT_09
+                // com/joestelmach/natty/generated/DateLexer.g:1:402: INT_09
                 {
                 mINT_09(); 
 
                 }
                 break;
             case 61 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:409: INT_0
+                // com/joestelmach/natty/generated/DateLexer.g:1:409: INT_0
                 {
                 mINT_0(); 
 
                 }
                 break;
             case 62 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:415: INT_1
+                // com/joestelmach/natty/generated/DateLexer.g:1:415: INT_1
                 {
                 mINT_1(); 
 
                 }
                 break;
             case 63 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:421: INT_2
+                // com/joestelmach/natty/generated/DateLexer.g:1:421: INT_2
                 {
                 mINT_2(); 
 
                 }
                 break;
             case 64 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:427: INT_3
+                // com/joestelmach/natty/generated/DateLexer.g:1:427: INT_3
                 {
                 mINT_3(); 
 
                 }
                 break;
             case 65 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:433: INT_4
+                // com/joestelmach/natty/generated/DateLexer.g:1:433: INT_4
                 {
                 mINT_4(); 
 
                 }
                 break;
             case 66 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:439: INT_5
+                // com/joestelmach/natty/generated/DateLexer.g:1:439: INT_5
                 {
                 mINT_5(); 
 
                 }
                 break;
             case 67 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:445: INT_6
+                // com/joestelmach/natty/generated/DateLexer.g:1:445: INT_6
                 {
                 mINT_6(); 
 
                 }
                 break;
             case 68 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:451: INT_7
+                // com/joestelmach/natty/generated/DateLexer.g:1:451: INT_7
                 {
                 mINT_7(); 
 
                 }
                 break;
             case 69 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:457: INT_8
+                // com/joestelmach/natty/generated/DateLexer.g:1:457: INT_8
                 {
                 mINT_8(); 
 
                 }
                 break;
             case 70 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:463: INT_9
+                // com/joestelmach/natty/generated/DateLexer.g:1:463: INT_9
                 {
                 mINT_9(); 
 
                 }
                 break;
             case 71 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:469: INT_10
+                // com/joestelmach/natty/generated/DateLexer.g:1:469: INT_10
                 {
                 mINT_10(); 
 
                 }
                 break;
             case 72 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:476: INT_11
+                // com/joestelmach/natty/generated/DateLexer.g:1:476: INT_11
                 {
                 mINT_11(); 
 
                 }
                 break;
             case 73 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:483: INT_12
+                // com/joestelmach/natty/generated/DateLexer.g:1:483: INT_12
                 {
                 mINT_12(); 
 
                 }
                 break;
             case 74 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:490: INT_13
+                // com/joestelmach/natty/generated/DateLexer.g:1:490: INT_13
                 {
                 mINT_13(); 
 
                 }
                 break;
             case 75 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:497: INT_14
+                // com/joestelmach/natty/generated/DateLexer.g:1:497: INT_14
                 {
                 mINT_14(); 
 
                 }
                 break;
             case 76 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:504: INT_15
+                // com/joestelmach/natty/generated/DateLexer.g:1:504: INT_15
                 {
                 mINT_15(); 
 
                 }
                 break;
             case 77 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:511: INT_16
+                // com/joestelmach/natty/generated/DateLexer.g:1:511: INT_16
                 {
                 mINT_16(); 
 
                 }
                 break;
             case 78 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:518: INT_17
+                // com/joestelmach/natty/generated/DateLexer.g:1:518: INT_17
                 {
                 mINT_17(); 
 
                 }
                 break;
             case 79 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:525: INT_18
+                // com/joestelmach/natty/generated/DateLexer.g:1:525: INT_18
                 {
                 mINT_18(); 
 
                 }
                 break;
             case 80 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:532: INT_19
+                // com/joestelmach/natty/generated/DateLexer.g:1:532: INT_19
                 {
                 mINT_19(); 
 
                 }
                 break;
             case 81 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:539: INT_20
+                // com/joestelmach/natty/generated/DateLexer.g:1:539: INT_20
                 {
                 mINT_20(); 
 
                 }
                 break;
             case 82 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:546: INT_21
+                // com/joestelmach/natty/generated/DateLexer.g:1:546: INT_21
                 {
                 mINT_21(); 
 
                 }
                 break;
             case 83 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:553: INT_22
+                // com/joestelmach/natty/generated/DateLexer.g:1:553: INT_22
                 {
                 mINT_22(); 
 
                 }
                 break;
             case 84 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:560: INT_23
+                // com/joestelmach/natty/generated/DateLexer.g:1:560: INT_23
                 {
                 mINT_23(); 
 
                 }
                 break;
             case 85 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:567: INT_24
+                // com/joestelmach/natty/generated/DateLexer.g:1:567: INT_24
                 {
                 mINT_24(); 
 
                 }
                 break;
             case 86 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:574: INT_25
+                // com/joestelmach/natty/generated/DateLexer.g:1:574: INT_25
                 {
                 mINT_25(); 
 
                 }
                 break;
             case 87 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:581: INT_26
+                // com/joestelmach/natty/generated/DateLexer.g:1:581: INT_26
                 {
                 mINT_26(); 
 
                 }
                 break;
             case 88 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:588: INT_27
+                // com/joestelmach/natty/generated/DateLexer.g:1:588: INT_27
                 {
                 mINT_27(); 
 
                 }
                 break;
             case 89 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:595: INT_28
+                // com/joestelmach/natty/generated/DateLexer.g:1:595: INT_28
                 {
                 mINT_28(); 
 
                 }
                 break;
             case 90 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:602: INT_29
+                // com/joestelmach/natty/generated/DateLexer.g:1:602: INT_29
                 {
                 mINT_29(); 
 
                 }
                 break;
             case 91 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:609: INT_30
+                // com/joestelmach/natty/generated/DateLexer.g:1:609: INT_30
                 {
                 mINT_30(); 
 
                 }
                 break;
             case 92 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:616: INT_31
+                // com/joestelmach/natty/generated/DateLexer.g:1:616: INT_31
                 {
                 mINT_31(); 
 
                 }
                 break;
             case 93 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:623: INT_32
+                // com/joestelmach/natty/generated/DateLexer.g:1:623: INT_32
                 {
                 mINT_32(); 
 
                 }
                 break;
             case 94 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:630: INT_33
+                // com/joestelmach/natty/generated/DateLexer.g:1:630: INT_33
                 {
                 mINT_33(); 
 
                 }
                 break;
             case 95 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:637: INT_34
+                // com/joestelmach/natty/generated/DateLexer.g:1:637: INT_34
                 {
                 mINT_34(); 
 
                 }
                 break;
             case 96 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:644: INT_35
+                // com/joestelmach/natty/generated/DateLexer.g:1:644: INT_35
                 {
                 mINT_35(); 
 
                 }
                 break;
             case 97 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:651: INT_36
+                // com/joestelmach/natty/generated/DateLexer.g:1:651: INT_36
                 {
                 mINT_36(); 
 
                 }
                 break;
             case 98 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:658: INT_37
+                // com/joestelmach/natty/generated/DateLexer.g:1:658: INT_37
                 {
                 mINT_37(); 
 
                 }
                 break;
             case 99 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:665: INT_38
+                // com/joestelmach/natty/generated/DateLexer.g:1:665: INT_38
                 {
                 mINT_38(); 
 
                 }
                 break;
             case 100 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:672: INT_39
+                // com/joestelmach/natty/generated/DateLexer.g:1:672: INT_39
                 {
                 mINT_39(); 
 
                 }
                 break;
             case 101 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:679: INT_40
+                // com/joestelmach/natty/generated/DateLexer.g:1:679: INT_40
                 {
                 mINT_40(); 
 
                 }
                 break;
             case 102 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:686: INT_41
+                // com/joestelmach/natty/generated/DateLexer.g:1:686: INT_41
                 {
                 mINT_41(); 
 
                 }
                 break;
             case 103 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:693: INT_42
+                // com/joestelmach/natty/generated/DateLexer.g:1:693: INT_42
                 {
                 mINT_42(); 
 
                 }
                 break;
             case 104 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:700: INT_43
+                // com/joestelmach/natty/generated/DateLexer.g:1:700: INT_43
                 {
                 mINT_43(); 
 
                 }
                 break;
             case 105 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:707: INT_44
+                // com/joestelmach/natty/generated/DateLexer.g:1:707: INT_44
                 {
                 mINT_44(); 
 
                 }
                 break;
             case 106 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:714: INT_45
+                // com/joestelmach/natty/generated/DateLexer.g:1:714: INT_45
                 {
                 mINT_45(); 
 
                 }
                 break;
             case 107 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:721: INT_46
+                // com/joestelmach/natty/generated/DateLexer.g:1:721: INT_46
                 {
                 mINT_46(); 
 
                 }
                 break;
             case 108 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:728: INT_47
+                // com/joestelmach/natty/generated/DateLexer.g:1:728: INT_47
                 {
                 mINT_47(); 
 
                 }
                 break;
             case 109 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:735: INT_48
+                // com/joestelmach/natty/generated/DateLexer.g:1:735: INT_48
                 {
                 mINT_48(); 
 
                 }
                 break;
             case 110 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:742: INT_49
+                // com/joestelmach/natty/generated/DateLexer.g:1:742: INT_49
                 {
                 mINT_49(); 
 
                 }
                 break;
             case 111 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:749: INT_50
+                // com/joestelmach/natty/generated/DateLexer.g:1:749: INT_50
                 {
                 mINT_50(); 
 
                 }
                 break;
             case 112 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:756: INT_51
+                // com/joestelmach/natty/generated/DateLexer.g:1:756: INT_51
                 {
                 mINT_51(); 
 
                 }
                 break;
             case 113 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:763: INT_52
+                // com/joestelmach/natty/generated/DateLexer.g:1:763: INT_52
                 {
                 mINT_52(); 
 
                 }
                 break;
             case 114 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:770: INT_53
+                // com/joestelmach/natty/generated/DateLexer.g:1:770: INT_53
                 {
                 mINT_53(); 
 
                 }
                 break;
             case 115 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:777: INT_54
+                // com/joestelmach/natty/generated/DateLexer.g:1:777: INT_54
                 {
                 mINT_54(); 
 
                 }
                 break;
             case 116 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:784: INT_55
+                // com/joestelmach/natty/generated/DateLexer.g:1:784: INT_55
                 {
                 mINT_55(); 
 
                 }
                 break;
             case 117 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:791: INT_56
+                // com/joestelmach/natty/generated/DateLexer.g:1:791: INT_56
                 {
                 mINT_56(); 
 
                 }
                 break;
             case 118 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:798: INT_57
+                // com/joestelmach/natty/generated/DateLexer.g:1:798: INT_57
                 {
                 mINT_57(); 
 
                 }
                 break;
             case 119 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:805: INT_58
+                // com/joestelmach/natty/generated/DateLexer.g:1:805: INT_58
                 {
                 mINT_58(); 
 
                 }
                 break;
             case 120 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:812: INT_59
+                // com/joestelmach/natty/generated/DateLexer.g:1:812: INT_59
                 {
                 mINT_59(); 
 
                 }
                 break;
             case 121 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:819: INT_60
+                // com/joestelmach/natty/generated/DateLexer.g:1:819: INT_60
                 {
                 mINT_60(); 
 
                 }
                 break;
             case 122 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:826: INT_61
+                // com/joestelmach/natty/generated/DateLexer.g:1:826: INT_61
                 {
                 mINT_61(); 
 
                 }
                 break;
             case 123 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:833: INT_62
+                // com/joestelmach/natty/generated/DateLexer.g:1:833: INT_62
                 {
                 mINT_62(); 
 
                 }
                 break;
             case 124 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:840: INT_63
+                // com/joestelmach/natty/generated/DateLexer.g:1:840: INT_63
                 {
                 mINT_63(); 
 
                 }
                 break;
             case 125 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:847: INT_64
+                // com/joestelmach/natty/generated/DateLexer.g:1:847: INT_64
                 {
                 mINT_64(); 
 
                 }
                 break;
             case 126 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:854: INT_65
+                // com/joestelmach/natty/generated/DateLexer.g:1:854: INT_65
                 {
                 mINT_65(); 
 
                 }
                 break;
             case 127 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:861: INT_66
+                // com/joestelmach/natty/generated/DateLexer.g:1:861: INT_66
                 {
                 mINT_66(); 
 
                 }
                 break;
             case 128 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:868: INT_67
+                // com/joestelmach/natty/generated/DateLexer.g:1:868: INT_67
                 {
                 mINT_67(); 
 
                 }
                 break;
             case 129 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:875: INT_68
+                // com/joestelmach/natty/generated/DateLexer.g:1:875: INT_68
                 {
                 mINT_68(); 
 
                 }
                 break;
             case 130 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:882: INT_69
+                // com/joestelmach/natty/generated/DateLexer.g:1:882: INT_69
                 {
                 mINT_69(); 
 
                 }
                 break;
             case 131 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:889: INT_70
+                // com/joestelmach/natty/generated/DateLexer.g:1:889: INT_70
                 {
                 mINT_70(); 
 
                 }
                 break;
             case 132 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:896: INT_71
+                // com/joestelmach/natty/generated/DateLexer.g:1:896: INT_71
                 {
                 mINT_71(); 
 
                 }
                 break;
             case 133 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:903: INT_72
+                // com/joestelmach/natty/generated/DateLexer.g:1:903: INT_72
                 {
                 mINT_72(); 
 
                 }
                 break;
             case 134 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:910: INT_73
+                // com/joestelmach/natty/generated/DateLexer.g:1:910: INT_73
                 {
                 mINT_73(); 
 
                 }
                 break;
             case 135 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:917: INT_74
+                // com/joestelmach/natty/generated/DateLexer.g:1:917: INT_74
                 {
                 mINT_74(); 
 
                 }
                 break;
             case 136 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:924: INT_75
+                // com/joestelmach/natty/generated/DateLexer.g:1:924: INT_75
                 {
                 mINT_75(); 
 
                 }
                 break;
             case 137 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:931: INT_76
+                // com/joestelmach/natty/generated/DateLexer.g:1:931: INT_76
                 {
                 mINT_76(); 
 
                 }
                 break;
             case 138 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:938: INT_77
+                // com/joestelmach/natty/generated/DateLexer.g:1:938: INT_77
                 {
                 mINT_77(); 
 
                 }
                 break;
             case 139 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:945: INT_78
+                // com/joestelmach/natty/generated/DateLexer.g:1:945: INT_78
                 {
                 mINT_78(); 
 
                 }
                 break;
             case 140 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:952: INT_79
+                // com/joestelmach/natty/generated/DateLexer.g:1:952: INT_79
                 {
                 mINT_79(); 
 
                 }
                 break;
             case 141 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:959: INT_80
+                // com/joestelmach/natty/generated/DateLexer.g:1:959: INT_80
                 {
                 mINT_80(); 
 
                 }
                 break;
             case 142 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:966: INT_81
+                // com/joestelmach/natty/generated/DateLexer.g:1:966: INT_81
                 {
                 mINT_81(); 
 
                 }
                 break;
             case 143 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:973: INT_82
+                // com/joestelmach/natty/generated/DateLexer.g:1:973: INT_82
                 {
                 mINT_82(); 
 
                 }
                 break;
             case 144 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:980: INT_83
+                // com/joestelmach/natty/generated/DateLexer.g:1:980: INT_83
                 {
                 mINT_83(); 
 
                 }
                 break;
             case 145 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:987: INT_84
+                // com/joestelmach/natty/generated/DateLexer.g:1:987: INT_84
                 {
                 mINT_84(); 
 
                 }
                 break;
             case 146 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:994: INT_85
+                // com/joestelmach/natty/generated/DateLexer.g:1:994: INT_85
                 {
                 mINT_85(); 
 
                 }
                 break;
             case 147 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1001: INT_86
+                // com/joestelmach/natty/generated/DateLexer.g:1:1001: INT_86
                 {
                 mINT_86(); 
 
                 }
                 break;
             case 148 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1008: INT_87
+                // com/joestelmach/natty/generated/DateLexer.g:1:1008: INT_87
                 {
                 mINT_87(); 
 
                 }
                 break;
             case 149 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1015: INT_88
+                // com/joestelmach/natty/generated/DateLexer.g:1:1015: INT_88
                 {
                 mINT_88(); 
 
                 }
                 break;
             case 150 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1022: INT_89
+                // com/joestelmach/natty/generated/DateLexer.g:1:1022: INT_89
                 {
                 mINT_89(); 
 
                 }
                 break;
             case 151 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1029: INT_90
+                // com/joestelmach/natty/generated/DateLexer.g:1:1029: INT_90
                 {
                 mINT_90(); 
 
                 }
                 break;
             case 152 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1036: INT_91
+                // com/joestelmach/natty/generated/DateLexer.g:1:1036: INT_91
                 {
                 mINT_91(); 
 
                 }
                 break;
             case 153 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1043: INT_92
+                // com/joestelmach/natty/generated/DateLexer.g:1:1043: INT_92
                 {
                 mINT_92(); 
 
                 }
                 break;
             case 154 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1050: INT_93
+                // com/joestelmach/natty/generated/DateLexer.g:1:1050: INT_93
                 {
                 mINT_93(); 
 
                 }
                 break;
             case 155 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1057: INT_94
+                // com/joestelmach/natty/generated/DateLexer.g:1:1057: INT_94
                 {
                 mINT_94(); 
 
                 }
                 break;
             case 156 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1064: INT_95
+                // com/joestelmach/natty/generated/DateLexer.g:1:1064: INT_95
                 {
                 mINT_95(); 
 
                 }
                 break;
             case 157 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1071: INT_96
+                // com/joestelmach/natty/generated/DateLexer.g:1:1071: INT_96
                 {
                 mINT_96(); 
 
                 }
                 break;
             case 158 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1078: INT_97
+                // com/joestelmach/natty/generated/DateLexer.g:1:1078: INT_97
                 {
                 mINT_97(); 
 
                 }
                 break;
             case 159 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1085: INT_98
+                // com/joestelmach/natty/generated/DateLexer.g:1:1085: INT_98
                 {
                 mINT_98(); 
 
                 }
                 break;
             case 160 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1092: INT_99
+                // com/joestelmach/natty/generated/DateLexer.g:1:1092: INT_99
                 {
                 mINT_99(); 
 
                 }
                 break;
             case 161 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1099: ONE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1099: ONE
                 {
                 mONE(); 
 
                 }
                 break;
             case 162 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1103: TWO
+                // com/joestelmach/natty/generated/DateLexer.g:1:1103: TWO
                 {
                 mTWO(); 
 
                 }
                 break;
             case 163 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1107: THREE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1107: THREE
                 {
                 mTHREE(); 
 
                 }
                 break;
             case 164 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1113: FOUR
+                // com/joestelmach/natty/generated/DateLexer.g:1:1113: FOUR
                 {
                 mFOUR(); 
 
                 }
                 break;
             case 165 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1118: FIVE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1118: FIVE
                 {
                 mFIVE(); 
 
                 }
                 break;
             case 166 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1123: SIX
+                // com/joestelmach/natty/generated/DateLexer.g:1:1123: SIX
                 {
                 mSIX(); 
 
                 }
                 break;
             case 167 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1127: SEVEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1127: SEVEN
                 {
                 mSEVEN(); 
 
                 }
                 break;
             case 168 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1133: EIGHT
+                // com/joestelmach/natty/generated/DateLexer.g:1:1133: EIGHT
                 {
                 mEIGHT(); 
 
                 }
                 break;
             case 169 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1139: NINE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1139: NINE
                 {
                 mNINE(); 
 
                 }
                 break;
             case 170 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1144: TEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1144: TEN
                 {
                 mTEN(); 
 
                 }
                 break;
             case 171 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1148: ELEVEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1148: ELEVEN
                 {
                 mELEVEN(); 
 
                 }
                 break;
             case 172 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1155: TWELVE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1155: TWELVE
                 {
                 mTWELVE(); 
 
                 }
                 break;
             case 173 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1162: THIRTEEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1162: THIRTEEN
                 {
                 mTHIRTEEN(); 
 
                 }
                 break;
             case 174 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1171: FOURTEEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1171: FOURTEEN
                 {
                 mFOURTEEN(); 
 
                 }
                 break;
             case 175 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1180: FIFTEEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1180: FIFTEEN
                 {
                 mFIFTEEN(); 
 
                 }
                 break;
             case 176 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1188: SIXTEEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1188: SIXTEEN
                 {
                 mSIXTEEN(); 
 
                 }
                 break;
             case 177 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1196: SEVENTEEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1196: SEVENTEEN
                 {
                 mSEVENTEEN(); 
 
                 }
                 break;
             case 178 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1206: EIGHTEEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1206: EIGHTEEN
                 {
                 mEIGHTEEN(); 
 
                 }
                 break;
             case 179 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1215: NINETEEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1215: NINETEEN
                 {
                 mNINETEEN(); 
 
                 }
                 break;
             case 180 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1224: TWENTY
+                // com/joestelmach/natty/generated/DateLexer.g:1:1224: TWENTY
                 {
                 mTWENTY(); 
 
                 }
                 break;
             case 181 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1231: THIRTY
+                // com/joestelmach/natty/generated/DateLexer.g:1:1231: THIRTY
                 {
                 mTHIRTY(); 
 
                 }
                 break;
             case 182 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1238: FIRST
+                // com/joestelmach/natty/generated/DateLexer.g:1:1238: FIRST
                 {
                 mFIRST(); 
 
                 }
                 break;
             case 183 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1244: SECOND
+                // com/joestelmach/natty/generated/DateLexer.g:1:1244: SECOND
                 {
                 mSECOND(); 
 
                 }
                 break;
             case 184 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1251: THIRD
+                // com/joestelmach/natty/generated/DateLexer.g:1:1251: THIRD
                 {
                 mTHIRD(); 
 
                 }
                 break;
             case 185 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1257: FOURTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1257: FOURTH
                 {
                 mFOURTH(); 
 
                 }
                 break;
             case 186 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1264: FIFTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1264: FIFTH
                 {
                 mFIFTH(); 
 
                 }
                 break;
             case 187 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1270: SIXTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1270: SIXTH
                 {
                 mSIXTH(); 
 
                 }
                 break;
             case 188 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1276: SEVENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1276: SEVENTH
                 {
                 mSEVENTH(); 
 
                 }
                 break;
             case 189 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1284: EIGHTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1284: EIGHTH
                 {
                 mEIGHTH(); 
 
                 }
                 break;
             case 190 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1291: NINTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1291: NINTH
                 {
                 mNINTH(); 
 
                 }
                 break;
             case 191 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1297: TENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1297: TENTH
                 {
                 mTENTH(); 
 
                 }
                 break;
             case 192 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1303: ELEVENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1303: ELEVENTH
                 {
                 mELEVENTH(); 
 
                 }
                 break;
             case 193 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1312: TWELFTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1312: TWELFTH
                 {
                 mTWELFTH(); 
 
                 }
                 break;
             case 194 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1320: THIRTEENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1320: THIRTEENTH
                 {
                 mTHIRTEENTH(); 
 
                 }
                 break;
             case 195 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1331: FOURTEENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1331: FOURTEENTH
                 {
                 mFOURTEENTH(); 
 
                 }
                 break;
             case 196 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1342: FIFTEENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1342: FIFTEENTH
                 {
                 mFIFTEENTH(); 
 
                 }
                 break;
             case 197 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1352: SIXTEENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1352: SIXTEENTH
                 {
                 mSIXTEENTH(); 
 
                 }
                 break;
             case 198 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1362: SEVENTEENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1362: SEVENTEENTH
                 {
                 mSEVENTEENTH(); 
 
                 }
                 break;
             case 199 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1374: EIGHTEENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1374: EIGHTEENTH
                 {
                 mEIGHTEENTH(); 
 
                 }
                 break;
             case 200 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1385: NINETEENTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1385: NINETEENTH
                 {
                 mNINETEENTH(); 
 
                 }
                 break;
             case 201 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1396: TWENTIETH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1396: TWENTIETH
                 {
                 mTWENTIETH(); 
 
                 }
                 break;
             case 202 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1406: THIRTIETH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1406: THIRTIETH
                 {
                 mTHIRTIETH(); 
 
                 }
                 break;
             case 203 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1416: ST
+                // com/joestelmach/natty/generated/DateLexer.g:1:1416: ST
                 {
                 mST(); 
 
                 }
                 break;
             case 204 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1419: ND
+                // com/joestelmach/natty/generated/DateLexer.g:1:1419: ND
                 {
                 mND(); 
 
                 }
                 break;
             case 205 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1422: RD
+                // com/joestelmach/natty/generated/DateLexer.g:1:1422: RD
                 {
                 mRD(); 
 
                 }
                 break;
             case 206 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1425: TH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1425: TH
                 {
                 mTH(); 
 
                 }
                 break;
             case 207 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1428: COLON
+                // com/joestelmach/natty/generated/DateLexer.g:1:1428: COLON
                 {
                 mCOLON(); 
 
                 }
                 break;
             case 208 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1434: COMMA
+                // com/joestelmach/natty/generated/DateLexer.g:1:1434: COMMA
                 {
                 mCOMMA(); 
 
                 }
                 break;
             case 209 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1440: DASH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1440: DASH
                 {
                 mDASH(); 
 
                 }
                 break;
             case 210 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1445: SLASH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1445: SLASH
                 {
                 mSLASH(); 
 
                 }
                 break;
             case 211 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1451: DOT
+                // com/joestelmach/natty/generated/DateLexer.g:1:1451: DOT
                 {
                 mDOT(); 
 
                 }
                 break;
             case 212 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1455: PLUS
+                // com/joestelmach/natty/generated/DateLexer.g:1:1455: PLUS
                 {
                 mPLUS(); 
 
                 }
                 break;
             case 213 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1460: SINGLE_QUOTE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1460: SINGLE_QUOTE
                 {
                 mSINGLE_QUOTE(); 
 
                 }
                 break;
             case 214 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1473: FOR
+                // com/joestelmach/natty/generated/DateLexer.g:1:1473: FOR
                 {
                 mFOR(); 
 
                 }
                 break;
             case 215 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1477: IN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1477: IN
                 {
                 mIN(); 
 
                 }
                 break;
             case 216 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1480: AN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1480: AN
                 {
                 mAN(); 
 
                 }
                 break;
             case 217 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1483: THE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1483: THE
                 {
                 mTHE(); 
 
                 }
                 break;
             case 218 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1487: OR
+                // com/joestelmach/natty/generated/DateLexer.g:1:1487: OR
                 {
                 mOR(); 
 
                 }
                 break;
             case 219 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1490: AND
+                // com/joestelmach/natty/generated/DateLexer.g:1:1490: AND
                 {
                 mAND(); 
 
                 }
                 break;
             case 220 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1494: TO
+                // com/joestelmach/natty/generated/DateLexer.g:1:1494: TO
                 {
                 mTO(); 
 
                 }
                 break;
             case 221 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1497: THROUGH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1497: THROUGH
                 {
                 mTHROUGH(); 
 
                 }
                 break;
             case 222 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1505: ON
+                // com/joestelmach/natty/generated/DateLexer.g:1:1505: ON
                 {
                 mON(); 
 
                 }
                 break;
             case 223 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1508: OF
+                // com/joestelmach/natty/generated/DateLexer.g:1:1508: OF
                 {
                 mOF(); 
 
                 }
                 break;
             case 224 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1511: THIS
+                // com/joestelmach/natty/generated/DateLexer.g:1:1511: THIS
                 {
                 mTHIS(); 
 
                 }
                 break;
             case 225 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1516: THAT
+                // com/joestelmach/natty/generated/DateLexer.g:1:1516: THAT
                 {
                 mTHAT(); 
 
                 }
                 break;
             case 226 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1521: LAST
+                // com/joestelmach/natty/generated/DateLexer.g:1:1521: LAST
                 {
                 mLAST(); 
 
                 }
                 break;
             case 227 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1526: NEXT
+                // com/joestelmach/natty/generated/DateLexer.g:1:1526: NEXT
                 {
                 mNEXT(); 
 
                 }
                 break;
             case 228 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1531: COMING
+                // com/joestelmach/natty/generated/DateLexer.g:1:1531: COMING
                 {
                 mCOMING(); 
 
                 }
                 break;
             case 229 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1538: UPCOMING
+                // com/joestelmach/natty/generated/DateLexer.g:1:1538: UPCOMING
                 {
                 mUPCOMING(); 
 
                 }
                 break;
             case 230 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1547: FROM
+                // com/joestelmach/natty/generated/DateLexer.g:1:1547: FROM
                 {
                 mFROM(); 
 
                 }
                 break;
             case 231 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1552: NOW
+                // com/joestelmach/natty/generated/DateLexer.g:1:1552: NOW
                 {
                 mNOW(); 
 
                 }
                 break;
             case 232 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1556: AGO
+                // com/joestelmach/natty/generated/DateLexer.g:1:1556: AGO
                 {
                 mAGO(); 
 
                 }
                 break;
             case 233 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1560: BEFORE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1560: BEFORE
                 {
                 mBEFORE(); 
 
                 }
                 break;
             case 234 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1567: BEGINNING
+                // com/joestelmach/natty/generated/DateLexer.g:1:1567: BEGINNING
                 {
                 mBEGINNING(); 
 
                 }
                 break;
             case 235 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1577: START
+                // com/joestelmach/natty/generated/DateLexer.g:1:1577: START
                 {
                 mSTART(); 
 
                 }
                 break;
             case 236 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1583: END
+                // com/joestelmach/natty/generated/DateLexer.g:1:1583: END
                 {
                 mEND(); 
 
                 }
                 break;
             case 237 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1587: WHITE_SPACE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1587: WHITE_SPACE
                 {
                 mWHITE_SPACE(); 
 
                 }
                 break;
             case 238 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1599: FOOL
+                // com/joestelmach/natty/generated/DateLexer.g:1:1599: FOOL
                 {
                 mFOOL(); 
 
                 }
                 break;
             case 239 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1604: BLACK
+                // com/joestelmach/natty/generated/DateLexer.g:1:1604: BLACK
                 {
                 mBLACK(); 
 
                 }
                 break;
             case 240 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1610: CHRISTMAS
+                // com/joestelmach/natty/generated/DateLexer.g:1:1610: CHRISTMAS
                 {
                 mCHRISTMAS(); 
 
                 }
                 break;
             case 241 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1620: COLUMBUS
+                // com/joestelmach/natty/generated/DateLexer.g:1:1620: COLUMBUS
                 {
                 mCOLUMBUS(); 
 
                 }
                 break;
             case 242 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1629: EARTH
+                // com/joestelmach/natty/generated/DateLexer.g:1:1629: EARTH
                 {
                 mEARTH(); 
 
                 }
                 break;
             case 243 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1635: EASTER
+                // com/joestelmach/natty/generated/DateLexer.g:1:1635: EASTER
                 {
                 mEASTER(); 
 
                 }
                 break;
             case 244 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1642: FATHER
+                // com/joestelmach/natty/generated/DateLexer.g:1:1642: FATHER
                 {
                 mFATHER(); 
 
                 }
                 break;
             case 245 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1649: FLAG
+                // com/joestelmach/natty/generated/DateLexer.g:1:1649: FLAG
                 {
                 mFLAG(); 
 
                 }
                 break;
             case 246 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1654: GOOD
+                // com/joestelmach/natty/generated/DateLexer.g:1:1654: GOOD
                 {
                 mGOOD(); 
 
                 }
                 break;
             case 247 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1659: GROUNDHOG
+                // com/joestelmach/natty/generated/DateLexer.g:1:1659: GROUNDHOG
                 {
                 mGROUNDHOG(); 
 
                 }
                 break;
             case 248 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1669: HALLOWEEN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1669: HALLOWEEN
                 {
                 mHALLOWEEN(); 
 
                 }
                 break;
             case 249 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1679: INAUGURATION
+                // com/joestelmach/natty/generated/DateLexer.g:1:1679: INAUGURATION
                 {
                 mINAUGURATION(); 
 
                 }
                 break;
             case 250 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1692: INDEPENDENCE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1692: INDEPENDENCE
                 {
                 mINDEPENDENCE(); 
 
                 }
                 break;
             case 251 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1705: KWANZAA
+                // com/joestelmach/natty/generated/DateLexer.g:1:1705: KWANZAA
                 {
                 mKWANZAA(); 
 
                 }
                 break;
             case 252 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1713: LABOR
+                // com/joestelmach/natty/generated/DateLexer.g:1:1713: LABOR
                 {
                 mLABOR(); 
 
                 }
                 break;
             case 253 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1719: MLK
+                // com/joestelmach/natty/generated/DateLexer.g:1:1719: MLK
                 {
                 mMLK(); 
 
                 }
                 break;
             case 254 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1723: MEMORIAL
+                // com/joestelmach/natty/generated/DateLexer.g:1:1723: MEMORIAL
                 {
                 mMEMORIAL(); 
 
                 }
                 break;
             case 255 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1732: MOTHER
+                // com/joestelmach/natty/generated/DateLexer.g:1:1732: MOTHER
                 {
                 mMOTHER(); 
 
                 }
                 break;
             case 256 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1739: NEW
+                // com/joestelmach/natty/generated/DateLexer.g:1:1739: NEW
                 {
                 mNEW(); 
 
                 }
                 break;
             case 257 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1743: PALM
+                // com/joestelmach/natty/generated/DateLexer.g:1:1743: PALM
                 {
                 mPALM(); 
 
                 }
                 break;
             case 258 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1748: PATRIOT
+                // com/joestelmach/natty/generated/DateLexer.g:1:1748: PATRIOT
                 {
                 mPATRIOT(); 
 
                 }
                 break;
             case 259 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1756: PRESIDENT
+                // com/joestelmach/natty/generated/DateLexer.g:1:1756: PRESIDENT
                 {
                 mPRESIDENT(); 
 
                 }
                 break;
             case 260 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1766: PATRICK
+                // com/joestelmach/natty/generated/DateLexer.g:1:1766: PATRICK
                 {
                 mPATRICK(); 
 
                 }
                 break;
             case 261 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1774: SAINT
+                // com/joestelmach/natty/generated/DateLexer.g:1:1774: SAINT
                 {
                 mSAINT(); 
 
                 }
                 break;
             case 262 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1780: TAX
+                // com/joestelmach/natty/generated/DateLexer.g:1:1780: TAX
                 {
                 mTAX(); 
 
                 }
                 break;
             case 263 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1784: THANKSGIVING
+                // com/joestelmach/natty/generated/DateLexer.g:1:1784: THANKSGIVING
                 {
                 mTHANKSGIVING(); 
 
                 }
                 break;
             case 264 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1797: ELECTION
+                // com/joestelmach/natty/generated/DateLexer.g:1:1797: ELECTION
                 {
                 mELECTION(); 
 
                 }
                 break;
             case 265 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1806: VALENTINE
+                // com/joestelmach/natty/generated/DateLexer.g:1:1806: VALENTINE
                 {
                 mVALENTINE(); 
 
                 }
                 break;
             case 266 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1816: VETERAN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1816: VETERAN
                 {
                 mVETERAN(); 
 
                 }
                 break;
             case 267 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1824: WINTER
+                // com/joestelmach/natty/generated/DateLexer.g:1:1824: WINTER
                 {
                 mWINTER(); 
 
                 }
                 break;
             case 268 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1831: FALL
+                // com/joestelmach/natty/generated/DateLexer.g:1:1831: FALL
                 {
                 mFALL(); 
 
                 }
                 break;
             case 269 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1836: AUTUMN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1836: AUTUMN
                 {
                 mAUTUMN(); 
 
                 }
                 break;
             case 270 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1843: SPRING
+                // com/joestelmach/natty/generated/DateLexer.g:1:1843: SPRING
                 {
                 mSPRING(); 
 
                 }
                 break;
             case 271 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1850: SUMMER
+                // com/joestelmach/natty/generated/DateLexer.g:1:1850: SUMMER
                 {
                 mSUMMER(); 
 
                 }
                 break;
             case 272 :
-                // com/joestelmach/natty/spark/DateLexer.g:1:1857: UNKNOWN
+                // com/joestelmach/natty/generated/DateLexer.g:1:1857: UNKNOWN
                 {
                 mUNKNOWN(); 
 
