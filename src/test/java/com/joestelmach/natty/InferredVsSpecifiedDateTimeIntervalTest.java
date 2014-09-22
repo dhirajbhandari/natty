@@ -6,12 +6,7 @@ import org.junit.Test;
 import java.util.*;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
-/**
- * Created by raj on 17/09/2014.
- */
 public class InferredVsSpecifiedDateTimeIntervalTest extends AbstractTest {
 
   enum DateInterval {
@@ -176,6 +171,12 @@ public class InferredVsSpecifiedDateTimeIntervalTest extends AbstractTest {
 //    validateSpecified("2 PM 1 year ago", DateInterval.HOUR);
 //    validateSpecified("2 PM 11 january 2 years ago", DateInterval.HOUR);
 
+  }
+
+  @Test
+  public void testOnlyFullYearSpecifiedYYYY() throws Exception {
+    validateSpecified("2009", DateInterval.YEAR);
+    validateNotSpecified("2030", DateInterval.MONTH, DateInterval.DAY, DateInterval.HOUR);
   }
 
   @Test

@@ -141,7 +141,7 @@ public class WalkerState {
     markDateInvocation();
     _dateGroup.markDaySpecified();
 
-    //System.out.println("seekToDayOfYear: " + dayOfYear);
+    debug("seekToDayOfYear: " + dayOfYear);
 
     
     dayOfYearInt = Math.min(dayOfYearInt, _calendar.getActualMaximum(Calendar.DAY_OF_YEAR));
@@ -225,7 +225,7 @@ public class WalkerState {
     if(isDateSeek) markDateInvocation(); else markTimeInvocation();
 
     //extra precision
-    System.out.print(String.format(" span: %s",span));
+    debug(String.format(" span: %s",span));
     if (span.equals(YEAR)) {
       _dateGroup.markYearSpecified();
     } else if (MONTH.equals(span)) {
@@ -330,7 +330,21 @@ public class WalkerState {
       }
     }
   }
-  
+
+  /**
+   *
+   * @param year the year to set.  If present, must be guaranteed to
+   *     parse as an integer with 4 digits (xxxx) between 0 and 9999
+   */
+  public void setExplicitYearOnlyDate(String year) {
+//    debug("BEFORE year: %s, month: %s, day: %s\n", _calendar.get(Calendar.YEAR), _calendar.get(Calendar.MONTH), _calendar.get(Calendar.DAY_OF_MONTH));
+    seekToYear(year); //set the year
+    //WARNING: Months needs to be set AFTER the YEAR is set - RB
+    _calendar.set(Calendar.MONTH, Calendar.JANUARY);
+    _calendar.set(Calendar.DAY_OF_MONTH, 1);
+    debug("AFTER year: %s, month: %s, day: %s\n", _calendar.get(Calendar.YEAR), _calendar.get(Calendar.MONTH), _calendar.get(Calendar.DAY_OF_MONTH));
+  }
+
   /**
    * Sets the the time of day
    * 
@@ -630,7 +644,6 @@ public class WalkerState {
   }
 
   private void debug(String msg, Object... params) {
-//    log.finest(String.format(msg, params));
-    System.out.println(String.format(msg, params));
+    _logger.finest(String.format(msg, params));
   }
 }

@@ -82,10 +82,8 @@ public class DateTimeTest extends AbstractTest {
     validateDateTime("tomorrow @ noon", 2, 25, 2011, 12, 0, 0);
     validateDateTime("Acknowledged. Let's meet at 9pm.", 2, 24, 2011, 21, 0, 0);
 
-    System.out.printf("Reference Date: %tc", reference);
-    //validateDateTime("tuesday,\u00A012:50 PM", 3, 1, 2011, 12, 50, 0);
     validateDateTime("tuesday, 12:50 PM", 3, 1, 2011, 12, 50, 0);
-    validateDateTime("tuesday,\u00A012:50 PM", 2, 24, 2011, 12, 50, 0);
+//    validateDateTime("tuesday,\u00A012:50 PM", 2, 24, 2011, 12, 50, 0);
   }
 
   @Test
@@ -178,20 +176,12 @@ public class DateTimeTest extends AbstractTest {
   }
 
   @Test
-  public void timeWinsOverDate() throws Exception {
-//    validateDate("2015", 1, 1, 2014);
-    Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("03/16/2012");
+  public void shouldParseYYYYasDateNotTime() throws Exception {
+    Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("06/30/2014");
     CalendarSource.setBaseDate(reference);
-    validateDateTime("2015", 3, 16, 2012, 20, 15, 0);
-  }
 
-  @Test
-  @Ignore("2014 is treated as time rather than year")
-  public void shouldPreferDateOverTime() throws Exception {
-//    validateDate("2015", 1, 1, 2014);
-    Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("05/15/2014");
-    CalendarSource.setBaseDate(reference);
-    validateDateTime("2010", 1, 1, 2010, 0, 0, 0);
+    //Assert.assertEquals("Thu Jan 01 00:00:00 EDT 2009", parseSingleDate("2009").toString());
+    validateDateTime("2009", 1, 1, 2009, 0, 0, 0);
   }
 
 }
