@@ -45,6 +45,7 @@ class Transformer
  def line_tr(line)
    package_regex = Regexp.new(Regexp.escape("package #{from_package}"))
    antlr_import_regex = Regexp.new(Regexp.escape("import org.antlr.runtime"))
+   fq_natty_package_regex = Regexp.new(Regexp.escape("com.joestelmach.natty"))
    #puts "package_regex: #{package_regex}"
    result = line
    if line =~ package_regex
@@ -54,9 +55,15 @@ class Transformer
      result
    elsif line =~ antlr_import_regex
       puts "matched import !!: #{line}"
-        result = line.sub(antlr_import_regex, 'import org.antlr.v32.runtime')
-        puts "import #{line} -> #{result}"
-        result
+      result = line.sub(antlr_import_regex, 'import org.antlr.v32.runtime')
+      puts "import #{line} -> #{result}"
+      result
+   elsif line =~ fq_natty_package_regex
+      puts "matched fq natty !!: #{line}"
+      result = line.gsub('com.joestelmach.natty.WalkerState', 'com.joestelmach.natty.antlrV32.WalkerState')
+      result = result.sub('com.joestelmach.natty.DateGroup', 'com.joestelmach.natty.antlrV32.DateGroup')
+      puts "import #{line} -> #{result}"
+      result
    else
      #puts "not_matched: #{line}"
      result = line

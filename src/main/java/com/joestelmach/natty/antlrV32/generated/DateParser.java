@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/DateParser.g 2014-09-22 17:28:07
+// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/DateParser.g 2014-09-23 17:18:49
 
   package com.joestelmach.natty.antlrV32.generated;
 
@@ -328,40 +328,41 @@ public class DateParser extends DebugParser {
     // delegators
 
     public static final String[] ruleNames = new String[] {
-        "invalidRule", "time_zone", "meridian_indicator", "relative_date_span", 
-        "synpred8_DateParser", "int_01_to_12", "synpred19_DateParser", "explicit_day_of_year_part", 
-        "day_of_week", "synpred4_DateParser", "int_24_to_31", "relaxed_month", 
-        "int_1_to_5", "formal_month_of_year", "parse", "int_00_to_23_optional_prefix", 
-        "relaxed_day_of_month_prefix", "synpred9_NumericRules", "relaxed_date", 
-        "prefix", "explicit_relative_month", "explicit_day_of_week_bound", 
-        "synpred16_DateParser", "explicit_day_of_month_bound", "named_relative_date", 
-        "synpred20_DateParser", "implicit_prefix", "recurrence", "synpred6_NumericRules", 
-        "synpred3_DateParser", "int_1_to_9", "synpred1_NumericRules", "relative_time_span", 
-        "day_of_week_list_separator", "relaxed_day_of_month", "synpred17_DateParser", 
-        "spelled_or_int_01_to_31_optional_prefix", "synpred8_NumericRules", 
-        "synpred1_DateParser", "spelled_one_to_thirty_one", "relative_date_prefix", 
-        "synpred6_DateParser", "formal_year", "synpred4_NumericRules", "alternative_day_of_week_list", 
-        "holiday", "synpred18_DateParser", "date", "minutes", "synpred12_DateParser", 
-        "holiday_name", "synpred10_NumericRules", "synpred2_NumericRules", 
-        "relaxed_day_of_week", "synpred13_DateParser", "time_zone_abbreviation", 
-        "formal_date_separator", "relative_time_target", "season_name", 
-        "int_60_to_99", "time_date_separator", "relaxed_day_of_year", "named_time", 
-        "empty", "formal_date", "formal_year_four_digits", "time_zone_plus_offset", 
-        "date_time_alternative", "synpred11_DateParser", "explicit_time", 
-        "synpred3_NumericRules", "seconds", "alternative_day_of_month_list", 
-        "synpred9_DateParser", "global_date_prefix", "synpred5_DateParser", 
-        "explicit_day_of_month_part", "explicit_day_of_year_bound", "int_01_to_12_optional_prefix", 
-        "relative_date_suffix", "int_32_to_59", "explicit_relative_date", 
-        "time_zone_offset", "prefix_direction", "int_01_to_31_optional_prefix", 
-        "synpred7_NumericRules", "relaxed_year_prefix", "int_13_to_23", 
-        "relative_occurrence_index", "spelled_or_int_optional_prefix", "conjunction", 
-        "synpred15_DateParser", "relaxed_year", "alternative_direction", 
-        "int_four_digits", "relative_time_suffix", "named_relative_time", 
-        "relative_time", "date_time", "explicit_day_of_week_part", "synpred5_NumericRules", 
-        "int_00_to_99_mandatory_prefix", "synpred7_DateParser", "spelled_first_to_thirty_first", 
-        "synpred14_DateParser", "int_00_to_59_mandatory_prefix", "relative_target", 
-        "synpred2_DateParser", "relative_time_suffix_anchor", "formal_day_of_month", 
-        "season", "relative_date", "hours", "synpred10_DateParser", "date_time_separator"
+        "invalidRule", "minutes", "relative_date_prefix", "relative_date_span", 
+        "relaxed_month", "synpred8_NumericRules", "date_time_alternative", 
+        "relaxed_day_of_month", "implicit_prefix", "holiday", "int_32_to_59", 
+        "synpred17_DateParser", "synpred2_NumericRules", "synpred4_NumericRules", 
+        "synpred5_NumericRules", "synpred10_DateParser", "relative_time_span", 
+        "formal_date", "int_24_to_31", "synpred6_DateParser", "synpred1_NumericRules", 
+        "prefix", "int_1_to_5", "synpred9_DateParser", "int_00_to_23_optional_prefix", 
+        "spelled_one_to_thirty_one", "time_zone", "synpred7_DateParser", 
+        "time_zone_abbreviation", "relaxed_year", "synpred5_DateParser", 
+        "synpred9_NumericRules", "relaxed_day_of_month_prefix", "int_13_to_23", 
+        "seconds", "int_01_to_12_optional_prefix", "global_date_prefix", 
+        "synpred6_NumericRules", "explicit_relative_month", "synpred2_DateParser", 
+        "spelled_or_int_01_to_31_optional_prefix", "synpred16_DateParser", 
+        "int_00_to_59_mandatory_prefix", "synpred4_DateParser", "int_1_to_9", 
+        "hours", "explicit_day_of_year_part", "time_date_separator", "synpred1_DateParser", 
+        "time_zone_offset", "meridian_indicator", "named_time", "relative_date", 
+        "formal_year_four_digits", "spelled_first_to_thirty_first", "relaxed_day_of_week", 
+        "alternative_day_of_week_list", "date", "synpred10_NumericRules", 
+        "formal_month_of_year", "relative_time_suffix_anchor", "named_relative_date", 
+        "explicit_day_of_year_bound", "synpred19_DateParser", "explicit_day_of_month_part", 
+        "relative_occurrence_index", "spelled_or_int_optional_prefix", "relaxed_year_prefix", 
+        "synpred3_DateParser", "formal_date_separator", "synpred12_DateParser", 
+        "day_of_week", "synpred8_DateParser", "synpred3_NumericRules", "formal_day_of_month", 
+        "int_01_to_12", "synpred20_DateParser", "date_time_separator", "explicit_relative_date", 
+        "synpred14_DateParser", "season", "recurrence", "int_four_digits", 
+        "relaxed_date", "parse", "relative_time", "explicit_day_of_week_bound", 
+        "conjunction", "relative_time_target", "int_60_to_99", "day_of_week_list_separator", 
+        "explicit_time", "relative_time_suffix", "synpred15_DateParser", 
+        "synpred11_DateParser", "explicit_day_of_week_part", "season_name", 
+        "synpred7_NumericRules", "relative_date_suffix", "time_zone_plus_offset", 
+        "prefix_direction", "date_time", "formal_year", "relaxed_day_of_year", 
+        "empty", "synpred13_DateParser", "named_relative_time", "int_00_to_99_mandatory_prefix", 
+        "int_01_to_31_optional_prefix", "alternative_day_of_month_list", 
+        "relative_target", "explicit_day_of_month_bound", "holiday_name", 
+        "synpred18_DateParser", "alternative_direction"
     };
      
         public int ruleLevel = 0;
@@ -2664,7 +2665,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: global_date_prefix, date
+                    // elements: date, global_date_prefix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3319,7 +3320,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: explicit_time, date, explicit_time, global_date_prefix, date
+                    // elements: date, date, explicit_time, global_date_prefix, explicit_time
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3666,7 +3667,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: explicit_time, day_of_week, day_of_week, alternative_direction, explicit_time
+                    // elements: day_of_week, day_of_week, alternative_direction, explicit_time, explicit_time
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -3952,7 +3953,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relaxed_year, first, relaxed_year, second
+                    // elements: first, relaxed_year, relaxed_year, second
                     // token labels: 
                     // rule labels: first, retval, second
                     // token list labels: 
@@ -4177,7 +4178,7 @@ public class DateParser extends DebugParser {
 
 
                             // AST REWRITE
-                            // elements: spelled_or_int_optional_prefix, relative_date_span
+                            // elements: relative_date_span, spelled_or_int_optional_prefix
                             // token labels: 
                             // rule labels: retval
                             // token list labels: 
@@ -4297,7 +4298,7 @@ public class DateParser extends DebugParser {
 
 
                             // AST REWRITE
-                            // elements: spelled_or_int_optional_prefix, relative_time_span
+                            // elements: relative_time_span, spelled_or_int_optional_prefix
                             // token labels: 
                             // rule labels: retval
                             // token list labels: 
@@ -4535,7 +4536,7 @@ public class DateParser extends DebugParser {
 
 
                             // AST REWRITE
-                            // elements: relative_date_span, spelled_or_int_optional_prefix
+                            // elements: spelled_or_int_optional_prefix, relative_date_span
                             // token labels: 
                             // rule labels: retval
                             // token list labels: 
@@ -5497,7 +5498,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relaxed_month, relaxed_day_of_month, explicit_time
+                    // elements: relaxed_day_of_month, explicit_time, relaxed_month
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -5511,10 +5512,10 @@ public class DateParser extends DebugParser {
                     // 174:7: -> ( ^( DATE_TIME ^( EXPLICIT_DATE relaxed_month relaxed_day_of_month ) ( explicit_time )? ) )+
                     {
                         dbg.location(174,10);
-                        if ( !(stream_relaxed_month.hasNext()||stream_relaxed_day_of_month.hasNext()) ) {
+                        if ( !(stream_relaxed_day_of_month.hasNext()||stream_relaxed_month.hasNext()) ) {
                             throw new RewriteEarlyExitException();
                         }
-                        while ( stream_relaxed_month.hasNext()||stream_relaxed_day_of_month.hasNext() ) {
+                        while ( stream_relaxed_day_of_month.hasNext()||stream_relaxed_month.hasNext() ) {
                             dbg.location(174,10);
                             // com/joestelmach/natty/generated/DateParser.g:174:10: ^( DATE_TIME ^( EXPLICIT_DATE relaxed_month relaxed_day_of_month ) ( explicit_time )? )
                             {
@@ -5549,8 +5550,8 @@ public class DateParser extends DebugParser {
                             }
 
                         }
-                        stream_relaxed_month.reset();
                         stream_relaxed_day_of_month.reset();
+                        stream_relaxed_month.reset();
 
                     }
 
@@ -5695,7 +5696,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: explicit_time, relaxed_month, relaxed_month, explicit_time, first, second
+                    // elements: relaxed_month, second, explicit_time, first, relaxed_month, explicit_time
                     // token labels: 
                     // rule labels: first, retval, second
                     // token list labels: 
@@ -5949,7 +5950,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: explicit_time, explicit_time, explicit_relative_month, second, prefix, prefix, explicit_relative_month, first
+                    // elements: second, explicit_time, explicit_time, prefix, first, prefix, explicit_relative_month, explicit_relative_month
                     // token labels: 
                     // rule labels: first, retval, second
                     // token list labels: 
@@ -6218,7 +6219,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relative_date_suffix, explicit_time, spelled_or_int_optional_prefix, explicit_time, explicit_relative_month, second, first, spelled_or_int_optional_prefix, explicit_relative_month, relative_date_suffix
+                    // elements: explicit_relative_month, relative_date_suffix, first, explicit_relative_month, second, explicit_time, spelled_or_int_optional_prefix, relative_date_suffix, spelled_or_int_optional_prefix, explicit_time
                     // token labels: 
                     // rule labels: first, retval, second
                     // token list labels: 
@@ -6633,7 +6634,7 @@ public class DateParser extends DebugParser {
 
 
             // AST REWRITE
-            // elements: explicit_time, day_of_week, alternative_direction
+            // elements: explicit_time, alternative_direction, day_of_week
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -6647,10 +6648,10 @@ public class DateParser extends DebugParser {
             // 198:7: -> ( ^( DATE_TIME ^( RELATIVE_DATE ^( SEEK alternative_direction day_of_week ) ) ( explicit_time )? ) )+
             {
                 dbg.location(198,10);
-                if ( !(stream_day_of_week.hasNext()||stream_alternative_direction.hasNext()) ) {
+                if ( !(stream_alternative_direction.hasNext()||stream_day_of_week.hasNext()) ) {
                     throw new RewriteEarlyExitException();
                 }
-                while ( stream_day_of_week.hasNext()||stream_alternative_direction.hasNext() ) {
+                while ( stream_alternative_direction.hasNext()||stream_day_of_week.hasNext() ) {
                     dbg.location(198,10);
                     // com/joestelmach/natty/generated/DateParser.g:198:10: ^( DATE_TIME ^( RELATIVE_DATE ^( SEEK alternative_direction day_of_week ) ) ( explicit_time )? )
                     {
@@ -6695,8 +6696,8 @@ public class DateParser extends DebugParser {
                     }
 
                 }
-                stream_day_of_week.reset();
                 stream_alternative_direction.reset();
+                stream_day_of_week.reset();
 
             }
 
@@ -7503,7 +7504,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: spelled_or_int_optional_prefix, prefix_direction
+                    // elements: prefix_direction, spelled_or_int_optional_prefix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -7562,7 +7563,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: prefix_direction, spelled_or_int_optional_prefix
+                    // elements: spelled_or_int_optional_prefix, prefix_direction
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -7981,7 +7982,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: prefix_direction, day_of_week, spelled_first_to_thirty_first
+                    // elements: prefix_direction, spelled_first_to_thirty_first, day_of_week
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -8817,7 +8818,7 @@ public class DateParser extends DebugParser {
 
 
             // AST REWRITE
-            // elements: relaxed_month, relaxed_year, relaxed_day_of_month, relaxed_day_of_week
+            // elements: relaxed_day_of_week, relaxed_day_of_month, relaxed_year, relaxed_month
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -11197,7 +11198,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relaxed_month, formal_month_of_year, relaxed_day_of_week, formal_year_four_digits, formal_day_of_month
+                    // elements: formal_month_of_year, formal_day_of_month, relaxed_month, formal_year_four_digits, relaxed_day_of_week
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11743,7 +11744,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relaxed_day_of_week, formal_month_of_year, formal_day_of_month, formal_year
+                    // elements: formal_year, formal_day_of_month, relaxed_day_of_week, formal_month_of_year
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11865,7 +11866,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relaxed_month, formal_day_of_month, formal_year_four_digits
+                    // elements: formal_day_of_month, relaxed_month, formal_year_four_digits
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -11932,7 +11933,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relaxed_year, relaxed_month
+                    // elements: relaxed_month, relaxed_year
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -13543,7 +13544,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relative_target, relative_date_prefix
+                    // elements: relative_date_prefix, relative_target
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -13816,7 +13817,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relative_target, spelled_or_int_optional_prefix, relative_date_suffix
+                    // elements: relative_date_suffix, spelled_or_int_optional_prefix, relative_target
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -13887,7 +13888,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relative_date_suffix, relative_target
+                    // elements: relative_target, relative_date_suffix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -14414,7 +14415,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: explicit_relative_month, relative_date_suffix, explicit_day_of_month_part, spelled_or_int_optional_prefix
+                    // elements: explicit_relative_month, explicit_day_of_month_part, relative_date_suffix, spelled_or_int_optional_prefix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -14498,7 +14499,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: prefix, explicit_day_of_month_part, explicit_relative_month
+                    // elements: explicit_relative_month, explicit_day_of_month_part, prefix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -14851,7 +14852,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: prefix, explicit_day_of_week_part
+                    // elements: explicit_day_of_week_part, prefix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -14941,7 +14942,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relative_date_suffix, explicit_day_of_week_part, spelled_or_int_optional_prefix
+                    // elements: spelled_or_int_optional_prefix, relative_date_suffix, explicit_day_of_week_part
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -15124,7 +15125,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relaxed_year, relaxed_month, explicit_day_of_month_part
+                    // elements: relaxed_month, relaxed_year, explicit_day_of_month_part
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -15286,7 +15287,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relaxed_year, explicit_day_of_year_part
+                    // elements: explicit_day_of_year_part, relaxed_year
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -15816,7 +15817,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: day_of_week, relative_occurrence_index
+                    // elements: relative_occurrence_index, day_of_week
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -23596,7 +23597,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: holiday_name, spelled_or_int_optional_prefix, relative_date_suffix
+                    // elements: spelled_or_int_optional_prefix, relative_date_suffix, holiday_name
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -25880,7 +25881,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relative_date_suffix, spelled_or_int_optional_prefix, season_name
+                    // elements: spelled_or_int_optional_prefix, season_name, relative_date_suffix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -26513,7 +26514,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: relative_time_suffix, relative_time_target, spelled_or_int_optional_prefix
+                    // elements: relative_time_suffix, spelled_or_int_optional_prefix, relative_time_target
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -26592,7 +26593,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: spelled_or_int_optional_prefix, relative_time_target
+                    // elements: relative_time_target, spelled_or_int_optional_prefix
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -27894,7 +27895,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: meridian_indicator, time_zone, hours, seconds, minutes
+                    // elements: time_zone, meridian_indicator, minutes, seconds, hours
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -28386,7 +28387,7 @@ public class DateParser extends DebugParser {
 
 
                     // AST REWRITE
-                    // elements: named_time, time_zone
+                    // elements: time_zone, named_time
                     // token labels: 
                     // rule labels: retval
                     // token list labels: 
@@ -31532,23 +31533,23 @@ public class DateParser extends DebugParser {
     // $ANTLR end synpred20_DateParser
 
     // Delegated rules
-    public DateParser_NumericRules.int_01_to_12_return int_01_to_12() throws RecognitionException { return gNumericRules.int_01_to_12(); }
+    public DateParser_NumericRules.int_32_to_59_return int_32_to_59() throws RecognitionException { return gNumericRules.int_32_to_59(); }
     public DateParser_NumericRules.int_24_to_31_return int_24_to_31() throws RecognitionException { return gNumericRules.int_24_to_31(); }
     public DateParser_NumericRules.int_1_to_5_return int_1_to_5() throws RecognitionException { return gNumericRules.int_1_to_5(); }
     public DateParser_NumericRules.int_00_to_23_optional_prefix_return int_00_to_23_optional_prefix() throws RecognitionException { return gNumericRules.int_00_to_23_optional_prefix(); }
-    public DateParser_NumericRules.int_1_to_9_return int_1_to_9() throws RecognitionException { return gNumericRules.int_1_to_9(); }
-    public DateParser_NumericRules.spelled_or_int_01_to_31_optional_prefix_return spelled_or_int_01_to_31_optional_prefix() throws RecognitionException { return gNumericRules.spelled_or_int_01_to_31_optional_prefix(); }
     public DateParser_NumericRules.spelled_one_to_thirty_one_return spelled_one_to_thirty_one() throws RecognitionException { return gNumericRules.spelled_one_to_thirty_one(); }
-    public DateParser_NumericRules.int_60_to_99_return int_60_to_99() throws RecognitionException { return gNumericRules.int_60_to_99(); }
-    public DateParser_NumericRules.int_01_to_12_optional_prefix_return int_01_to_12_optional_prefix() throws RecognitionException { return gNumericRules.int_01_to_12_optional_prefix(); }
-    public DateParser_NumericRules.int_32_to_59_return int_32_to_59() throws RecognitionException { return gNumericRules.int_32_to_59(); }
-    public DateParser_NumericRules.int_01_to_31_optional_prefix_return int_01_to_31_optional_prefix() throws RecognitionException { return gNumericRules.int_01_to_31_optional_prefix(); }
     public DateParser_NumericRules.int_13_to_23_return int_13_to_23() throws RecognitionException { return gNumericRules.int_13_to_23(); }
-    public DateParser_NumericRules.spelled_or_int_optional_prefix_return spelled_or_int_optional_prefix() throws RecognitionException { return gNumericRules.spelled_or_int_optional_prefix(); }
-    public DateParser_NumericRules.int_four_digits_return int_four_digits() throws RecognitionException { return gNumericRules.int_four_digits(); }
-    public DateParser_NumericRules.int_00_to_99_mandatory_prefix_return int_00_to_99_mandatory_prefix() throws RecognitionException { return gNumericRules.int_00_to_99_mandatory_prefix(); }
-    public DateParser_NumericRules.spelled_first_to_thirty_first_return spelled_first_to_thirty_first() throws RecognitionException { return gNumericRules.spelled_first_to_thirty_first(); }
+    public DateParser_NumericRules.int_01_to_12_optional_prefix_return int_01_to_12_optional_prefix() throws RecognitionException { return gNumericRules.int_01_to_12_optional_prefix(); }
+    public DateParser_NumericRules.spelled_or_int_01_to_31_optional_prefix_return spelled_or_int_01_to_31_optional_prefix() throws RecognitionException { return gNumericRules.spelled_or_int_01_to_31_optional_prefix(); }
     public DateParser_NumericRules.int_00_to_59_mandatory_prefix_return int_00_to_59_mandatory_prefix() throws RecognitionException { return gNumericRules.int_00_to_59_mandatory_prefix(); }
+    public DateParser_NumericRules.int_1_to_9_return int_1_to_9() throws RecognitionException { return gNumericRules.int_1_to_9(); }
+    public DateParser_NumericRules.spelled_first_to_thirty_first_return spelled_first_to_thirty_first() throws RecognitionException { return gNumericRules.spelled_first_to_thirty_first(); }
+    public DateParser_NumericRules.spelled_or_int_optional_prefix_return spelled_or_int_optional_prefix() throws RecognitionException { return gNumericRules.spelled_or_int_optional_prefix(); }
+    public DateParser_NumericRules.int_01_to_12_return int_01_to_12() throws RecognitionException { return gNumericRules.int_01_to_12(); }
+    public DateParser_NumericRules.int_four_digits_return int_four_digits() throws RecognitionException { return gNumericRules.int_four_digits(); }
+    public DateParser_NumericRules.int_60_to_99_return int_60_to_99() throws RecognitionException { return gNumericRules.int_60_to_99(); }
+    public DateParser_NumericRules.int_00_to_99_mandatory_prefix_return int_00_to_99_mandatory_prefix() throws RecognitionException { return gNumericRules.int_00_to_99_mandatory_prefix(); }
+    public DateParser_NumericRules.int_01_to_31_optional_prefix_return int_01_to_31_optional_prefix() throws RecognitionException { return gNumericRules.int_01_to_31_optional_prefix(); }
 
     public final boolean synpred17_DateParser() {
         state.backtracking++;

@@ -1,9 +1,9 @@
-// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/DateWalker.g 2014-09-22 18:05:51
+// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/DateWalker.g 2014-09-23 17:18:52
  package com.joestelmach.natty.antlrV32.generated; 
 
-import com.joestelmach.natty.antlrV32.WalkerState;
 import org.antlr.v32.runtime.*;
-import org.antlr.v32.runtime.tree.*;import java.util.Stack;
+import org.antlr.v32.runtime.tree.*;
+import java.util.Stack;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -334,7 +334,7 @@ public class DateWalker extends TreeParser {
     public String getGrammarFileName() { return "com/joestelmach/natty/generated/DateWalker.g"; }
 
 
-      private WalkerState _walkerState = new WalkerState();
+      private com.joestelmach.natty.antlrV32.WalkerState _walkerState = new com.joestelmach.natty.antlrV32.WalkerState();
       private java.util.logging.Logger _logger = java.util.logging.Logger.getLogger("com.joestelmach.natty");
       
       public void displayRecognitionError(String[] tokenNames, RecognitionException re) {
@@ -348,7 +348,7 @@ public class DateWalker extends TreeParser {
         _walkerState.clearDateGroup();
       }
       
-      public WalkerState getState() {
+      public com.joestelmach.natty.antlrV32.WalkerState getState() {
         return _walkerState;
       }
 

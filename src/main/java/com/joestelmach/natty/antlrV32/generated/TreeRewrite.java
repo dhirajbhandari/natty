@@ -1,4 +1,4 @@
-// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/TreeRewrite.g 2014-09-22 17:28:09
+// $ANTLR 3.2 Sep 23, 2009 14:05:07 com/joestelmach/natty/generated/TreeRewrite.g 2014-09-23 17:18:52
  package com.joestelmach.natty.antlrV32.generated; 
 
 import org.antlr.v32.runtime.*;
@@ -542,7 +542,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: INT, DIRECTION, SEEK, SEEK_BY, dow, DAY_OF_WEEK
+                    // elements: dow, DAY_OF_WEEK, DIRECTION, SEEK_BY, INT, SEEK
                     // token labels: dow
                     // rule labels: retval
                     // token list labels: 
@@ -660,7 +660,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: SEEK_BY, dow, INT, SEEK, DIRECTION, DAY_OF_MONTH
+                    // elements: dow, DAY_OF_MONTH, SEEK_BY, SEEK, DIRECTION, INT
                     // token labels: dow
                     // rule labels: retval
                     // token list labels: 
@@ -778,7 +778,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: INT, MONTH_OF_YEAR, SEEK_BY, SEEK, DIRECTION, dow
+                    // elements: SEEK, INT, dow, DIRECTION, SEEK_BY, MONTH_OF_YEAR
                     // token labels: dow
                     // rule labels: retval
                     // token list labels: 
@@ -900,7 +900,7 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: dow, SEEK, SEEK_BY, amount, MONTH_OF_YEAR, DIRECTION
+                    // elements: DIRECTION, SEEK, MONTH_OF_YEAR, SEEK_BY, dow, amount
                     // token labels: amount, dow
                     // rule labels: retval
                     // token list labels: 
@@ -1091,8 +1091,8 @@ public class TreeRewrite extends TreeRewriter {
 
 
                     // AST REWRITE
-                    // elements: seekby, SEEK, MONTH_OF_YEAR, month, YEAR_OF, EXPLICIT_SEEK, dow, EXPLICIT_SEEK, RELATIVE_DATE, day, dir, year, DAY_OF_WEEK, amount
-                    // token labels: amount, seekby, month, year, dir, dow, day
+                    // elements: YEAR_OF, year, amount, month, dir, EXPLICIT_SEEK, seekby, SEEK, day, MONTH_OF_YEAR, RELATIVE_DATE, dow, EXPLICIT_SEEK, DAY_OF_WEEK
+                    // token labels: amount, seekby, month, year, dir, day, dow
                     // rule labels: retval
                     // token list labels: 
                     // rule list labels: 
@@ -1104,8 +1104,8 @@ public class TreeRewrite extends TreeRewriter {
                     RewriteRuleNodeStream stream_month=new RewriteRuleNodeStream(adaptor,"token month",month);
                     RewriteRuleNodeStream stream_year=new RewriteRuleNodeStream(adaptor,"token year",year);
                     RewriteRuleNodeStream stream_dir=new RewriteRuleNodeStream(adaptor,"token dir",dir);
-                    RewriteRuleNodeStream stream_dow=new RewriteRuleNodeStream(adaptor,"token dow",dow);
                     RewriteRuleNodeStream stream_day=new RewriteRuleNodeStream(adaptor,"token day",day);
+                    RewriteRuleNodeStream stream_dow=new RewriteRuleNodeStream(adaptor,"token dow",dow);
                     RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
 
                     root_0 = (CommonTree)adaptor.nil();
