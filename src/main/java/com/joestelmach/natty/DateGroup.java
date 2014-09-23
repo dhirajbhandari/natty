@@ -125,7 +125,7 @@ public class DateGroup {
     return isFieldSpecified(Calendar.DAY_OF_MONTH);
   }
 
-  public boolean isHourSet() {
+  public boolean isHourSpecified() {
     return isFieldSpecified(Calendar.HOUR);
   }
 
@@ -142,7 +142,9 @@ public class DateGroup {
   }
 
   public void markHourSpecified() {
+    //TODO: do we have the case where we dont know AM or PM?
     markFieldSpecified(Calendar.HOUR);
+    markFieldSpecified(Calendar.HOUR_OF_DAY);
   }
 
   public List<Date> getDatesWithInferredFieldsSetToMinimum()
@@ -157,13 +159,15 @@ public class DateGroup {
         // Leave as current year
         // TODO in the future could think about all years?
       }
-      if (isFieldInferred(Calendar.DAY_OF_YEAR))
-      {
-        cal.set(Calendar.DAY_OF_YEAR, 1);
-      }
       if (isFieldInferred(Calendar.MONTH))
       {
         cal.set(Calendar.MONTH, Calendar.JANUARY);
+      }
+
+      assert Calendar.DAY_OF_MONTH == Calendar.DATE;
+      if (isFieldInferred(Calendar.DAY_OF_MONTH))
+      {
+        cal.set(Calendar.DAY_OF_MONTH, 1);
       }
       if (isFieldInferred(Calendar.HOUR) || isFieldInferred(Calendar.HOUR_OF_DAY))
       {
@@ -181,8 +185,7 @@ public class DateGroup {
       {
         cal.set(Calendar.MILLISECOND, 0);
       }
-      dates.add(date); // TODO revert this when fix the natty parsing to properly set the inferred fields
-//            dates.add(cal.getTime());
+      dates.add(cal.getTime());
     }
     return dates;
   }
@@ -199,13 +202,14 @@ public class DateGroup {
         // Leave as current year
         // TODO in the future could think about all years?
       }
-      if (isFieldInferred(Calendar.DAY_OF_YEAR))
-      {
-        cal.set(Calendar.DAY_OF_MONTH, 31);
-      }
       if (isFieldInferred(Calendar.MONTH))
       {
         cal.set(Calendar.MONTH, Calendar.DECEMBER);
+      }
+      assert Calendar.DAY_OF_MONTH == Calendar.DATE;
+      if (isFieldInferred(Calendar.DAY_OF_MONTH))
+      {
+        cal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH));
       }
       if (isFieldInferred(Calendar.HOUR) || isFieldInferred(Calendar.HOUR_OF_DAY))
       {
@@ -223,8 +227,7 @@ public class DateGroup {
       {
         cal.set(Calendar.MILLISECOND, 999);
       }
-      dates.add(date); // TODO revert this when fix the natty parsing to properly set the inferred fields
-//            dates.add(cal.getTime());
+      dates.add(cal.getTime());
     }
     return dates;
   }
