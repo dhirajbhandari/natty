@@ -26,7 +26,6 @@ public class CPANTest {
       if(!value.trim().startsWith("#") && value.trim().length() > 0) {
         Parser parser = new Parser();
         StringBuilder sb = new StringBuilder().append("[").append(value).append("] -> ");
-//        System.out.print(s);
         List<DateGroup> groups = parser.parse(value);
         Assert.assertEquals(1, groups.size());
         DateGroup dg = groups.get(0);
