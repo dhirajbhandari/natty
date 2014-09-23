@@ -175,12 +175,11 @@ public class DateTimeTest extends AbstractTest {
   }
 
   @Test
-  @Ignore("todo")
-  public void shouldPreferDateOverTime() throws Exception {
-//    validateDate("2015", 1, 1, 2014);
-    Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("05/15/2014");
+  public void shouldParseYYYYasDateNotTime() throws Exception {
+    Date reference = DateFormat.getDateInstance(DateFormat.SHORT).parse("06/30/2014");
     CalendarSource.setBaseDate(reference);
-    validateDateTime("2010", 1, 1, 2010, 0, 0, 0);
-  }
 
+    //Assert.assertEquals("Thu Jan 01 00:00:00 EDT 2009", parseSingleDate("2009").toString());
+    validateDateTime("2009", 1, 1, 2009, 0, 0, 0);
+  }
 }

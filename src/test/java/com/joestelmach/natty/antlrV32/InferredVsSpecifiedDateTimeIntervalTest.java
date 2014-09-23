@@ -244,7 +244,7 @@ public class InferredVsSpecifiedDateTimeIntervalTest extends AbstractTest {
         assertEquals("day interval", expected, date.isDaySpecified());
         break;
       case HOUR:
-        assertEquals("hour interval", expected, date.isHourSet());
+        assertEquals("hour interval", expected, date.isHourSpecified());
         break;
     }
   }

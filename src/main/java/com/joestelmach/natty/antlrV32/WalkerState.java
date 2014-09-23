@@ -1,6 +1,7 @@
 package com.joestelmach.natty.antlrV32;
 
 import java.util.*;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -30,7 +31,7 @@ public class WalkerState {
   private static final String SUMMARY = "SUMMARY";
   private static final String HOLIDAY_ICS_FILE = "/holidays.ics";
   private static final String SEASON_ICS_FILE = "/seasons.ics";
-  private static final Logger _logger = Logger.getLogger("com.joestelmach.natty");
+  private static final Logger _logger = Logger.getLogger(WalkerState.class.getName());
   
   private GregorianCalendar _calendar;
   private TimeZone _defaultTimeZone;
@@ -80,6 +81,7 @@ public class WalkerState {
     assert(direction.equals(DIR_LEFT) || direction.equals(DIR_RIGHT));
     assert(seekType.equals(SEEK_BY_DAY) || seekType.equals(SEEK_BY_WEEK));
     assert(dayOfWeekInt >= 1 && dayOfWeekInt <= 7);
+
     markDateInvocation();
 
     // BEGIN: Patch
@@ -342,6 +344,20 @@ public class WalkerState {
     }
   }
   
+  /**
+   *
+   * @param year the year to set.  If present, must be guaranteed to
+   *     parse as an integer with 4 digits (xxxx) between 0 and 9999
+   */
+  public void setExplicitYearOnlyDate(String year) {
+//    debug("BEFORE year: %s, month: %s, day: %s\n", _calendar.get(Calendar.YEAR), _calendar.get(Calendar.MONTH), _calendar.get(Calendar.DAY_OF_MONTH));
+    seekToYear(year); //set the year
+    //WARNING: Months needs to be set AFTER the YEAR is set - RB
+    _calendar.set(Calendar.MONTH, Calendar.JANUARY);
+    _calendar.set(Calendar.DAY_OF_MONTH, 1);
+    debug("AFTER year: %s, month: %s, day: %s\n", _calendar.get(Calendar.YEAR), _calendar.get(Calendar.MONTH), _calendar.get(Calendar.DAY_OF_MONTH));
+  }
+
   /**
    * Sets the the time of day
    * 
@@ -645,10 +661,6 @@ public class WalkerState {
   // BEGIN: Patch
   private void debug(String msg, Object... params) {
     _logger.finest(String.format(msg, params));
-  }
-
-  public void setExplicitYearOnlyDate(String year) {
-
   }
   // END: Patch
 }
